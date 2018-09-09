@@ -1,3 +1,5 @@
+Abstract: this will be a complete guide to deal
+
 - Intro: Why API scraping is not as easy as it seems
   - Rate Limiting
   - Error Handling
@@ -22,5 +24,5 @@
   - Scraping Cluster
   - Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbLTkyMTA1MjY4OSwtMTQwMjQ0MDc5NV19
 -->
