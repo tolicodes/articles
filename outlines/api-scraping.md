@@ -22,22 +22,33 @@ Storing in .env file vs environmental variables
 ### Libraries vs Roll Your Own 
  Using existing libraries vs using fetch vs axios/request
 ### Setting up our example app - Twitter scraper
-- API Scraping Concepts
-  - Building a simple queue 
-  - Adding logging
-  - Adding concurrency 
-  - Adding rate limiting support
-  - Adding error handling
-  - Improving our logging - making it easy to debug
-    - Progress Bar
-    - Status Reporting
-    - Using chrome inspector to debug
-  - Adding pagination support
+
+## API Scraping Concepts
+
+###  Building a simple queue 
+ 
+### Adding logging
+
+### Adding concurrency 
+
+###  Adding rate limiting support
+ 
+###  Adding error handling
+ 
+### Improving our logging - making it easy to debug
+ 
+ #### Progress Bar
+  
+#### Status Reporting
+  
+#### Using chrome inspector to debug
+
+####  Adding pagination support
   - Adding support for batch operations
 - Advanced Topics
   - Scraping Cluster
   - Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODc3NTM1MSwyOTgzMzg5NDQsLTE0MD
-I0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbOTk3NTQ5NDIyLDI5ODMzODk0NCwtMTQwMj
+Q0MDc5NV19
 -->
