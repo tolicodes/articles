@@ -1,4 +1,4 @@
-Abstract: this will be a complete guide to dealing with API Scraping based on my framework 
+Abstract: this will be a complete guide to dealing with API Scraping. I explain how I came up with my [api-tookit](https://github.com/tolicodes/node-api-toolkit) and the [twitter-toolkit](
 
 - Intro: Why API scraping is not as easy as it seems
   - Rate Limiting
@@ -24,5 +24,6 @@ Abstract: this will be a complete guide to dealing with API Scraping based on my
   - Scraping Cluster
   - Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MzM4OTQ0LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbNjgwNDU0NTIzLDI5ODMzODk0NCwtMTQwMj
+Q0MDc5NV19
 -->
