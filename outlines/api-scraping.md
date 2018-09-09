@@ -1,9 +1,13 @@
-Abstract: this will be a complete guide to dealing with API Scraping. I explain how I came up with my [api-tookit](https://github.com/tolicodes/node-api-toolkit) and the [twitter-toolkit](
+# Abstract
+This will be a complete guide to dealing with API Scraping. I explain how I came up with my [api-tookit](https://github.com/tolicodes/node-api-toolkit) and the [twitter-toolkit](https://github.com/tolicodes/twitter-toolkit) based on it. 
 
-- Intro: Why API scraping is not as easy as it seems
-  - Rate Limiting
-  - Error Handling
-  - Pagination
+# Outline
+## Intro
+Why API scraping is not as easy as it seems
+
+### Rate Limiting
+### Error Handling
+### Pagination
   - Concurrency
   - Logging and Debugging
 - The Basics
@@ -20,10 +24,11 @@ Abstract: this will be a complete guide to dealing with API Scraping. I explain 
     - Progress Bar
     - Status Reporting
     - Using chrome inspector to debug
+ -   - Adding pagination support
 - Advanced Topics
   - Scraping Cluster
   - Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwNDU0NTIzLDI5ODMzODk0NCwtMTQwMj
-Q0MDc5NV19
+eyJoaXN0b3J5IjpbLTIxMzAyNjI2MTksMjk4MzM4OTQ0LC0xND
+AyNDQwNzk1XX0=
 -->
