@@ -41,6 +41,8 @@ Storing in .env file vs environmental variables
 
 #### Exponential Backoff
  
+### Request Dependencies
+
 ### Improving our logging - making it easy to debug
  
 #### Progress Bar
@@ -62,6 +64,6 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzY0NDQ3ODEsNTkwNjIyMzE4LDI5OD
-MzODk0NCwtMTQwMjQ0MDc5NV19
+eyJoaXN0b3J5IjpbLTYwNzYwNDQ2NiwtMTQ3NjQ0NDc4MSw1OT
+A2MjIzMTgsMjk4MzM4OTQ0LC0xNDAyNDQwNzk1XX0=
 -->
