@@ -44,11 +44,14 @@ Storing in .env file vs environmental variables
 #### Using chrome inspector to debug
 
 ####  Adding pagination support
-  - Adding support for batch operations
-- Advanced Topics
-  - Scraping Cluster
-  - Multiple Keys
+
+#### Adding support for batch operations
+
+## Advanced Topics
+### Scraping Cluster
+
+### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk3NTQ5NDIyLDI5ODMzODk0NCwtMTQwMj
+eyJoaXN0b3J5IjpbNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMj
 Q0MDc5NV19
 -->
