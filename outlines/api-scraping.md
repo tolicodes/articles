@@ -25,11 +25,13 @@ Storing in .env file vs environmental variables
 
 ## API Scraping Concepts
 
-###  Building a simple queue 
+###  Building a simple queue
  
 ### Adding logging
 
 ### Adding concurrency 
+
+### Having multiple queues at the same time
 
 ###  Adding rate limiting support
  
@@ -37,21 +39,24 @@ Storing in .env file vs environmental variables
  
 ### Improving our logging - making it easy to debug
  
- #### Progress Bar
+#### Progress Bar
   
 #### Status Reporting
   
-#### Using chrome inspector to debug
+### Using chrome inspector to debug
 
-####  Adding pagination support
+### Adding pagination support
 
-#### Adding support for batch operations
+### Adding support for batch operations
+
+### Pausing/Resuming
+
 
 ## Advanced Topics
 ### Scraping Cluster
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMj
-Q0MDc5NV19
+eyJoaXN0b3J5IjpbMTIwNjA3ODQ1LDU5MDYyMjMxOCwyOTgzMz
+g5NDQsLTE0MDI0NDA3OTVdfQ==
 -->
