@@ -36,6 +36,10 @@ Storing in .env file vs environmental variables
 ###  Adding rate limiting support
  
 ###  Adding error handling
+
+#### Retrying
+
+#### Exponential Backoff
  
 ### Improving our logging - making it easy to debug
  
@@ -51,12 +55,13 @@ Storing in .env file vs environmental variables
 
 ### Pausing/Resuming
 
+### Streaming Results to a file
 
 ## Advanced Topics
 ### Scraping Cluster
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjA3ODQ1LDU5MDYyMjMxOCwyOTgzMz
-g5NDQsLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbLTE0NzY0NDQ3ODEsNTkwNjIyMzE4LDI5OD
+MzODk0NCwtMTQwMjQ0MDc5NV19
 -->
