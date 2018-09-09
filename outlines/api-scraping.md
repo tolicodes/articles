@@ -1,4 +1,4 @@
-Abstract: this will be a complete guide to deal
+Abstract: this will be a complete guide to dealing with API Scraping based on my framework 
 
 - Intro: Why API scraping is not as easy as it seems
   - Rate Limiting
@@ -24,5 +24,5 @@ Abstract: this will be a complete guide to deal
   - Scraping Cluster
   - Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTA1MjY4OSwtMTQwMjQ0MDc5NV19
+eyJoaXN0b3J5IjpbMjk4MzM4OTQ0LC0xNDAyNDQwNzk1XX0=
 -->
