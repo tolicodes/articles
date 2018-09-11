@@ -18,7 +18,8 @@ Just about API you will be hitting (public or private) will come with 2 types of
 ### Error Handling
 Errors happen. A lot. Common errors include
 - Rate limiting: even if you are careful sometimes a rate limiting error still occurs. You need a strategy to retry
-- not found: different APIs handle not found error 
+- not found: different APIs handle not found errors in different ways. Some throw a 404. Your application might not care if something is not found. 
+- Other errors: you may want to ignore 
 
 ### Pagination
  
@@ -75,7 +76,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTE3NTMzOSwtNjA3NjA0NDY2LC0xND
+eyJoaXN0b3J5IjpbLTk4NTg4NzI2MiwtNjA3NjA0NDY2LC0xND
 c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
 OTVdfQ==
 -->
