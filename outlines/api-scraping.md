@@ -3,7 +3,7 @@ This will be a complete guide to dealing with API Scraping. I explain how I came
 
 # Outline
 ## Intro
-Why API scraping is not as easy as it seems
+I’ve done a few projects now that involve API scraping of some sort - Twitter, AWS, Google, 
 
 ### Rate Limiting
 
@@ -64,6 +64,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzYwNDQ2NiwtMTQ3NjQ0NDc4MSw1OT
-A2MjIzMTgsMjk4MzM4OTQ0LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbLTcxMzA5MDAwOCwtNjA3NjA0NDY2LC0xND
+c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
+OTVdfQ==
 -->
