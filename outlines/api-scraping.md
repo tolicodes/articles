@@ -10,7 +10,9 @@ I feel it is important to understand the Fundementals behind some of these conce
 API scraping has many challenges, but we will be focusing on what I believe are the major ones in this article. 
 
 ### Rate Limiting
-Just about API you will be hitting (public or private) will come wit
+Just about API you will be hitting (public or private) will come with 2 types of rate limiting
+
+- DDOS protection: almost every production API, if you start hitting it with 1000 requests per seconds will block your IP. This means your server will be prohibited from accessing the API 
 
 ### Error Handling
 
@@ -69,7 +71,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2OTMwNzk4LC02MDc2MDQ0NjYsLTE0Nz
-Y0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMjQ0MDc5
-NV19
+eyJoaXN0b3J5IjpbLTY2Njk4MjE1NSwtNjA3NjA0NDY2LC0xND
+c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
+OTVdfQ==
 -->
