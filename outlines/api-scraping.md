@@ -3,7 +3,7 @@ This will be a complete guide to dealing with API Scraping. I explain how I came
 
 # Outline
 ## Intro
-I’ve done a few projects now that involve API scraping of some sort - Twitter, AWS, Google, Medium, JIRA, you name it. It’s a fairly common task when you’re a freelance developer. Throughout these implementations I’ve used a few libraries, including bottleneck, promise-queue, and just rolling my own 
+I’ve done a few projects now that involve API scraping of some sort - Twitter, AWS, Google, Medium, JIRA, you name it. It’s a fairly common task when you’re a freelance developer. Throughout these implementations I’ve used a few libraries, including bottleneck, promise-queue, and just rolling my own. However none of the existing solutions covered every aspect of scraping. So, I created my own solution, api-toolkit, which I believe solves 90% of the challen
 
 ### Rate Limiting
 
@@ -64,7 +64,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjU3NjA2LC02MDc2MDQ0NjYsLTE0Nz
-Y0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMjQ0MDc5
-NV19
+eyJoaXN0b3J5IjpbLTIxNDE4MjYzNDQsLTYwNzYwNDQ2NiwtMT
+Q3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0LC0xNDAyNDQw
+Nzk1XX0=
 -->
