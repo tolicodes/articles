@@ -28,9 +28,10 @@ This is a common issue with very long sets of results. Generally there are two a
 - page: standard pagination, You keep passing page numbers sequentially until there are no more results 
  
 ### Concurrency
-Especially if the results are quite large (images, files), you probably want to have some sort of conc
+Especially if the results are quite large (images, files), you probably want to have some sort of concurrency. That is multiple requests happening at the same time. But also, you don’t want too many concurrent requests to prevent rate limiting/DOS protection. 
 
 ### Logging and Debugging
+There is so much that can go wrong when scraping an API. For this you need an effective l
 
 ## The Basics
 ### Key/Secret Management
@@ -81,7 +82,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3NDA3MTI1LC02MDc2MDQ0NjYsLTE0Nz
+eyJoaXN0b3J5IjpbNDU3Mzc1NTQxLC02MDc2MDQ0NjYsLTE0Nz
 Y0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMjQ0MDc5
 NV19
 -->
