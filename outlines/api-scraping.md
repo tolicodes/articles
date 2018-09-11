@@ -37,7 +37,9 @@ There is so much that can go wrong when scraping an API. For this you need an ef
 ### Key/Secret Management
 Almost every private API will have some sort of Private key system (essentially a password that’s easily revocable). The implemenatations vary greatly, but generally they require you to store one or more pieces of “secret” text somewhere. 
 
-Never put secrets in your repository. Even if the repo is private, it is so easy for your secrets to get leaked accidentally. Th
+Never put secrets in your repository. Even if the repo is private, it is so easy for your secrets to get leaked accidentally. If this happens your account will be hijacked and you will be responsible for anything that happens on it. This includes posts made on Behalf of your company, stolen user information, and any billing that may occur from use of the API. 
+
+Instead Ad there are two optioms
   
 ### Libraries vs Roll Your Own 
  Using existing libraries vs using fetch vs axios/request
@@ -84,7 +86,7 @@ Never put secrets in your repository. Even if the repo is private, it is so easy
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYwMzgzOTY1LC02MDc2MDQ0NjYsLTE0Nz
-Y0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMjQ0MDc5
-NV19
+eyJoaXN0b3J5IjpbLTIxMDQzMjU0NDUsLTYwNzYwNDQ2NiwtMT
+Q3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0LC0xNDAyNDQw
+Nzk1XX0=
 -->
