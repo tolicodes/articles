@@ -44,7 +44,13 @@ Instead Ad there are two options:
 - .env file: a simple file that is excluded from the repository and manually copied to your computer and sever 
 - environmental variables: manually set variables in your shell environment. 
 
-Environmental var
+Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are the most secure and easy way to go
+
+An environment file is great for your dev computer or servers that you configure manually. 
+
+Either way the code is quite sinilar
+
+
   
 ### Libraries vs Roll Your Own 
  Using existing libraries vs using fetch vs axios/request
@@ -91,7 +97,7 @@ Environmental var
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM5ODAwOTAsLTYwNzYwNDQ2NiwtMT
+eyJoaXN0b3J5IjpbLTE0NDQwOTQxMDIsLTYwNzYwNDQ2NiwtMT
 Q3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0LC0xNDAyNDQw
 Nzk1XX0=
 -->
