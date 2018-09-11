@@ -13,7 +13,7 @@ API scraping has many challenges, but we will be focusing on what I believe are 
 Just about API you will be hitting (public or private) will come with 2 types of rate limiting
 
 - DDOS protection: almost every production API, if you start hitting it with 1000 requests per second will block your IP. This means your server will be prohibited from accessing the API, potentially indefinitely. This is meant to prevent DDOS attacks (or denial of service). Unfortunately, it’s quite easy to inadvertently trigger these protection if you’re not careful, especially if you are using multiple servers (clustering). 
-- Standard 
+- Standard Rate Limiting: most APIs will limit either your IP or your API key to a certain amount of requests during a certain timeframe (ex: 180 per 15m). These limits may be different for different for different endpoints for a sing
 
 ### Error Handling
 
@@ -72,7 +72,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODg0ODAxNSwtNjA3NjA0NDY2LC0xND
+eyJoaXN0b3J5IjpbLTE3NjA2NjYyMCwtNjA3NjA0NDY2LC0xND
 c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
 OTVdfQ==
 -->
