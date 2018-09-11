@@ -25,9 +25,10 @@ Errors happen. A lot. Common errors include
 This is a common issue with very long sets of results. Generally there are two approaches
 
 - cursor: a pointer to the next record returned by the last record 
-- page: standard pagination, if you know 
+- page: standard pagination, You keep passing page numbers sequentially until there are no more results 
  
 ### Concurrency
+Especially if the results are quite large (images, files), you probably want to have some sort of conc
 
 ### Logging and Debugging
 
@@ -80,7 +81,7 @@ Storing in .env file vs environmental variables
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjU1NDA4NSwtNjA3NjA0NDY2LC0xND
-c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
-OTVdfQ==
+eyJoaXN0b3J5IjpbMjM3NDA3MTI1LC02MDc2MDQ0NjYsLTE0Nz
+Y0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0NCwtMTQwMjQ0MDc5
+NV19
 -->
