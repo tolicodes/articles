@@ -50,6 +50,9 @@ An environment file is great for your dev computer or servers that you configure
 
 Either way the code is quite sinilar
 
+#### environmental variables
+
+#### environment file
 
   
 ### Libraries vs Roll Your Own 
@@ -97,7 +100,7 @@ Either way the code is quite sinilar
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQwOTQxMDIsLTYwNzYwNDQ2NiwtMT
-Q3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0LC0xNDAyNDQw
-Nzk1XX0=
+eyJoaXN0b3J5IjpbMTg5NTY0MzIzMCwtNjA3NjA0NDY2LC0xND
+c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
+OTVdfQ==
 -->
