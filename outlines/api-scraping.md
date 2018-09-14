@@ -129,12 +129,13 @@ For this tutorial we are going to be using the Twitter API with the [`twit`](htt
 
 Set up your app as follows.
 
-1. Set up a developer account and get your account secrets fro
-1. Run 
+1. Set up a [developer account](https://developer.twitter.com/en/account/get-started) and get your account secrets on the Twitter website
+2. 
+3. Run 
 	```
 	yarn add twit
 	```
-2. 
+4. 
 
 ## API Scraping Concepts
 
@@ -177,7 +178,7 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDYxNDQ0MiwxODk1NjQzMjMwLC02MD
+eyJoaXN0b3J5IjpbMTE5MDI1NjA3NCwxODk1NjQzMjMwLC02MD
 c2MDQ0NjYsLTE0NzY0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0
 NCwtMTQwMjQ0MDc5NV19
 -->
