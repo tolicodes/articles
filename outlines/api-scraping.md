@@ -47,14 +47,18 @@ An .env file is simple file that is excluded from the git repository and is manu
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
 
-Esseniallly, all you have to do is manually set variables in your shell environment. Or in your container provider's config (to persist the variable). 
+Esseniallly, all you have to do is manually set variables in your shell environment. Or in your container provider's config, such as [AWS ECS](https://stackoverflow.com/questions/43330278/how-to-provide-environment-variables-to-aws-ecs-task-definition) (to persist the variable across restarts).
 
-In your bash environment:
+To get this working on your local machine,
+
+type in your bash environment:
 ```
 export API_KEY=sn89ds2ju93sdnljos
 ```
 
-And then in your 
+or add that line to `~/.bashrc`
+
+And then in your node file ic
 
   
 ### Libraries vs Roll Your Own 
@@ -102,7 +106,7 @@ And then in your
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0Mzg1MjI2LDE4OTU2NDMyMzAsLTYwNz
+eyJoaXN0b3J5IjpbLTg3NTg0MTI5LDE4OTU2NDMyMzAsLTYwNz
 YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
 LC0xNDAyNDQwNzk1XX0=
 -->
