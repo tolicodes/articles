@@ -114,13 +114,14 @@ For example:
 
 ```
 const instance = axios.create({
-  baseURL: 'https://twitter.com/api/',
-  headers: {
-	  : 'foobar'}
+	 baseURL: 'https://twitter.com/api/',
+	 headers: {
+		'X-Bearer-Token: API_TOKEN
+	 }
 });
 
-const myRequest()
-
+// later using the instance
+instance.get('/users');
 ```
 
 
@@ -167,7 +168,7 @@ const myRequest()
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MjMxNDA3LDE4OTU2NDMyMzAsLTYwNz
-YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
-LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbLTE1NjYxODc3MTQsMTg5NTY0MzIzMCwtNj
+A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
+NDQsLTE0MDI0NDA3OTVdfQ==
 -->
