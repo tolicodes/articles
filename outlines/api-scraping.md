@@ -44,7 +44,6 @@ Instead Ad there are a few options:
 #### .env file
 An .env file is simple file that is excluded from the git repository and is manually copied to your computer and sever. An environment file is great for your dev computer or servers that you configure manually. 
 
-
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
 
@@ -99,7 +98,7 @@ In your environemnt:
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NTU4MjY5LDE4OTU2NDMyMzAsLTYwNz
-YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
-LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbLTIxMDE2NjY4NjUsMTg5NTY0MzIzMCwtNj
+A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
+NDQsLTE0MDI0NDA3OTVdfQ==
 -->
