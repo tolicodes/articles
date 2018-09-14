@@ -146,14 +146,14 @@ Set up your app as follows.
 	}
 	twitterScraper.init();
 	```
-5. Configure the Twit client
+5. Configure the Twit client referencing your .env variables
 	```
 	init: async () => {	
 		this.client  =  new  Twit({
-			consumer_key:  consumerKey,
-			consumer_secret:  consumerSecret,
-			access_token:  accessToken,
-			access_token_secret:  accessTokenSecret,
+			consumer_key:  CONSUMER_KEY,
+			consumer_secret:  CONSUMER_SECRET,
+			access_token:  ACCESS_TOKEN,
+			access_token_secret:  ACCESS_TOKEN_SECRET,
 		});
 	}
 	```
@@ -199,5 +199,6 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTY0MjM2NCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ
+==
 -->
