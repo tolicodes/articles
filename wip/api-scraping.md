@@ -140,10 +140,23 @@ Set up your app as follows.
 4. Add an object where we will keep our code
 	```
 	const twitterScraper = {
-	   init: async () =
+	   init: async () => {	
+	
+	   }
+	}
+	twitterScraper.init();
+	```
+5. Configure the Twit client
+	```
+	init: async () => {	
+		this.client  =  new  Twit({
+			consumer_key:  consumerKey,
+			consumer_secret:  consumerSecret,
+			access_token:  accessToken,
+			access_token_secret:  accessTokenSecret,
+		});
 	}
 	```
-	
 
 ## API Scraping Concepts
 
@@ -186,6 +199,5 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ1MTg3OTcsLTEzMjIxNzAwNjVdfQ
-==
+eyJoaXN0b3J5IjpbLTk5NTY0MjM2NCwtMTMyMjE3MDA2NV19
 -->
