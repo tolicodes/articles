@@ -58,7 +58,15 @@ yarn add dotenv
 
 At the top of your node file add:
 ```
+require('dotenv').config();;
 
+const {
+   API_KEY,
+   API_SECRET
+} = process.env;
+```
+
+Finally make sure that you exclude the file from your .GIT repository (and manually copy it anywhere that needs to use the secret
 
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
@@ -128,7 +136,7 @@ const {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE1ODMyNDYsMTg5NTY0MzIzMCwtNj
-A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
-NDQsLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbOTc4Mzg0MTYzLDE4OTU2NDMyMzAsLTYwNz
+YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
+LC0xNDAyNDQwNzk1XX0=
 -->
