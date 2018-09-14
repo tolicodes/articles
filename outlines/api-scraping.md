@@ -124,8 +124,16 @@ const instance = axios.create({
 instance.get('/users');
 ```
 
-
 ### Setting up our example app - Twitter scraper
+For this tutorial we are going to be using the Twitter API with the [`twit`](https://github.com/ttezel/twit) client.
+
+Set up your app as follows.
+
+1. Run 
+	```
+	yarn add twit
+	```
+2. 
 
 ## API Scraping Concepts
 
@@ -168,7 +176,7 @@ instance.get('/users');
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjYxODc3MTQsMTg5NTY0MzIzMCwtNj
+eyJoaXN0b3J5IjpbLTExNzYzODY4MjksMTg5NTY0MzIzMCwtNj
 A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
 NDQsLTE0MDI0NDA3OTVdfQ==
 -->
