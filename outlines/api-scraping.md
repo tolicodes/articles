@@ -108,11 +108,17 @@ If you are using a lesser supported API, you may be forced to roll your own impl
 
 In this case you have an option of using ES6's `fetch` function or an exisiting library such as [axios](https://github.com/axios/axios). I like axios because it supports Promises and has a clean syntax. 
 
-Once you have decided on your HTTP request library you may want to create a wrapper for creating requests, so that you do not have to type the same info over and over.
+Once you have decided on your HTTP request library you may want to create a wrapper for creating requests, so that you do not have to type the same info over and over. Axios has an ability to create an "instance" that serves the same purpose.
 
 For example:
 
 ```
+const instance = axios.create({
+  baseURL: 'https://twitter.com/api/',
+  headers: {
+	  : 'foobar'}
+});
+
 const myRequest()
 
 ```
@@ -161,7 +167,7 @@ const myRequest()
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTMwMjAwMjYsMTg5NTY0MzIzMCwtNj
-A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
-NDQsLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbLTM1MjMxNDA3LDE4OTU2NDMyMzAsLTYwNz
+YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
+LC0xNDAyNDQwNzk1XX0=
 -->
