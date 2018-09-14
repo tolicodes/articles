@@ -104,7 +104,9 @@ Generally, when you are going to scraping a well known API, such as Twitter, the
 
 Once you start using the more advanced parts of the API you may want to fork the repository to make it fit your needs, or even write your own.
 
-If you are using a lesser supported API, you may be forced to roll your own implemen
+If you are using a lesser supported API, you may be forced to roll your own implementation. 
+
+In this case you have an option of using ES6's `fetch` function or an exisiting library such as [axios](https://github.com/axios/axios). I like axios because it supports Promises and has a clean syntax. 
 
 
 ### Setting up our example app - Twitter scraper
@@ -150,7 +152,7 @@ If you are using a lesser supported API, you may be forced to roll your own impl
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTg0MzgwODEsMTg5NTY0MzIzMCwtNj
-A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
-NDQsLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbNTc0OTE5NjEwLDE4OTU2NDMyMzAsLTYwNz
+YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
+LC0xNDAyNDQwNzk1XX0=
 -->
