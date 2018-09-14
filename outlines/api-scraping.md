@@ -39,7 +39,7 @@ Almost every private API will have some sort of Private key system (essentially 
 
 Never put secrets in your repository. Even if the repo is private, it is so easy for your secrets to get leaked accidentally. If this happens your account will be hijacked and you will be responsible for anything that happens on it. This includes posts made on Behalf of your company, stolen user information, and any billing that may occur from use of the API. 
 
-Instead Ad there are a few options:
+Instead, there are a few options:
 
 #### .env file
 An .env file is simple file that is excluded from the git repository and is manually copied to your computer and sever. An environment file is great for your dev computer or servers that you configure manually. 
@@ -49,8 +49,10 @@ Environmental variables are easily manageable in most environments that run Dock
 
 Esseniallly, all you have to do is manually set variables in your shell environment.
 
-In your environemnt:
+In your bash environment:
+```
 
+```
 
   
 ### Libraries vs Roll Your Own 
@@ -98,7 +100,7 @@ In your environemnt:
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDE2NjY4NjUsMTg5NTY0MzIzMCwtNj
-A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
-NDQsLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbLTQ0NTQ2Nzk3OCwxODk1NjQzMjMwLC02MD
+c2MDQ0NjYsLTE0NzY0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0
+NCwtMTQwMjQ0MDc5NV19
 -->
