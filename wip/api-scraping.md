@@ -137,8 +137,10 @@ Set up your app as follows.
 	```
 	yarn add twit
 	```
-4. Add 
-
+4. Add the Twit library and configure it
+	```
+	const  Twit  =  require('twit');
+	
 
 ## API Scraping Concepts
 
@@ -181,5 +183,6 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNTgwNDE5NSwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTE1MjUzOTA3NzYsLTEzMjIxNzAwNjVdfQ
+==
 -->
