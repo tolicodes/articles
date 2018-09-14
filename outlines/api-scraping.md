@@ -42,21 +42,16 @@ Never put secrets in your repository. Even if the repo is private, it is so easy
 Instead Ad there are a few options:
 
 #### .env file
-An .env file is simple file that is excluded from the git repository and is manually copied to your computer and sever 
+An .env file is simple file that is excluded from the git repository and is manually copied to your computer and sever. An environment file is great for your dev computer or servers that you configure manually. 
 
 
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
 
-Esseniallly, all you have to do is manually set variables in your shell environment.  
+Esseniallly, all you have to do is manually set variables in your shell environment.
 
+In your environemnt:
 
-
-Either way the code is quite sinilar
-
-#### environmental variables
-
-#### environment file
 
   
 ### Libraries vs Roll Your Own 
@@ -104,7 +99,7 @@ Either way the code is quite sinilar
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDg1NzUzLDE4OTU2NDMyMzAsLTYwNz
+eyJoaXN0b3J5IjpbODk2NTU4MjY5LDE4OTU2NDMyMzAsLTYwNz
 YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
 LC0xNDAyNDQwNzk1XX0=
 -->
