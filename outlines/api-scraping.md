@@ -97,7 +97,9 @@ const {
 
   
 ### Libraries vs Roll Your Own 
-Generally, when you are going to scraping a well known API, such as Twitter, there will be multiple 
+Generally, when you are going to scraping a well known API, such as Twitter, there will be [multiple](https://www.npmjs.com/package/twitter) [node](https://www.npmjs.com/package/node-twitter-api) [packages](https://github.com/ttezel/twit) to choose from. I strongly suggest using those packages, at least in the beginning because they take care of:
+* authentication
+* the http request headers and body
 
 
 ### Setting up our example app - Twitter scraper
@@ -143,7 +145,7 @@ Generally, when you are going to scraping a well known API, such as Twitter, the
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MjUwMjMsMTg5NTY0MzIzMCwtNjA3Nj
-A0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQs
-LTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbLTEzMzE0NjI0MiwxODk1NjQzMjMwLC02MD
+c2MDQ0NjYsLTE0NzY0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0
+NCwtMTQwMjQ0MDc5NV19
 -->
