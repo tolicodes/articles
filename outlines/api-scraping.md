@@ -3,7 +3,9 @@ This will be a complete guide to dealing with API Scraping. I explain how I came
 
 # Outline
 ## Intro
-I’ve done a few projects now that involve API scraping of some sort - Twitter, AWS, Google, Medium, JIRA, you name it. It’s a fairly common task when you’re a freelance developer. Throughout these implementations I’ve used a few libraries, including bottleneck, promise-queue, and just rolling my own. However none of the existing solutions covered every aspect of scraping. So, I created my own solution, api-toolkit, which I believe solves 90% of the challenges you will encounter in scraping your own APIs. 
+I’ve done a few projects now that involve API scraping of some sort - Twitter, AWS, Google, Medium, JIRA, you name it. It’s a fairly common task when you’re a freelance developer. Throughout these implementations I’ve used a few libraries, including bottleneck, promise-queue, and just rolling my own. However none of the existing solutions covered every aspect of scraping. 
+
+So, I created my own solution, [api-tookit](https://github.com/tolicodes/node-api-toolkit) and the [twitter-toolkit](https://github.com/tolicodes/twitter-toolkit) based on it, which I believe solves 90% of the challenges you will encounter in scraping your own APIs. 
 
 I feel it is important to understand the Fundementals behind some of these concepts, so I decided to write this article for CodeMentor. 
 
@@ -178,7 +180,7 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDg2NjYzMSwxMTkwMjU2MDc0LDE4OT
-U2NDMyMzAsLTYwNzYwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIz
-MTgsMjk4MzM4OTQ0LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbLTE5MDA1Nzk0NDIsMTE5MDI1NjA3NCwxOD
+k1NjQzMjMwLC02MDc2MDQ0NjYsLTE0NzY0NDQ3ODEsNTkwNjIy
+MzE4LDI5ODMzODk0NCwtMTQwMjQ0MDc5NV19
 -->
