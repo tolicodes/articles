@@ -66,7 +66,12 @@ const {
 } = process.env;
 ```
 
-Finally make sure that you exclude the file from your .GIT repository (and manually copy it anywhere that needs to use the secret
+Finally make sure that you exclude the file from your .GIT repository (and manually copy it anywhere that needs to use the secrets)
+
+`.gitignore`
+```
+.env
+```
 
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
@@ -92,7 +97,9 @@ const {
 
   
 ### Libraries vs Roll Your Own 
- Using existing libraries vs using fetch vs axios/request
+Generally, when you are going to scraping a well known API, such as Twitter, there will be multiple 
+
+
 ### Setting up our example app - Twitter scraper
 
 ## API Scraping Concepts
@@ -136,7 +143,7 @@ const {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4Mzg0MTYzLDE4OTU2NDMyMzAsLTYwNz
-YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
-LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbLTM0MjUwMjMsMTg5NTY0MzIzMCwtNjA3Nj
+A0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQs
+LTE0MDI0NDA3OTVdfQ==
 -->
