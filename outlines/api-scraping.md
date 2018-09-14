@@ -39,12 +39,14 @@ Almost every private API will have some sort of Private key system (essentially 
 
 Never put secrets in your repository. Even if the repo is private, it is so easy for your secrets to get leaked accidentally. If this happens your account will be hijacked and you will be responsible for anything that happens on it. This includes posts made on Behalf of your company, stolen user information, and any billing that may occur from use of the API. 
 
-Instead Ad there are two options:
+Instead Ad there are a few options:
+
 
 - .env file: a simple file that is excluded from the repository and manually copied to your computer and sever 
 - environmental variables: manually set variables in your shell environment. 
+- 
 
-Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are the most secure and easy way to go
+Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and easy way to go
 
 An environment file is great for your dev computer or servers that you configure manually. 
 
@@ -100,7 +102,7 @@ Either way the code is quite sinilar
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTY0MzIzMCwtNjA3NjA0NDY2LC0xND
-c2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5NDQsLTE0MDI0NDA3
-OTVdfQ==
+eyJoaXN0b3J5IjpbLTE0NjcwNDk0NjUsMTg5NTY0MzIzMCwtNj
+A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
+NDQsLTE0MDI0NDA3OTVdfQ==
 -->
