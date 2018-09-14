@@ -129,6 +129,7 @@ For this tutorial we are going to be using the Twitter API with the [`twit`](htt
 
 Set up your app as follows.
 
+1. Set up a developer account and get your account secrets fro
 1. Run 
 	```
 	yarn add twit
@@ -176,7 +177,7 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzYzODY4MjksMTg5NTY0MzIzMCwtNj
-A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
-NDQsLTE0MDI0NDA3OTVdfQ==
+eyJoaXN0b3J5IjpbMTg1NDYxNDQ0MiwxODk1NjQzMjMwLC02MD
+c2MDQ0NjYsLTE0NzY0NDQ3ODEsNTkwNjIyMzE4LDI5ODMzODk0
+NCwtMTQwMjQ0MDc5NV19
 -->
