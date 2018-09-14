@@ -44,6 +44,8 @@ Instead, there are a few options:
 #### .env file
 An .env file is simple file that is excluded from the git repository and is manually copied to your computer and sever. An environment file is great for your dev computer or servers that you configure manually. 
 
+To do this create a file called `e
+
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
 
@@ -58,7 +60,13 @@ export API_KEY=sn89ds2ju93sdnljos
 
 or add that line to `~/.bashrc`
 
-And then in your node file ic
+And then in your node file, to access the variable just do 
+
+```
+const {
+    API_KEY
+} = process.env;
+```
 
   
 ### Libraries vs Roll Your Own 
@@ -106,7 +114,7 @@ And then in your node file ic
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTg0MTI5LDE4OTU2NDMyMzAsLTYwNz
+eyJoaXN0b3J5IjpbNTk1NTgyODUyLDE4OTU2NDMyMzAsLTYwNz
 YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
 LC0xNDAyNDQwNzk1XX0=
 -->
