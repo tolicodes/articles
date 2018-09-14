@@ -137,9 +137,12 @@ Set up your app as follows.
 	```
 	yarn add twit
 	```
-4. Add the Twit library and configure it
+4. Add an object where we will keep our code
 	```
-	const  Twit  =  require('twit');
+	const twitterScraper = {
+	   init: async () =
+	}
+	```
 	
 
 ## API Scraping Concepts
@@ -183,6 +186,6 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjUzOTA3NzYsLTEzMjIxNzAwNjVdfQ
+eyJoaXN0b3J5IjpbLTE1NzQ1MTg3OTcsLTEzMjIxNzAwNjVdfQ
 ==
 -->
