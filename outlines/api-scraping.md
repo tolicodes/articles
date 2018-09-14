@@ -44,10 +44,21 @@ Instead, there are a few options:
 #### .env file
 An .env file is simple file that is excluded from the git repository and is manually copied to your computer and sever. An environment file is great for your dev computer or servers that you configure manually. 
 
-To do this create a file called `.env` in the root of your project. Then add your variables
+To do this create a file called `.env` in the root of your project. Then add your secrets:
 ```
 API_KEY = asdfhsd834hsd
-API_SECR
+API_SECRET = ioshfa94widoj2ws
+```
+
+Then install [ `dotenv`](https://www.npmjs.com/package/dotenv)
+
+```
+yarn add dotenv
+```
+
+At the top of your node file add:
+```
+
 
 #### enviornmental variables
 Environmental variables are easily manageable in most environments that run Docker Containers (ex: AWS). They are one of the more secure and simple way to go.
@@ -117,7 +128,7 @@ const {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0OTM5MTgxLDE4OTU2NDMyMzAsLTYwNz
-YwNDQ2NiwtMTQ3NjQ0NDc4MSw1OTA2MjIzMTgsMjk4MzM4OTQ0
-LC0xNDAyNDQwNzk1XX0=
+eyJoaXN0b3J5IjpbLTE3NzE1ODMyNDYsMTg5NTY0MzIzMCwtNj
+A3NjA0NDY2LC0xNDc2NDQ0NzgxLDU5MDYyMjMxOCwyOTgzMzg5
+NDQsLTE0MDI0NDA3OTVdfQ==
 -->
