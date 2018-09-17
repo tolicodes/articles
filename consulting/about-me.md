@@ -16,12 +16,16 @@ I have 4 years experience in React, and over 10 years programming in general, an
 Also I'm giving a 30% discount off my regular 90/h rate since it's still a technology I'm developing my skills in.
 
 # Open Source Projects
-- My website: https://tolicodes.com  and source https://github.com/tolicodes/tolicodes.com
-- Example CRUD React App: https://cm-idea.surge.sh/ https://github.com/tolicodes/cm-idea-app
+- PickleJS: https://PickleJS.com https://github.com/tolicodes/picklejs an extensive Cypress testing library
+- Node Scraping Toolkit: https://github.com/tolicodes/node-api-toolkit
+- Twitter Toolkit: https://github.com/tolicodes/twitter-toolkit
+- Mapbox Geocoder: https://github.com/tolicodes/react-geocoder
+
+- My website: https://tolicodes.com  https://github.com/tolicodes/tolicodes.com
+- Example CRUD React App: https://cm-ideas.tolicodes.com https://github.com/tolicodes/cm-idea-app
 - WeAcro: http://weacro.com/ https://github.com/weacro/weacro-fe Acro Yoga Application
 
-- Mapbox Geocoder: https://github.com/tolicodes/react-geocoder
-- PickleJS: https://PickleJS.com https://github.com/tolicodes/picklejs an extensive Cypress testing library
+
 
 # Get To Know Me
 Here are some of my profiles so that you can get to know me as a programmer and as a person:
@@ -36,5 +40,6 @@ Here are some of my profiles so that you can get to know me as a programmer and 
 - Example Backbone App: https://github.com/tolicodes/amazingcreditresults.com-frontend
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTA4NzQ1NSwtMjE0Njk1ODg2NF19
+eyJoaXN0b3J5IjpbMTI0MTAyNjMzMSwyMDE5MDg3NDU1LC0yMT
+Q2OTU4ODY0XX0=
 -->
