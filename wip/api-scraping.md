@@ -167,7 +167,7 @@ We are going to create a simple Queue with 4 states:
 * `complete`: successfully executed
 * `failed`: failed to execute
 
-Since we cannot "pas
+We are going to use Promises in this queue. Since we cannot "pause" a Promise, we are going to have to wrap the function to be executed in a second Promise. It will be resolved at the same time that the internal function 
 ```
 class Queue {
   constructor() {
@@ -247,6 +247,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDkzMjk1ODAsLTExODI1NTU1MDQsLT
-EzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbLTQzNjE4Mzc0NSwtMTE4MjU1NTUwNCwtMT
+MyMjE3MDA2NV19
 -->
