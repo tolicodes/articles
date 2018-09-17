@@ -158,7 +158,7 @@ Set up your app as follows.
 	```
 
 ## API Scraping Concepts
-
+Now we 
 
 ###  Building a simple queue
  
@@ -199,6 +199,6 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njc5MjcxODgsLTExODI1NTU1MDQsLT
-EzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMjAzMjYxNDE5NCwtMTE4MjU1NTUwNCwtMT
+MyMjE3MDA2NV19
 -->
