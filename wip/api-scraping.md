@@ -162,7 +162,12 @@ Now we are going to start building our scraper one concept at a time.
 
 ###  Building a simple queue
 We are going to create a simple Queue with 4 states:
-* queue
+* `queued`: waiting to execute
+* `pending`: currently executing
+* `complete`: successfully executed
+* `failed`: failed to execute
+
+Since we cannot "pas
 ```
 class Queue {
   constructor() {
@@ -242,6 +247,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxMDYzOTg4LC0xMTgyNTU1NTA0LC0xMz
-IyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbLTIxMDkzMjk1ODAsLTExODI1NTU1MDQsLT
+EzMjIxNzAwNjVdfQ==
 -->
