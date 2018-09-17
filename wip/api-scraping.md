@@ -177,7 +177,7 @@ So:
 5. Internal Promise Resolves
 6. External Promise Resolves
 
-What happens in the a
+What happens in the `add` function is we sign
 
 ```
 class Queue {
@@ -258,6 +258,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzcwNDc0NiwtMTE4MjU1NTUwNCwtMT
-MyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMz
+IyMTcwMDY1XX0=
 -->
