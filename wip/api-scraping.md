@@ -180,7 +180,14 @@ class  Queue {
   // is enabled;
 
   add(func) {
-  
+	 let  resolve;
+     let  reject;
+
+	 const  wrapperPromise  =  new Promise((res, rej) => {
+		resolve = res;
+		reject = rej;
+	});
+  }
 }
 ```
  
@@ -221,6 +228,6 @@ class  Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMDc5ODIzOSwtMTE4MjU1NTUwNCwtMT
+eyJoaXN0b3J5IjpbMTYwNDQ3NTgyNSwtMTE4MjU1NTUwNCwtMT
 MyMjE3MDA2NV19
 -->
