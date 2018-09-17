@@ -96,7 +96,6 @@ const {
     API_KEY
 } = process.env;
 ```
-
   
 ### Libraries vs Roll Your Own 
 Generally, when you are going to scraping a well known API, such as Twitter, there will be [multiple](https://www.npmjs.com/package/twitter) [node](https://www.npmjs.com/package/node-twitter-api) [packages](https://github.com/ttezel/twit) to choose from. I strongly suggest using those packages, at least in the beginning because they take care of:
@@ -160,6 +159,7 @@ Set up your app as follows.
 
 ## API Scraping Concepts
 
+
 ###  Building a simple queue
  
 ### Adding logging
@@ -199,6 +199,6 @@ Set up your app as follows.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ
-==
+eyJoaXN0b3J5IjpbLTE1Njc5MjcxODgsLTExODI1NTU1MDQsLT
+EzMjIxNzAwNjVdfQ==
 -->
