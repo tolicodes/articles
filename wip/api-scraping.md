@@ -170,6 +170,8 @@ class  Queue {
 	  pending: [],
 	  complete: [],
       failed: [],
+	  
+	  
     });
   }
 
@@ -183,10 +185,17 @@ class  Queue {
 	 let  resolve;
      let  reject;
 
-	 const  wrapperPromise  =  new Promise((res, rej) => {
+	 const  wrapperPromise = new Promise((res, rej) => {
 		resolve = res;
 		reject = rej;
-	});
+	 });
+	 
+     this.queued.push(wrapperPromise);
+
+     this.queuedFuncs.push(() => {
+       func().then(resolve).catch(reject);
+       return  wrapperPromise;
+     });
   }
 }
 ```
@@ -228,6 +237,6 @@ class  Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDQ3NTgyNSwtMTE4MjU1NTUwNCwtMT
-MyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTIxMjQzODU4MTAsLTExODI1NTU1MDQsLT
+EzMjIxNzAwNjVdfQ==
 -->
