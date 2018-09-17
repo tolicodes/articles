@@ -26,7 +26,6 @@ Also I'm giving a 30% discount off my regular 90/h rate since it's still a techn
 - WeAcro: http://weacro.com/ https://github.com/weacro/weacro-fe Acro Yoga Application
 
 
-
 # Get To Know Me
 Here are some of my profiles so that you can get to know me as a programmer and as a person:
 - My website: https://tolicodes.com 
@@ -40,6 +39,6 @@ Here are some of my profiles so that you can get to know me as a programmer and 
 - Example Backbone App: https://github.com/tolicodes/amazingcreditresults.com-frontend
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MTAyNjMzMSwyMDE5MDg3NDU1LC0yMT
-Q2OTU4ODY0XX0=
+eyJoaXN0b3J5IjpbMjY5OTAxNDIxLDIwMTkwODc0NTUsLTIxND
+Y5NTg4NjRdfQ==
 -->
