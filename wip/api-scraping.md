@@ -163,8 +163,17 @@ Now we are going to start building our scraper one concept at a time.
 ###  Building a simple queue
 ```
 class  Queue {
-
-constructor({
+  constructor() {
+    Object.assign(this, {
+      // lists of promises
+      queued: [],
+	  pending: [],
+	  complete: [],
+      failed: [],
+    });
+  }
+}
+```
  
 ### Adding logging
 
@@ -203,6 +212,6 @@ constructor({
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxNjI2NDY5LC0xMTgyNTU1NTA0LC0xMz
-IyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbLTE1MTM4MDAzMTYsLTExODI1NTU1MDQsLT
+EzMjIxNzAwNjVdfQ==
 -->
