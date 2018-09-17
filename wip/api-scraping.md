@@ -172,7 +172,12 @@ We are going to use Promises in this queue. Since we cannot "pause" a Promise, w
 So:
 1. External Promise is created
 2. Extenal Promise is pending
-3. Interna
+3. Queue starts processing and Internal Function is queued up
+4. Internal Function is executed
+5. Internal Promise Resolves
+6. External Promise Resolves
+
+What happens in the a
 
 ```
 class Queue {
@@ -253,6 +258,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDg3MjIxODMsLTExODI1NTU1MDQsLT
-EzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMTE1NzcwNDc0NiwtMTE4MjU1NTUwNCwtMT
+MyMjE3MDA2NV19
 -->
