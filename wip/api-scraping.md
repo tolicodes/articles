@@ -158,9 +158,13 @@ Set up your app as follows.
 	```
 
 ## API Scraping Concepts
-Now we 
+Now we are going to start building our scraper one concept at a time.
 
 ###  Building a simple queue
+```
+class  Queue {
+
+constructor({
  
 ### Adding logging
 
@@ -199,6 +203,6 @@ Now we
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMjYxNDE5NCwtMTE4MjU1NTUwNCwtMT
-MyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbODkxNjI2NDY5LC0xMTgyNTU1NTA0LC0xMz
+IyMTcwMDY1XX0=
 -->
