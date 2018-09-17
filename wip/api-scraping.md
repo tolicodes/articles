@@ -161,8 +161,10 @@ Set up your app as follows.
 Now we are going to start building our scraper one concept at a time.
 
 ###  Building a simple queue
+We are going to create a simple Queue with 4 states:
+* queue
 ```
-class  Queue {
+class Queue {
   constructor() {
     Object.assign(this, {
       // lists of promises
@@ -170,8 +172,11 @@ class  Queue {
 	  pending: [],
 	  complete: [],
       failed: [],
+	
+	  // unlike queued this is a list of functions, not promises
+	  queuedFuncs: [],
 	  
-	  
+	  stopped:  true,
     });
   }
 
@@ -237,6 +242,6 @@ class  Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjQzODU4MTAsLTExODI1NTU1MDQsLT
-EzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbNjUxMDYzOTg4LC0xMTgyNTU1NTA0LC0xMz
+IyMTcwMDY1XX0=
 -->
