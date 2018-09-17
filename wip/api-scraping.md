@@ -172,6 +172,15 @@ class  Queue {
       failed: [],
     });
   }
+
+  // there will be a promise added to queued immediately after adding
+  // but func will ojnly start executing when `process` is called
+  // the wrapper promise will actually be the one that is passed around everywhere
+  // the queue will start executing if it's currently stopped if autoStart
+  // is enabled;
+
+  add(func) {
+  
 }
 ```
  
@@ -212,6 +221,6 @@ class  Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTM4MDAzMTYsLTExODI1NTU1MDQsLT
-EzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbLTkxMDc5ODIzOSwtMTE4MjU1NTUwNCwtMT
+MyMjE3MDA2NV19
 -->
