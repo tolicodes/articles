@@ -215,8 +215,10 @@ class Queue {
 
      this.queuedFuncs.push(() => {
        func().then(resolve).catch(reject);
-       return  wrapperPromise;
+       return wrapperPromise;
      });
+
+     return wrapperPromise;
   }
 }
 ```
@@ -258,6 +260,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMz
-IyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbLTE3MTI4NjUyODAsMzA4Njk3OTI5LC0xMT
+gyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
