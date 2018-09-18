@@ -233,7 +233,9 @@ Now we actually need to write the `process` function that starts off the process
 
 All our function is doing is:
 1. executing the next function in the `queuedFuncs` list (`this.queuedFuncs.shift()`)
-2. moving the Wrapper promise from the `queued`  
+2. moving the Wrapper promise from the `queued` list to the `pending` list.
+
+Notice we wrapper the execution in a `try catch` block. But we aren't actually waiting for the execution s 
 
 ```
 moveLists(item, from, to) {
@@ -246,11 +248,11 @@ async processNextItem() {
 
    this.moveLists(this.queued[0], 'queued', 'pending');
    
-   const promise = this.queuedFuncs.shift()();
+   let promise;
 
    try {
-	 promise  =  this.queuedFuncs.shift()();
-	 await  promise;
+	 promise = this.queuedFuncs.shift()();
+	 await promise;
 	 this.moveLists(promise, 'pending', 'complete');
    } catch (e) {}
 }
@@ -301,7 +303,7 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2NjEzNzg4LC0xMjA1NzI5ODkxLC0zMj
-E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
-MDY1XX0=
+eyJoaXN0b3J5IjpbLTY0MTM2NDczNCwtMTIwNTcyOTg5MSwtMz
+IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
+MDA2NV19
 -->
