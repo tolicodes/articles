@@ -232,7 +232,7 @@ class Queue {
 Now we actually need to write the `process` function that starts off the process. Essentially we have an async `while` loop, that processes one item at a time. For now, there is nothing asynchronous happening...but we will put some blocks in to stop processing if there are too many requests.
 
 All our function is doing is:
-1) executing the next function in the `queuedFuncs
+1) executing the next function in the `queuedFuncs` list (`this.queuedFuncs.shift()`)
 
 ```
 moveLists(item, from, to) {
@@ -298,6 +298,6 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTUwNzM0NSwtMzIxOTc5OTY1LDMwOD
-Y5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMD
+g2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
