@@ -273,6 +273,12 @@ Logging is extremely important. After all we need to see what's going on for lon
 For this we 
 
 ```
+
+const  ALL_EVENTS  = [
+  'queued',
+  'complete',
+];
+
 constructor() {
  // ... other code
  this.initializeEvents();
@@ -290,6 +296,17 @@ triggerEvent(event, promise) {
   this.eventListeners[event].forEach((cb) => {
     cb(promise);
   });
+}
+
+on(event, cb) {
+  if (event  ===  'all') {
+    ALL_EVENTS.forEach((e) => {
+      this.eventListeners[e].push((...args) =>  cb(e, ...args));
+    });
+  } else {
+    this.eventListeners[event].push(cb);
+  }
+  return  this;
 }
 
 add() {
@@ -311,7 +328,7 @@ processNextItem() {
 
 // OUTSIDE
 const queue = new Queue();
-queue.on(
+queue.on('all')
 ```
 
 ### Adding concurrency 
@@ -349,7 +366,7 @@ queue.on(
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTk1NzYyODUsLTEyMDU3Mjk4OTEsLT
-MyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIx
-NzAwNjVdfQ==
+eyJoaXN0b3J5IjpbLTY0NTIyMDg2MSwtMTIwNTcyOTg5MSwtMz
+IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
+MDA2NV19
 -->
