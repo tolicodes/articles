@@ -268,7 +268,9 @@ async process() {
 ```
  
 ### Adding logging
-Logging is extremely important. After all we need to see what's going on for long running queues...We want to see how many items are done processing, how many are still left. We will set up an advanced logger later, but for now, let's just set up the ability to see each action as it happens
+Logging is extremely important. After all we need to see what's going on for long running queues...We want to see how many items are done processing, how many are still left. We will set up an advanced logger later, but for now, let's just set up the ability to see each action as it happens.
+
+For this we 
 
 ```
 constructor() {
@@ -277,7 +279,7 @@ constructor() {
 }
 
 initializeEvents() {
-  this.eventListeners =  ALL_EVENTS.reduce((listeners, event) => {
+  this.eventListeners = ALL_EVENTS.reduce((listeners, event) => {
     listeners[event] = [];
     return  listeners;
   }, {});
@@ -298,7 +300,18 @@ add() {
   this.triggerEvent('queued', wrapperPromise);
 }
 
-processNext
+processNextItem() {
+  // ... other code
+  this.moveLists(promise, 'pending', 'complete');
+  
+  // ADD THIS LINE
+  this.triggerEvent('complete', promise);
+}
+
+
+// OUTSIDE
+const queue = new Queue();
+queue.on(
 ```
 
 ### Adding concurrency 
@@ -336,7 +349,7 @@ processNext
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTU1NjY0OCwtMTIwNTcyOTg5MSwtMz
-IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
-MDA2NV19
+eyJoaXN0b3J5IjpbLTE5MTk1NzYyODUsLTEyMDU3Mjk4OTEsLT
+MyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIx
+NzAwNjVdfQ==
 -->
