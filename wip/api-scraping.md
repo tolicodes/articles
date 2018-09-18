@@ -336,18 +336,25 @@ queue.on('all', (event, promise) => {
 ### Adding concurrency 
 So we have our queue...but at this rate, if we have 1000 requests queued up, it will try to hit the server with 1000 requests at once. Not good...
 
-Let's wait at least 1 second in between requests
+Let's wait at least 1 second in between requests:
 
 ```
 const WAIT_BETWEEN_REQUESTS = 1000;
 
 wait (ms) {
-  return new  Promise(resolve  =>  setTimeout(() =>  resolve(), ms));
+  return new Promise(resolve  =>  setTimeout(() => resolve(), ms));
 }
 
 async processNextItem() {
-   await this.wait(const WAIT_BETWEEN_REQUESTS);
-```}
+   await this.wait(WAIT_BETWEEN_REQUESTS);
+   // ...other code
+}
+```
+
+Awesome. Now at least we will wait a second between bombarding the server
+
+
+But still let
 
 ### Having multiple queues at the same time
 
@@ -382,7 +389,7 @@ async processNextItem() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjE1MjI0MCwtMTIwNTcyOTg5MSwtMz
+eyJoaXN0b3J5IjpbMTczNDIzNzU5MiwtMTIwNTcyOTg5MSwtMz
 IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
 MDA2NV19
 -->
