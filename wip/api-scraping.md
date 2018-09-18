@@ -339,7 +339,15 @@ So we have our queue...but at this rate, if we have 1000 requests queued up, it 
 Let's wait at least 1 second in between requests
 
 ```
-async  processNextItem(tryNumber  =  0) {
+const WAIT_BETWEEN_REQUESTS = 1000;
+
+wait (ms) {
+  return new  Promise(resolve  =>  setTimeout(() =>  resolve(), ms));
+}
+
+async processNextItem() {
+   await this.wait(const WAIT_BETWEEN_REQUESTS);
+```}
 
 ### Having multiple queues at the same time
 
@@ -374,7 +382,7 @@ async  processNextItem(tryNumber  =  0) {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1Mzc5NzI1LC0xMjA1NzI5ODkxLC0zMj
-E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
-MDY1XX0=
+eyJoaXN0b3J5IjpbLTM3MjE1MjI0MCwtMTIwNTcyOTg5MSwtMz
+IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
+MDA2NV19
 -->
