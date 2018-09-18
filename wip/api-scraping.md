@@ -271,12 +271,23 @@ async process() {
 Logging is extremely important. After all we need to see what's going on for long running queues...We want to see how many items are done processing, how many are still left. We will set up an advanced logger later, but for now, let's just set up the ability to see each action as it happens
 
 ```
+constructor() {
+ // ... other code
+ this.initializeEvents();
+}
+
+initializeEvents() {
+  this.eventListeners =  ALL_EVENTS.reduce((listeners, event) => {
+listeners[event] = [];
+  return  listeners;
+  }, {});
+}
+
 triggerEvent(event, promise) {
   if (!this.eventListeners[event]) return;
   this.eventListeners[event].forEach((cb) => {
     cb(promise);
-});
-
+  });
 }
 ```
 
@@ -315,7 +326,7 @@ triggerEvent(event, promise) {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjkyOTA4OCwtMTIwNTcyOTg5MSwtMz
-IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
-MDA2NV19
+eyJoaXN0b3J5IjpbLTE5ODA3MzI1MzgsLTEyMDU3Mjk4OTEsLT
+MyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIx
+NzAwNjVdfQ==
 -->
