@@ -229,16 +229,15 @@ class Queue {
 }
 ```
  
-Now we actually need to write the `process` function that starts off the process
+Now we actually need to write the `process` function that starts off the process. Essentially we have an async `while` loop, that 
 
 ```
-
 moveLists(item, from, to) {
   this[to].push(item);
   this[from].splice(this[from].indexOf(item), 1);
 }
 
-async  processNextItem() {
+async processNextItem() {
    if (!this.queued.length) { return  false; }
 
    this.moveLists(this.queued[0], 'queued', 'pending');
@@ -296,6 +295,6 @@ async  process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3NDk3NjEzLDMwODY5NzkyOSwtMTE4Mj
-U1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTE3NTM4MjY5ODEsMzA4Njk3OTI5LC0xMT
+gyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
