@@ -218,6 +218,12 @@ class Queue {
        return wrapperPromise;
      });
 
+     setTimeout(() => {
+       if (this.stopped  &&  this.autoStart) {
+		  this.process();
+		}
+      });
+
      return wrapperPromise;
   }
 }
@@ -260,6 +266,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTI4NjUyODAsMzA4Njk3OTI5LC0xMT
-gyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbNDE3MDEzMzgwLDMwODY5NzkyOSwtMTE4Mj
+U1NTUwNCwtMTMyMjE3MDA2NV19
 -->
