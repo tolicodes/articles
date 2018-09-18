@@ -234,8 +234,9 @@ Now we actually need to write the `process` function that starts off the process
 All our function is doing is:
 1. executing the next function in the `queuedFuncs` list (`this.queuedFuncs.shift()`)
 2. moving the Wrapper promise from the `queued` list to the `pending` list.
+3. `pending` will wait for all the requests in 
 
-Notice we wrapper the execution in a `try catch` block. But we aren't actually waiting for the execution s 
+Notice we wrapper the execution in a `try catch` block. But we aren't actually doing anything in the `catch`. This will let all the errors that happen pass through for now
 
 ```
 moveLists(item, from, to) {
@@ -303,7 +304,7 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTM2NDczNCwtMTIwNTcyOTg5MSwtMz
-IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
-MDA2NV19
+eyJoaXN0b3J5IjpbMjM1MjY5NDE5LC0xMjA1NzI5ODkxLC0zMj
+E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
+MDY1XX0=
 -->
