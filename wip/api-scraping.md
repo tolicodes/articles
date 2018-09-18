@@ -270,7 +270,7 @@ async process() {
 ### Adding logging
 Logging is extremely important. After all we need to see what's going on for long running queues...We want to see how many items are done processing, how many are still left. We will set up an advanced logger later, but for now, let's just set up the ability to see each action as it happens.
 
-For this we set up a simple event listener/trigger system. We will trigger events as they happen and use `.on` to 
+For this we set up a simple event listener/trigger system. We will trigger events as they happen and use `.on` to listen to them. Then we can log the output using `console.log` or make more advanced UIs.
 
 ```
 const  ALL_EVENTS  = [
@@ -334,6 +334,12 @@ queue.on('all', (event, promise) => {
 ```
 
 ### Adding concurrency 
+So we have our queue...but at this rate, if we have 1000 requests queued up, it will try to hit the server with 1000 requests at once. Not good...
+
+Let's wait at least 1 second in between requests
+
+```
+async  processNextItem(tryNumber  =  0) {
 
 ### Having multiple queues at the same time
 
@@ -368,7 +374,7 @@ queue.on('all', (event, promise) => {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxNTgyNzgsLTEyMDU3Mjk4OTEsLTMyMT
-k3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAw
-NjVdfQ==
+eyJoaXN0b3J5IjpbNzE1Mzc5NzI1LC0xMjA1NzI5ODkxLC0zMj
+E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
+MDY1XX0=
 -->
