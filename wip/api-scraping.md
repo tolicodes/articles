@@ -232,16 +232,7 @@ class Queue {
 Now we actually need to write the `process` function that starts off the process
 
 ```
-async  processNextItem(tryNumber  =  0) {
-
-if (this.waitBetweenRequests) {
-
-await  wait(this.waitBetweenRequests);
-
-}
-
-  
-
+async  processNextItem() {
 if (this.pending.length  <  this.maxConcurrent) {
 
 if (!this.queued.length) { return  false; }
@@ -312,19 +303,14 @@ return  Promise.race(this.pending);
 
 }
 
-  
-
 async  process() {
-  for (;this.queuedFuncs.length;) {
-  await  this.processNextItem();
-
-}
-
+  while (this.queuedFuncs.length) {
+    await  this.processNextItem();
+  }
   
-
-return  Promise.all(this.pending);
-
+  return  Promise.all(this.pending);
 }
+```
  
 ### Adding logging
 
@@ -363,6 +349,6 @@ return  Promise.all(this.pending);
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzA2NjMxOCwzMDg2OTc5MjksLTExOD
+eyJoaXN0b3J5IjpbLTg3MTAyNDU5MCwzMDg2OTc5MjksLTExOD
 I1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
