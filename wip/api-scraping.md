@@ -270,65 +270,67 @@ async process() {
 ### Adding logging
 Logging is extremely important. After all we need to see what's going on for long running queues...We want to see how many items are done processing, how many are still left. We will set up an advanced logger later, but for now, let's just set up the ability to see each action as it happens.
 
-For this we 
+For this we set up a simple event listener/trigger system. We will trigger events as they happen and use `.on` to 
 
 ```
-
 const  ALL_EVENTS  = [
   'queued',
   'complete',
 ];
 
-constructor() {
- // ... other code
- this.initializeEvents();
+class Queue {	
+	constructor() {
+	 // ... other code
+	 this.initializeEvents();
+	}
+
+	initializeEvents() {
+	  this.eventListeners = ALL_EVENTS.reduce((listeners, event) => {
+	    listeners[event] = [];
+	    return  listeners;
+	  }, {});
+	}
+
+	triggerEvent(event, promise) {
+	  if (!this.eventListeners[event]) return;
+	  this.eventListeners[event].forEach((cb) => {
+	    cb(promise);
+	  });
+	}
+
+	on(event, cb) {
+	  if (event  ===  'all') {
+	    ALL_EVENTS.forEach((e) => {
+	      this.eventListeners[e].push((...args) =>  cb(e, ...args));
+	    });
+	  } else {
+	    this.eventListeners[event].push(cb);
+	  }
+	  return  this;
+	}
+
+	add() {
+	  // ... other code
+	  this.queued.push(wrapperPromise);
+	  
+	  // ADD THIS LINE
+	  this.triggerEvent('queued', wrapperPromise);
+	}
+
+	processNextItem() {
+	  // ... other code
+	  this.moveLists(promise, 'pending', 'complete');
+	  
+	  // ADD THIS LINE
+	  this.triggerEvent('complete', promise);
+	}
 }
 
-initializeEvents() {
-  this.eventListeners = ALL_EVENTS.reduce((listeners, event) => {
-    listeners[event] = [];
-    return  listeners;
-  }, {});
-}
-
-triggerEvent(event, promise) {
-  if (!this.eventListeners[event]) return;
-  this.eventListeners[event].forEach((cb) => {
-    cb(promise);
-  });
-}
-
-on(event, cb) {
-  if (event  ===  'all') {
-    ALL_EVENTS.forEach((e) => {
-      this.eventListeners[e].push((...args) =>  cb(e, ...args));
-    });
-  } else {
-    this.eventListeners[event].push(cb);
-  }
-  return  this;
-}
-
-add() {
-  // ... other code
-  this.queued.push(wrapperPromise);
-  
-  // ADD THIS LINE
-  this.triggerEvent('queued', wrapperPromise);
-}
-
-processNextItem() {
-  // ... other code
-  this.moveLists(promise, 'pending', 'complete');
-  
-  // ADD THIS LINE
-  this.triggerEvent('complete', promise);
-}
-
-
-// OUTSIDE
 const queue = new Queue();
-queue.on('all')
+
+queue.on('all', (event, promise) => {
+   console.log(event, promise);
+});
 ```
 
 ### Adding concurrency 
@@ -366,7 +368,7 @@ queue.on('all')
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTIyMDg2MSwtMTIwNTcyOTg5MSwtMz
-IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
-MDA2NV19
+eyJoaXN0b3J5IjpbNDkxNTgyNzgsLTEyMDU3Mjk4OTEsLTMyMT
+k3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAw
+NjVdfQ==
 -->
