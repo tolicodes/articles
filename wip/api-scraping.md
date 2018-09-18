@@ -333,7 +333,7 @@ queue.on('all', (event, promise) => {
 });
 ```
 
-### Adding concurrency 
+### Adding wait time between request 
 So we have our queue...but at this rate, if we have 1000 requests queued up, it will try to hit the server with 1000 requests at once. Not good...
 
 Let's wait at least 1 second in between requests:
@@ -353,8 +353,11 @@ async processNextItem() {
 
 Awesome. Now at least we will wait a second between bombarding the server
 
+### Adding Concurrency 
 
-But still let
+Now let's add some concurrency support. Perhaps we only want 3 requests going on at one time.
+
+For this we can wrapper all the code in `processNextItem` belo
 
 ### Having multiple queues at the same time
 
@@ -389,7 +392,7 @@ But still let
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDIzNzU5MiwtMTIwNTcyOTg5MSwtMz
-IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
-MDA2NV19
+eyJoaXN0b3J5IjpbNjI0NzQ1NzEzLC0xMjA1NzI5ODkxLC0zMj
+E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
+MDY1XX0=
 -->
