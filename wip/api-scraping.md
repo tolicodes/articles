@@ -247,48 +247,7 @@ async  processNextItem() {
 
    promise.then(() => {
      this.moveLists(promise, 'pending', 'complete');
-   }).catch(async () => {
-
-// the parent's while will handle retries
-
-if (tryNumber  >  0) return;
-
-  
-
-if (this.retry) {
-
-while (tryNumber  <  this.maxRetries) {
-
-const  res  =  await  this.processNextItem(tryNumber  +  1);
-
-  
-
-if (res) return;
-
-}
-
-}
-
-  
-
-this.moveLists(promise, 'pending', 'failed');
-
-this.triggerEvent('failed', promise);
-
-});
-
-  
-
-// process next
-
-return  true;
-
-}
-
-// wait for something to succeed or fail
-
-return  Promise.race(this.pending);
-
+   });
 }
 
 async  process() {
@@ -296,7 +255,7 @@ async  process() {
     await  this.processNextItem();
   }
   
-  return  Promise.all(this.pending);
+  return Promise.all(this.pending);
 }
 ```
  
@@ -337,6 +296,6 @@ async  process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDU0MjI4OCwzMDg2OTc5MjksLTExOD
-I1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbNzc3NDk3NjEzLDMwODY5NzkyOSwtMTE4Mj
+U1NTUwNCwtMTMyMjE3MDA2NV19
 -->
