@@ -232,12 +232,17 @@ class Queue {
 Now we actually need to write the `process` function that starts off the process
 
 ```
+
+moveLists(item, from, to) {
+  this[to].push(item);
+
+   this[from].splice(this[from].indexOf(item), 1);
+
+}
 async  processNextItem() {
-if (this.pending.length  <  this.maxConcurrent) {
+   if (!this.queued.length) { return  false; }
 
-if (!this.queued.length) { return  false; }
-
-this.moveLists(this.queued[0], 'queued', 'pending');
+   this.moveLists(this.queued[0], 'queued', 'pending');
 
   
 
@@ -349,6 +354,6 @@ async  process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTAyNDU5MCwzMDg2OTc5MjksLTExOD
-I1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbNjk4MzQzNDA0LDMwODY5NzkyOSwtMTE4Mj
+U1NTUwNCwtMTMyMjE3MDA2NV19
 -->
