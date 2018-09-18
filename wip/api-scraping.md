@@ -234,9 +234,9 @@ Now we actually need to write the `process` function that starts off the process
 All our function is doing is:
 1. executing the next function in the `queuedFuncs` list (`this.queuedFuncs.shift()`)
 2. moving the Wrapper promise from the `queued` list to the `pending` list.
-3. `pending` will wait for all the requests in 
+3. After all the requests have been added to `pending` list, the function will wait for all the requests in the `pending` list to resolve and return their results 
 
-Notice we wrapper the execution in a `try catch` block. But we aren't actually doing anything in the `catch`. This will let all the errors that happen pass through for now
+Notice we wrapper the execution in a `try catch` block. But we aren't actually doing anything in the `catch`. This will let all the errors that happen pass through for now.
 
 ```
 moveLists(item, from, to) {
@@ -268,6 +268,7 @@ async process() {
 ```
  
 ### Adding logging
+Logging is extremely important. After all we need to see w
 
 ### Adding concurrency 
 
@@ -304,7 +305,7 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM1MjY5NDE5LC0xMjA1NzI5ODkxLC0zMj
-E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
-MDY1XX0=
+eyJoaXN0b3J5IjpbLTE2MTk3NjgxOTcsLTEyMDU3Mjk4OTEsLT
+MyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIx
+NzAwNjVdfQ==
 -->
