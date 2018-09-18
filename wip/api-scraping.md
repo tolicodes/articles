@@ -220,14 +220,111 @@ class Queue {
 
      setTimeout(() => {
        if (this.stopped  &&  this.autoStart) {
-		  this.process();
-		}
-      });
+	     this.process();
+	   }
+     });
 
      return wrapperPromise;
   }
 }
 ```
+ 
+Now we actually need to write the `process` function that starts off the process
+
+```
+async  processNextItem(tryNumber  =  0) {
+
+if (this.waitBetweenRequests) {
+
+await  wait(this.waitBetweenRequests);
+
+}
+
+  
+
+if (this.pending.length  <  this.maxConcurrent) {
+
+if (!this.queued.length) { return  false; }
+
+this.moveLists(this.queued[0], 'queued', 'pending');
+
+  
+
+if (this.blocked) {
+
+await  this.block;
+
+}
+
+  
+
+const  promise  =  this.queuedFuncs.shift()();
+
+  
+
+promise.then(() => {
+
+this.moveLists(promise, 'pending', 'complete');
+
+this.triggerEvent('complete', promise);
+
+}).catch(async () => {
+
+// the parent's while will handle retries
+
+if (tryNumber  >  0) return;
+
+  
+
+if (this.retry) {
+
+while (tryNumber  <  this.maxRetries) {
+
+const  res  =  await  this.processNextItem(tryNumber  +  1);
+
+  
+
+if (res) return;
+
+}
+
+}
+
+  
+
+this.moveLists(promise, 'pending', 'failed');
+
+this.triggerEvent('failed', promise);
+
+});
+
+  
+
+// process next
+
+return  true;
+
+}
+
+// wait for something to succeed or fail
+
+return  Promise.race(this.pending);
+
+}
+
+  
+
+async  process() {
+  for (;this.queuedFuncs.length;) {
+  await  this.processNextItem();
+
+}
+
+  
+
+return  Promise.all(this.pending);
+
+}
  
 ### Adding logging
 
@@ -266,6 +363,6 @@ class Queue {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3MDEzMzgwLDMwODY5NzkyOSwtMTE4Mj
-U1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbMTY0MzA2NjMxOCwzMDg2OTc5MjksLTExOD
+I1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
