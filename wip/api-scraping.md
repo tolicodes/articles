@@ -229,7 +229,7 @@ class Queue {
 }
 ```
  
-Now we actually need to write the `process` function that starts off the process. Essentially we have an async `while` loop, that processes one item at a time. For now there is 
+Now we actually need to write the `process` function that starts off the process. Essentially we have an async `while` loop, that processes one item at a time. For now, there is nothing asynchronous happening...but we will put 
 
 ```
 moveLists(item, from, to) {
@@ -249,7 +249,7 @@ async processNextItem() {
    });
 }
 
-async  process() {
+async process() {
   while (this.queuedFuncs.length) {
     await this.processNextItem();
   }
@@ -295,6 +295,6 @@ async  process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTk3OTk2NSwzMDg2OTc5MjksLTExOD
-I1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMzc1ODMxNzk0LC0zMjE5Nzk5NjUsMzA4Nj
+k3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
