@@ -268,7 +268,17 @@ async process() {
 ```
  
 ### Adding logging
-Logging is extremely important. After all we need to see w
+Logging is extremely important. After all we need to see what's going on for long running queues...We want to see how many items are done processing, how many are still left. We will set up an advanced logger later, but for now, let's just set up the ability to see each action as it happens
+
+```
+triggerEvent(event, promise) {
+  if (!this.eventListeners[event]) return;
+  this.eventListeners[event].forEach((cb) => {
+    cb(promise);
+});
+
+}
+```
 
 ### Adding concurrency 
 
@@ -305,7 +315,7 @@ Logging is extremely important. After all we need to see w
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTk3NjgxOTcsLTEyMDU3Mjk4OTEsLT
-MyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIx
-NzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMTA5MjkyOTA4OCwtMTIwNTcyOTg5MSwtMz
+IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
+MDA2NV19
 -->
