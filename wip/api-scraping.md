@@ -235,36 +235,19 @@ Now we actually need to write the `process` function that starts off the process
 
 moveLists(item, from, to) {
   this[to].push(item);
-
-   this[from].splice(this[from].indexOf(item), 1);
-
+  this[from].splice(this[from].indexOf(item), 1);
 }
+
 async  processNextItem() {
    if (!this.queued.length) { return  false; }
 
    this.moveLists(this.queued[0], 'queued', 'pending');
+   
+   const promise = this.queuedFuncs.shift()();
 
-  
-
-if (this.blocked) {
-
-await  this.block;
-
-}
-
-  
-
-const  promise  =  this.queuedFuncs.shift()();
-
-  
-
-promise.then(() => {
-
-this.moveLists(promise, 'pending', 'complete');
-
-this.triggerEvent('complete', promise);
-
-}).catch(async () => {
+   promise.then(() => {
+     this.moveLists(promise, 'pending', 'complete');
+   }).catch(async () => {
 
 // the parent's while will handle retries
 
@@ -354,6 +337,6 @@ async  process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4MzQzNDA0LDMwODY5NzkyOSwtMTE4Mj
-U1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTIzNDU0MjI4OCwzMDg2OTc5MjksLTExOD
+I1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
