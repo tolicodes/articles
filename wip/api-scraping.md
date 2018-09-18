@@ -232,7 +232,8 @@ class Queue {
 Now we actually need to write the `process` function that starts off the process. Essentially we have an async `while` loop, that processes one item at a time. For now, there is nothing asynchronous happening...but we will put some blocks in to stop processing if there are too many requests.
 
 All our function is doing is:
-1) executing the next function in the `queuedFuncs` list (`this.queuedFuncs.shift()`)
+1. executing the next function in the `queuedFuncs` list (`this.queuedFuncs.shift()`)
+2. moving the Wrapper promise from the `queued`  
 
 ```
 moveLists(item, from, to) {
@@ -247,9 +248,11 @@ async processNextItem() {
    
    const promise = this.queuedFuncs.shift()();
 
-   promise.then(() => {
-     this.moveLists(promise, 'pending', 'complete');
-   });
+   try {
+	 promise  =  this.queuedFuncs.shift()();
+	 await  promise;
+	 this.moveLists(promise, 'pending', 'complete');
+   } catch (e) {}
 }
 
 async process() {
@@ -298,6 +301,7 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMD
-g2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMzM2NjEzNzg4LC0xMjA1NzI5ODkxLC0zMj
+E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
+MDY1XX0=
 -->
