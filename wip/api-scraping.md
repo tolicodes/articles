@@ -278,8 +278,8 @@ constructor() {
 
 initializeEvents() {
   this.eventListeners =  ALL_EVENTS.reduce((listeners, event) => {
-listeners[event] = [];
-  return  listeners;
+    listeners[event] = [];
+    return  listeners;
   }, {});
 }
 
@@ -289,6 +289,16 @@ triggerEvent(event, promise) {
     cb(promise);
   });
 }
+
+add() {
+  // ... other code
+  this.queued.push(wrapperPromise);
+  
+  // ADD THIS LINE
+  this.triggerEvent('queued', wrapperPromise);
+}
+
+processNext
 ```
 
 ### Adding concurrency 
@@ -326,7 +336,7 @@ triggerEvent(event, promise) {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA3MzI1MzgsLTEyMDU3Mjk4OTEsLT
-MyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIx
-NzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMTY2MTU1NjY0OCwtMTIwNTcyOTg5MSwtMz
+IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
+MDA2NV19
 -->
