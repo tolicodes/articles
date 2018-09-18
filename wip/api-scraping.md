@@ -360,7 +360,9 @@ Now let's add some concurrency support. Perhaps we only want 3 requests going on
 For this we can wrapper all the code in `processNextItem` below our initial await with an `if` statement
 
 ```
-if (this.pending.length  <  this.maxConcurrent) {
+const MAX_CONCURRENT = 3;
+
+if (this.pending.length < MAX_CONCURRENT) {
   if (!this.queued.length) { return  false; }
   // ... OTHER CODE
   // this.moveLists(this.queued[0], 'queued', 'pending');
@@ -402,7 +404,7 @@ return Promise.race(this.pending);
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2Njc4MzI1OCwtMTIwNTcyOTg5MSwtMz
-IxOTc5OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3
-MDA2NV19
+eyJoaXN0b3J5IjpbOTM2NzgxMTk3LC0xMjA1NzI5ODkxLC0zMj
+E5Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcw
+MDY1XX0=
 -->
