@@ -399,7 +399,7 @@ async function getRateLimits() {
   // format limits so that it it in the format:
   {
      endpoint_name: {
-		remaining: MILLISECONDS,
+		remaining: ISO,
 		
      }
   }
@@ -441,7 +441,7 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDE5ODQ0MSwtMTE0MDQyOTA0NSwtMT
+eyJoaXN0b3J5IjpbMTI3NzQ1ODE2NCwtMTE0MDQyOTA0NSwtMT
 E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
 OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
 VdfQ==
