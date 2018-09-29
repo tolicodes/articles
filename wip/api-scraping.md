@@ -389,12 +389,14 @@ This is one of the most important parts of API Scraping. Most APIs will give you
 ```
 // fetch every 10 seconds
 const RATE_LIMIT_AUTO_FETCH_INTERVAL = 10000;
+
+let rateFetchTimeout;
+let rateLimits;
+
 function initRateLimitsAutoFetch() {
-  this.rateFetchTimeout =  setInterval(async () => {
-this.rateLimits  =  await  this.getRateLimits();
-
-}, RATE_LIMIT_AUTO_FETCH_INTERVAL);
-
+  rateFetchTimeout = setInterval(async () => {
+    rateLimits = await  this.getRateLimits();
+  }, RATE_LIMIT_AUTO_FETCH_INTERVAL);
 }
 ```
  
@@ -427,7 +429,7 @@ this.rateLimits  =  await  this.getRateLimits();
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzQxNTU5MywtMTE0MDQyOTA0NSwtMT
+eyJoaXN0b3J5IjpbLTE1NjMzNzA0OCwtMTE0MDQyOTA0NSwtMT
 E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
 OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
 VdfQ==
