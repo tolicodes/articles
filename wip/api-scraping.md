@@ -393,9 +393,14 @@ const RATE_LIMIT_AUTO_FETCH_INTERVAL = 10000;
 let rateFetchTimeout;
 let rateLimits;
 
+function getRateLimits() {
+  const limits = fetch(RATE_LIMIT_ENDPOINT);
+  
+}
+
 function initRateLimitsAutoFetch() {
   rateFetchTimeout = setInterval(async () => {
-    rateLimits = await  this.getRateLimits();
+    rateLimits = await getRateLimits();
   }, RATE_LIMIT_AUTO_FETCH_INTERVAL);
 }
 ```
@@ -429,7 +434,7 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMzNzA0OCwtMTE0MDQyOTA0NSwtMT
+eyJoaXN0b3J5IjpbLTg3MTcwOTMyMywtMTE0MDQyOTA0NSwtMT
 E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
 OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
 VdfQ==
