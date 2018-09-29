@@ -384,7 +384,9 @@ function createQueue(url) {
 ```
 
 ###  Adding rate limiting support
-This is one of the most important parts of API Scraping. Most APIs will give you an endpoint for checking 
+This is one of the most important parts of API Scraping. Most APIs will give you an endpoint for checking how many requests we have left.
+
+So we will set up a function `getRateLimits` to fetch every few seconds and find out the remaining limits on the endpoints. Then 
 
 ```
 // fetch every 10 seconds
@@ -416,7 +418,7 @@ async function getRateLimits() {
 
   Object.entries(limits).forEach((ep, reset) => { 
     setRateLimitOnQueue(ep, reset);
-  }
+  });
 }
 
 function initRateLimitsAutoFetch() {
@@ -455,8 +457,8 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4NTMzMDkzLC0xMTQwNDI5MDQ1LC0xMT
-gwMDMwMTQ5LDkzNjc4MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5
-OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV
-19
+eyJoaXN0b3J5IjpbLTU0MTMwMDQ1OCwtMTE0MDQyOTA0NSwtMT
+E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
+OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
+VdfQ==
 -->
