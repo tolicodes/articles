@@ -373,6 +373,8 @@ return Promise.race(this.pending);
 ```
 
 ### Having multiple queues at the same time
+A lot of time 
+
 
 ###  Adding rate limiting support
  
@@ -405,7 +407,8 @@ return Promise.race(this.pending);
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDA0MjkwNDUsLTExODAwMzAxNDksOT
-M2NzgxMTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3
-OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbLTEzNTU2MzY4NTcsLTExNDA0MjkwNDUsLT
+ExODAwMzAxNDksOTM2NzgxMTk3LC0xMjA1NzI5ODkxLC0zMjE5
+Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcwMD
+Y1XX0=
 -->
