@@ -397,11 +397,9 @@ async function getRateLimits() {
   const limits = await fetch(RATE_LIMIT_ENDPOINT);
   
   // format limits so that it it in the format:
-  {
-     endpoint_name: {
-		remaining: ISO,
-		
-     }
+  return {
+     endpoint_name: ISO_DATE_WHEN_RESET,
+     endpoint_name2: ISO_DATE_WHEN_RESET,
   }
 }
 
@@ -441,7 +439,7 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzQ1ODE2NCwtMTE0MDQyOTA0NSwtMT
+eyJoaXN0b3J5IjpbMTU2OTY5NDcxNCwtMTE0MDQyOTA0NSwtMT
 E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
 OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
 VdfQ==
