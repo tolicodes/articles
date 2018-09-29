@@ -384,9 +384,19 @@ function createQueue(url) {
 ```
 
 ###  Adding rate limiting support
-This is one of the most important parts of API Scraping.
+This is one of the most important parts of API Scraping. Most APIs will give you an endpoint for checking 
 
+```
+// fetch every 10 seconds
+const RATE_LIMIT_AUTO_FETCH_INTERVAL = 10000;
+function initRateLimitsAutoFetch() {
+  this.rateFetchTimeout =  setInterval(async () => {
+this.rateLimits  =  await  this.getRateLimits();
 
+}, RATE_LIMIT_AUTO_FETCH_INTERVAL);
+
+}
+```
  
 ###  Adding error handling
 
@@ -417,7 +427,7 @@ This is one of the most important parts of API Scraping.
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTAwNDgwNSwtMTE0MDQyOTA0NSwtMT
+eyJoaXN0b3J5IjpbMTIxMzQxNTU5MywtMTE0MDQyOTA0NSwtMT
 E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
 OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
 VdfQ==
