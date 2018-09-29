@@ -384,7 +384,9 @@ function createQueue(url) {
 ```
 
 ###  Adding rate limiting support
-This is one of the most important parts of API S
+This is one of the most important parts of API Scraping.
+
+
  
 ###  Adding error handling
 
@@ -415,8 +417,8 @@ This is one of the most important parts of API S
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTE5NTEwMjEsLTExNDA0MjkwNDUsLT
-ExODAwMzAxNDksOTM2NzgxMTk3LC0xMjA1NzI5ODkxLC0zMjE5
-Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcwMD
-Y1XX0=
+eyJoaXN0b3J5IjpbMTMzMTAwNDgwNSwtMTE0MDQyOTA0NSwtMT
+E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
+OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
+VdfQ==
 -->
