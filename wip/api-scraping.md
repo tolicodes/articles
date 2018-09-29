@@ -373,8 +373,13 @@ return Promise.race(this.pending);
 ```
 
 ### Having multiple queues at the same time
-A lot of time 
+Now that we have a queue of 1 endpoint, we can replicate this for multiple endpoints.
 
+```
+init () {
+	this.queues  = {};
+}
+```
 
 ###  Adding rate limiting support
  
@@ -407,8 +412,8 @@ A lot of time
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTU2MzY4NTcsLTExNDA0MjkwNDUsLT
-ExODAwMzAxNDksOTM2NzgxMTk3LC0xMjA1NzI5ODkxLC0zMjE5
-Nzk5NjUsMzA4Njk3OTI5LC0xMTgyNTU1NTA0LC0xMzIyMTcwMD
-Y1XX0=
+eyJoaXN0b3J5IjpbMTQyMDkxNjg0NiwtMTE0MDQyOTA0NSwtMT
+E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
+OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
+VdfQ==
 -->
