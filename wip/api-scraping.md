@@ -405,12 +405,17 @@ const setRateLimitOnQueue = (url, reset) => {
 };
 
 async function getRateLimits() {
-  const limits = await fetch(RATE_LIMIT_ENDPOINT);
+  const result = await fetch(RATE_LIMIT_ENDPOINT);
   
   // format limits so that it it in the format:
-  return {
+  
+  const limits = {
      endpoint_name: ISO_DATE_WHEN_RESET,
      endpoint_name2: ISO_DATE_WHEN_RESET,
+  }
+
+  Object.entries(limits).forEach((ep, reset) => { 
+    setRateLimitOnQueue(ep, reset);
   }
 }
 
@@ -450,8 +455,8 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDc5Mzk0NywtMTE0MDQyOTA0NSwtMT
-E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
-OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
-VdfQ==
+eyJoaXN0b3J5IjpbOTE4NTMzMDkzLC0xMTQwNDI5MDQ1LC0xMT
+gwMDMwMTQ5LDkzNjc4MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5
+OTY1LDMwODY5NzkyOSwtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV
+19
 -->
