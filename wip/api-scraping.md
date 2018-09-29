@@ -392,6 +392,15 @@ const RATE_LIMIT_AUTO_FETCH_INTERVAL = 10000;
 
 let rateFetchTimeout;
 let rateLimits;
+const queues = OUR_
+
+const setRateLimitOnQueue = (queues, url, reset) => {
+  const  queue  =  tt.queues[url];
+  if (!queue) return;
+  
+  const  unblockIn  =  moment.unix(reset).diff(moment());
+  queue.blockQueue(unblockIn);
+};
 
 async function getRateLimits() {
   const limits = await fetch(RATE_LIMIT_ENDPOINT);
@@ -439,7 +448,7 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTY5NDcxNCwtMTE0MDQyOTA0NSwtMT
+eyJoaXN0b3J5IjpbLTI4ODYyNjAyNCwtMTE0MDQyOTA0NSwtMT
 E4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3
 OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MDQsLTEzMjIxNzAwNj
 VdfQ==
