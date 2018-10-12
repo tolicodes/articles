@@ -465,7 +465,7 @@ For this we have to slightly edit our `process` function. It will still run a `w
 
 `runFunction` waits for blocks to be cleared on the queue, then tries to run the function. If the function succeeds, then the item is moved to a `completed` state. Otherwise we move on to our retry logic.
 
-If the function fails, we call `runFunction` again (recursion), while incrementing the `tryNumber`. If the `tryNumber` reaches the maximum tries (3), we fail 
+If the function fails, we call `runFunction` again (recursion), while incrementing the `tryNumber`. If the `tryNumber` reaches the maximum tries (3), we move the item to failed state.
 
 ```
 async runFunction(func, promise, tryNumber  =  0, { retry = true }) {
@@ -527,12 +527,9 @@ async process() {
 }
 ```
 
-#### Exponential Backoff
- 
-### Request Dependencies
-
 ### Improving our logging - making it easy to debug
- 
+It can be quite difficult to debug what's going on without logging, especially if the function is running for 
+
 #### Progress Bar
   
 #### Status Reporting
@@ -552,7 +549,7 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ4MjMzMDksLTYyNTQ1OTYxNCwtMT
+eyJoaXN0b3J5IjpbLTEzODAyMTYxMDAsLTYyNTQ1OTYxNCwtMT
 I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
 ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
 ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
