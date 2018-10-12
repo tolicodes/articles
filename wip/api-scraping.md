@@ -463,12 +463,14 @@ A lot of times, even when we handle Rate limiting correctly, the server may fail
 
 For this we have to slightly edit our `process` function. It will still run a `while` loop. It will be in charge of calling `processNextItem` which queues up the next function, which passes it off to `runFunction`.
 
-`runFunction` waits 
+`runFunction` waits for blocks to be cleared on the queue, then tries to run the function. If the function succeeds, then the item is moved to a `completed` state. Otherwise we move on to our retry logic.
+
+
 
 ```
 async runFunction(func, promise, tryNumber  =  0) {
   if (this.waitBetweenRequests) {
-    await  wait(this.waitBetweenRequests);
+    await wait(this.waitBetweenRequests);
   }
 
   if (this.blocked) {
@@ -476,15 +478,15 @@ async runFunction(func, promise, tryNumber  =  0) {
   }
   
   try {
-    await  func();
+    await func();
     this.moveLists(promise, 'pending', 'complete');
 
     this.triggerEvent('complete', promise);
 
   } catch (e) {
     if (this.retry) {
-      if (tryNumber  <  this.maxRetries) {
-        const  res  =  await this.runFunction(func, promise, tryNumber  +  1);
+      if (tryNumber < 3) {
+        const res = await this.runFunction(func, promise, tryNumber  +  1);
 
         if (res) return  true;
       }
@@ -550,8 +552,8 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTIxMDcxMzksLTYyNTQ1OTYxNCwtMT
-I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
-ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
-ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbLTc4NjYyNDAyMywtNjI1NDU5NjE0LC0xMj
+Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
+MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
+wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
 -->
