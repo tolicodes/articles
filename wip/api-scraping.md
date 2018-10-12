@@ -533,16 +533,24 @@ It can be quite difficult to debug what's going on without logging, especially i
 #### Progress Bar
 I wrote a progress bar that handles multiple queues with the structure we created. Instead of copy and pasting it here, you can look at the [github file](https://github.com/tolicodes/node-api-toolkit/blob/master/components/bar.js)
 
-The key is hooking on the `on` function from the queues. Then we use `terminal-kit
+The key is hooking on the `on` function from the queues. Then we use `terminal-kit` to help us color in the screen according to our current progress and status. 
   
 ### Using chrome inspector to debug
-I strongly recommend using the Chrome Debugger
+I strongly recommend using the Chrome Debugger.
+
+Instead of regularly running our application
+```
+node .`
+```
+
+we add an extra parameter 
+```
+
 
 ### Adding pagination support
 
-### Adding support for batch operations
-
 ### Pausing/Resuming
+All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current 
 
 ### Streaming Results to a file
 
@@ -551,8 +559,8 @@ I strongly recommend using the Chrome Debugger
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTQ3MDA4MzAsLTYyNTQ1OTYxNCwtMT
-I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
-ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
-ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbNzI2NjMwMzk0LC02MjU0NTk2MTQsLTEyND
+Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
+MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
+0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
