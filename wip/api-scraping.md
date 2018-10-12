@@ -528,11 +528,10 @@ async process() {
 ```
 
 ### Improving our logging - making it easy to debug
-It can be quite difficult to debug what's going on without logging, especially if the function is running for 
+It can be quite difficult to debug what's going on without logging, especially if the function is running for hours at a time. I've found that making a progress bar is the most effeective solution to check on what's going on.
 
 #### Progress Bar
-  
-#### Status Reporting
+
   
 ### Using chrome inspector to debug
 
@@ -549,8 +548,8 @@ It can be quite difficult to debug what's going on without logging, especially i
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODAyMTYxMDAsLTYyNTQ1OTYxNCwtMT
-I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
-ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
-ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbNzE4NTExMzkwLC02MjU0NTk2MTQsLTEyND
+Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
+MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
+0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
