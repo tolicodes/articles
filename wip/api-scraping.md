@@ -461,16 +461,18 @@ async request(method, url, params } = {}) {
 #### Retrying
 A lot of times, even when we handle Rate limiting correctly, the server may fail some of our requests. We want to have an effective retry strategy.
 
-For this we have to slightly edit our `process` function. It will still run a `while` loop
+For this we have to slightly edit our `process` function. It will still run a `while` loop. It will be in charge of calling `processNextItem` which queues up the next function, which passes it off to `runFunction`.
+
+`runFunction` waits 
 
 ```
-async  runFunction(func, promise, tryNumber  =  0) {
+async runFunction(func, promise, tryNumber  =  0) {
   if (this.waitBetweenRequests) {
     await  wait(this.waitBetweenRequests);
   }
 
   if (this.blocked) {
-    await  this.block;
+    await this.block;
   }
   
   try {
@@ -500,7 +502,7 @@ async processNextItem() {
   if (this.pending.length  <  this.maxConcurrent) {
     if (!this.queued.length) { return  false; }
     
-    const  promise  =  this.queued[0];
+    const  promise = this.queued[0];
 
     this.moveLists(promise, 'queued', 'pending');
 
@@ -548,8 +550,8 @@ async process() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzA0ODUzMSwtNjI1NDU5NjE0LC0xMj
-Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
-MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
-wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTE1OTIxMDcxMzksLTYyNTQ1OTYxNCwtMT
+I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
+ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
+ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
