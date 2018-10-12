@@ -542,25 +542,23 @@ Instead of regularly running our application
 ```
 node .`
 ```
-
 we add an extra parameter 
 ```
+node --inpect .
+```
+
+Then we navigate to: [chrome://inspect](chrome://inspect) in the Chrome browser, and are able to see our script in the list. 
+
+This is my preferred method of debugging, because not only can we see s
 
 
 ### Adding pagination support
 
 ### Pausing/Resuming
-All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current 
-
-### Streaming Results to a file
-
-## Advanced Topics
-### Scraping Cluster
-
-### Multiple Keys
+All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current strucure will support the rest.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI2NjMwMzk0LC02MjU0NTk2MTQsLTEyND
-Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
-MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
-0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbLTE4MDQ0MTIyNzQsLTYyNTQ1OTYxNCwtMT
+I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
+ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
+ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
