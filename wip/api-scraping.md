@@ -552,7 +552,9 @@ Then we navigate to: [chrome://inspect](chrome://inspect) in the Chrome browser,
 This is my preferred method of debugging, because not only can we see a much more user friendly output, but we can execute commands in the node environment as needed.
 
 ### Adding pagination support
-Most apis have some sort of pagination support for long lists. Generally this is done by passing a "cursor" for the next result, which is provider by the previous result
+Most apis have some sort of pagination support for long lists. Generally this is done by passing a "cursor" for the next result, which is provider by the previous result.
+
+We can create a simple recursive function, which checks for a max amount of pages that we want to fetch and that there are further results (`cursor` is present). Then we 
 
 ```
 const paginate = async ({
@@ -560,10 +562,10 @@ const paginate = async ({
   cursor,
   func,
   params,
-  page  =  0,
-  maxPages  =  1,
+  page = 0,
+  maxPages = 1,
 }) => {
-  if (page  <  maxPages  &&  cursor) {
+  if (page < maxPages && cursor) {
     const {
       data,
 	  nextCursor,
@@ -572,36 +574,31 @@ const paginate = async ({
 	  cursor,
 	});
 
-  const newResults = await  paginate({
-    results: [
-	  ...results,
-	  ...data,
-    ],
-    cursor:  nextCursor,
-    func,
-    params,
-    page:  page  +  1,
-  }) || [];
+    const newResults = await  paginate({
+      results: [
+	    ...results,
+	    ...data,
+      ],
+      cursor:  nextCursor,
+      func,
+      params,
+      page:  page  +  1,
+    }) || [];
 
-  return [
-    ...results,
-    ...newResults,
-  ];
-}
-return  results;
+    return [
+      ...results,
+      ...newResults,
+    ];
+  }
+  return  results;
+};  
 
-};
-
-  
-  
-
-module.exports  =  paginate;
 ```
 
 ### Pausing/Resuming
 All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current strucure will support the rest.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQ0MDkyMTIsLTYyNTQ1OTYxNCwtMT
+eyJoaXN0b3J5IjpbLTE0NTgzNDQ4NzUsLTYyNTQ1OTYxNCwtMT
 I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
 ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
 ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
