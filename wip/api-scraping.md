@@ -10,7 +10,7 @@ So, I created my own solution, [api-tookit](https://github.com/tolicodes/node-ap
 
 I feel it is important to understand the Fundementals behind some of these concepts, so I decided to write this article for CodeMentor. 
 
-If at any point you get stuck as to how 
+If at any point you get stuck as to how code works, you can look in these two repos for a working example. `api-toolkit` is the base set of utilities that you will share across all your APIs. And `twitter-toolkit` is an example of how you would use this base set.
 
 API scraping has many challenges, but we will be focusing on what I believe are the major ones in this article. 
 
@@ -600,8 +600,8 @@ const paginate = async ({
 ### Pausing/Resuming
 All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current strucure will support the rest.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjg4MjUzODgsLTYyNTQ1OTYxNCwtMT
-I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
-ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
-ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMTYxMTMwODExMywtNjI1NDU5NjE0LC0xMj
+Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
+MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
+wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
 -->
