@@ -383,6 +383,8 @@ function createQueue(url) {
 }
 ```
 
+
+###  Adding rate limiting support
 This is one of the most important parts of API Scraping. Most APIs will give you an endpoint for checking how many requests we have left.
 
 So we will set up a function `getRateLimits` to fetch every few seconds and find out the remaining limits on the endpoints. Then we use `blockQueue` 
@@ -425,9 +427,7 @@ function initRateLimitsAutoFetch() {
     rateLimits = await getRateLimits();
   }, RATE_LIMIT_AUTO_FETCH_INTERVAL);
 }
-```Most of the time you will be scaping multiple endpoint season at once
-
-###  Adding rate limiting support
+```
  
 ###  Adding error handling
 
@@ -458,8 +458,8 @@ function initRateLimitsAutoFetch() {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTQ1OTYxNCwtMTI0NDU0NTg1OSwtMT
-E0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3ODExOTcsLTEyMDU3
-Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5MjksLTExODI1NTU1MD
-QsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbLTM0MzMyOTkwNSwtNjI1NDU5NjE0LC0xMj
+Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
+MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
+wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
 -->
