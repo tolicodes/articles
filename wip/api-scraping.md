@@ -531,9 +531,11 @@ async process() {
 It can be quite difficult to debug what's going on without logging, especially if the function is running for hours at a time. I've found that making a progress bar is the most effeective solution to check on what's going on.
 
 #### Progress Bar
+I wrote a progress bar that handles multiple queues with the structure we created. Instead of copy and pasting it here, you can look at the [github file](https://github.com/tolicodes/node-api-toolkit/blob/master/components/bar.js)
 
   
 ### Using chrome inspector to debug
+I strongly recommend using the Chrome Debugger
 
 ### Adding pagination support
 
@@ -548,8 +550,8 @@ It can be quite difficult to debug what's going on without logging, especially i
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE4NTExMzkwLC02MjU0NTk2MTQsLTEyND
-Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
-MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
-0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbMTg2MzkxNjQ3NCwtNjI1NDU5NjE0LC0xMj
+Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
+MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
+wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
 -->
