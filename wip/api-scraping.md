@@ -556,73 +556,38 @@ Most apis have some sort of pagination support for long lists. Generally this is
 
 ```
 const paginate = async ({
-
-results  = [],
-
-cursor,
-
-func,
-
-params,
-
-page  =  0,
-
-maxPages  =  1,
-
+  results  = [],
+  cursor,
+  func,
+  params,
+  page  =  0,
+  maxPages  =  1,
 }) => {
+  if (page  <  maxPages  &&  cursor) {
+    const {
+      data,
+	  nextCursor,
+	} =  await  func({
+	  params,
+	  cursor,
+	});
 
-if (page  <  maxPages  &&  cursor) {
+  const newResults = await  paginate({
+    results: [
+	  ...results,
+	  ...data,
+    ],
+    cursor:  nextCursor,
+    func,
+    params,
+    page:  page  +  1,
+  }) || [];
 
-const {
-
-data,
-
-nextCursor,
-
-} =  await  func({
-
-params,
-
-cursor,
-
-});
-
-  
-
-const  newResults  =  await  paginate({
-
-results: [
-
-...results,
-
-...data,
-
-],
-
-cursor:  nextCursor,
-
-func,
-
-params,
-
-page:  page  +  1,
-
-}) || [];
-
-  
-
-return [
-
-...results,
-
-...newResults,
-
-];
-
+  return [
+    ...results,
+    ...newResults,
+  ];
 }
-
-  
-
 return  results;
 
 };
@@ -636,8 +601,8 @@ module.exports  =  paginate;
 ### Pausing/Resuming
 All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current strucure will support the rest.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTc0OTM4LC02MjU0NTk2MTQsLTEyND
-Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
-MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
-0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbLTE0NTQ0MDkyMTIsLTYyNTQ1OTYxNCwtMT
+I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
+ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
+ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
