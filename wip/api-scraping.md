@@ -459,7 +459,100 @@ async request(method, url, params } = {}) {
 ```
 
 #### Retrying
-We might want to 
+A lot of times, even when we handle Rate limiting correctly, the server may fail some of our requests. We want to have an effective retry strategy
+
+```
+async  runFunction(func, promise, tryNumber  =  0) {
+  if (this.waitBetweenRequests) {
+    await  wait(this.waitBetweenRequests);
+  }
+
+  if (this.blocked) {
+    await  this.block;
+  }
+  
+  try {
+    await  func();
+ this.moveLists(promise, 'pending', 'complete');
+
+this.triggerEvent('complete', promise);
+
+} catch (e) {
+
+if (this.retry) {
+
+if (tryNumber  <  this.maxRetries) {
+
+const  res  =  await  this.runFunction(func, promise, tryNumber  +  1);
+
+  
+
+if (res) return  true;
+
+}
+
+}
+
+  
+
+this.moveLists(promise, 'pending', 'failed');
+
+this.triggerEvent('failed', promise);
+
+}
+
+  
+
+return  true;
+
+}
+
+  
+
+async  processNextItem() {
+
+if (this.pending.length  <  this.maxConcurrent) {
+
+if (!this.queued.length) { return  false; }
+
+  
+
+const  promise  =  this.queued[0];
+
+this.moveLists(promise, 'queued', 'pending');
+
+await  this.runFunction(this.queuedFuncs.shift(), promise);
+
+  
+
+// process next
+
+return  true;
+
+}
+
+// wait for something to succeed or fail
+
+return  Promise.race(this.pending);
+
+}
+
+  
+
+async  process() {
+
+while (this.queuedFuncs.length) {
+
+await  this.processNextItem();
+
+}
+
+  
+
+return  Promise.all(this.pending);
+
+}
+```
 
 #### Exponential Backoff
  
@@ -486,8 +579,8 @@ We might want to
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzkzNzU1MSwtNjI1NDU5NjE0LC0xMj
-Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
-MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
-wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTE5MTY1MDkyNzYsLTYyNTQ1OTYxNCwtMT
+I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
+ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
+ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
