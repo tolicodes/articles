@@ -432,7 +432,7 @@ function initRateLimitsAutoFetch() {
 ###  Adding error handling
 There are some situations that APIs throw as errors but actually need to be handled in other ways. We want to handle them by wrapping our API in a `try catch`
 
-Two common scenarios we want to handle are a Not Found error, in which case we want to return a `null`. Another scenar
+Two common scenarios we want to handle are a Not Found error, in which case we want to return a `null`. Another scenario may be when we are rate limited, in which case we want to call our previous rate limit function to wait a few seconds.
 
 ```
 async request(method, url, params } = {}) {
@@ -459,6 +459,7 @@ async request(method, url, params } = {}) {
 ```
 
 #### Retrying
+We might want to 
 
 #### Exponential Backoff
  
@@ -485,7 +486,7 @@ async request(method, url, params } = {}) {
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDM2MTA3MCwtNjI1NDU5NjE0LC0xMj
+eyJoaXN0b3J5IjpbLTQ3MzkzNzU1MSwtNjI1NDU5NjE0LC0xMj
 Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
 MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
 wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
