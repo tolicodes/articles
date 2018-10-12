@@ -10,6 +10,8 @@ So, I created my own solution, [api-tookit](https://github.com/tolicodes/node-ap
 
 I feel it is important to understand the Fundementals behind some of these concepts, so I decided to write this article for CodeMentor. 
 
+If at any point you get stuck as to how 
+
 API scraping has many challenges, but we will be focusing on what I believe are the major ones in this article. 
 
 ### Rate Limiting
@@ -554,7 +556,7 @@ This is my preferred method of debugging, because not only can we see a much mor
 ### Adding pagination support
 Most apis have some sort of pagination support for long lists. Generally this is done by passing a "cursor" for the next result, which is provider by the previous result.
 
-We can create a simple recursive function, which checks for a max amount of pages that we want to fetch and that there are further results (`cursor` is present). Then we 
+We can create a simple recursive function, which checks for a max amount of pages that we want to fetch and that there are further results (`cursor` is present). Then we extract the next cursor (`nextCursor`) from the response of the function,  and pass it back into the recursive function. Then we concatenate the results from the function onto an output array `results`.
 
 ```
 const paginate = async ({
@@ -579,10 +581,10 @@ const paginate = async ({
 	    ...results,
 	    ...data,
       ],
-      cursor:  nextCursor,
+      cursor: nextCursor,
       func,
       params,
-      page:  page  +  1,
+      page: page  +  1,
     }) || [];
 
     return [
@@ -598,7 +600,7 @@ const paginate = async ({
 ### Pausing/Resuming
 All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current strucure will support the rest.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTgzNDQ4NzUsLTYyNTQ1OTYxNCwtMT
+eyJoaXN0b3J5IjpbLTE1Mjg4MjUzODgsLTYyNTQ1OTYxNCwtMT
 I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
 ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
 ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
