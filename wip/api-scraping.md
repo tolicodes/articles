@@ -430,9 +430,11 @@ function initRateLimitsAutoFetch() {
 ```
  
 ###  Adding error handling
+There are some si
+
 ```
-async  request(method, url, params } = {}) {
-  return  this.queues[url].add(async () => {
+async request(method, url, params } = {}) {
+  return this.queues[url].add(async () => {
     try {
       return (await  this.client[method](url, params)).data;
     } catch (e) {
@@ -441,24 +443,16 @@ async  request(method, url, params } = {}) {
       
       // rate limited
       if (e.code  ===  88) {
-      // waits 20 seconds so that the rate limit
+        // waits 20 seconds so that the rate limit
 
-      // auto request can find something
-      this.setRateLimitOnQueue(url, moment().add(20 * 1000, 'milliseconds').unix());
-      return;
-    }
+        // auto request can find something
+        this.setRateLimitOnQueue(url, moment().add(20 * 1000, 'milliseconds').unix());
+        return;
+      }
     
-    throw  e;
-  }
-
-}, {
-
-name:  `${method.toUpperCase()}  ${(url + (params ? ` ${JSON.stringify(params)}` : '')).substring(0, 100)}... }`,
-
-retry,
-
-});
-
+      throw  e;
+    }
+  });
 }
 ```
 
@@ -489,8 +483,8 @@ retry,
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODA2MDgzNSwtNjI1NDU5NjE0LC0xMj
-Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
-MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
-wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
+eyJoaXN0b3J5IjpbLTE3NTE4MTQyOTgsLTYyNTQ1OTYxNCwtMT
+I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
+ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
+ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
 -->
