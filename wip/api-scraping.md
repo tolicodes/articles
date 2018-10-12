@@ -549,16 +549,95 @@ node --inpect .
 
 Then we navigate to: [chrome://inspect](chrome://inspect) in the Chrome browser, and are able to see our script in the list. 
 
-This is my preferred method of debugging, because not only can we see s
-
+This is my preferred method of debugging, because not only can we see a much more user friendly output, but we can execute commands in the node environment as needed.
 
 ### Adding pagination support
+Most apis have some sort of pagination support for long lists. Generally this is done by passing a "cursor" for the next result, which is provider by the previous result
+
+```
+const paginate = async ({
+
+results  = [],
+
+cursor,
+
+func,
+
+params,
+
+page  =  0,
+
+maxPages  =  1,
+
+}) => {
+
+if (page  <  maxPages  &&  cursor) {
+
+const {
+
+data,
+
+nextCursor,
+
+} =  await  func({
+
+params,
+
+cursor,
+
+});
+
+  
+
+const  newResults  =  await  paginate({
+
+results: [
+
+...results,
+
+...data,
+
+],
+
+cursor:  nextCursor,
+
+func,
+
+params,
+
+page:  page  +  1,
+
+}) || [];
+
+  
+
+return [
+
+...results,
+
+...newResults,
+
+];
+
+}
+
+  
+
+return  results;
+
+};
+
+  
+  
+
+module.exports  =  paginate;
+```
 
 ### Pausing/Resuming
 All we have to do to pause/resume our queues is call `.block()` to pause, and then `.unblock()` to unpause. Our current strucure will support the rest.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ0MTIyNzQsLTYyNTQ1OTYxNCwtMT
-I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
-ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
-ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMTQ1MTc0OTM4LC02MjU0NTk2MTQsLTEyND
+Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
+MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
+0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
