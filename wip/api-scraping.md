@@ -459,7 +459,9 @@ async request(method, url, params } = {}) {
 ```
 
 #### Retrying
-A lot of times, even when we handle Rate limiting correctly, the server may fail some of our requests. We want to have an effective retry strategy
+A lot of times, even when we handle Rate limiting correctly, the server may fail some of our requests. We want to have an effective retry strategy.
+
+For this we have to slightly edit our `process` function. It will still run a `while` loop
 
 ```
 async  runFunction(func, promise, tryNumber  =  0) {
@@ -496,44 +498,28 @@ async  runFunction(func, promise, tryNumber  =  0) {
 
 async processNextItem() {
   if (this.pending.length  <  this.maxConcurrent) {
-  if (!this.queued.length) { return  false; }
+    if (!this.queued.length) { return  false; }
+    
+    const  promise  =  this.queued[0];
 
-  
+    this.moveLists(promise, 'queued', 'pending');
 
-const  promise  =  this.queued[0];
+    await  this.runFunction(this.queuedFuncs.shift(), promise);
+    
+    // process next
+    return  true;
+  }
 
-this.moveLists(promise, 'queued', 'pending');
-
-await  this.runFunction(this.queuedFuncs.shift(), promise);
-
-  
-
-// process next
-
-return  true;
-
+  // wait for something to succeed or fail
+  return  Promise.race(this.pending);
 }
 
-// wait for something to succeed or fail
+async process() {
+  while (this.queuedFuncs.length) {
+	await this.processNextItem();
+  }
 
-return  Promise.race(this.pending);
-
-}
-
-  
-
-async  process() {
-
-while (this.queuedFuncs.length) {
-
-await  this.processNextItem();
-
-}
-
-  
-
-return  Promise.all(this.pending);
-
+  return  Promise.all(this.pending);
 }
 ```
 
@@ -562,8 +548,8 @@ return  Promise.all(this.pending);
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2MzEzOTcyLC02MjU0NTk2MTQsLTEyND
-Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
-MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
-0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
+eyJoaXN0b3J5IjpbMTkxNzA0ODUzMSwtNjI1NDU5NjE0LC0xMj
+Q0NTQ1ODU5LC0xMTQwNDI5MDQ1LC0xMTgwMDMwMTQ5LDkzNjc4
+MTE5NywtMTIwNTcyOTg5MSwtMzIxOTc5OTY1LDMwODY5NzkyOS
+wtMTE4MjU1NTUwNCwtMTMyMjE3MDA2NV19
 -->
