@@ -473,47 +473,30 @@ async  runFunction(func, promise, tryNumber  =  0) {
   
   try {
     await  func();
- this.moveLists(promise, 'pending', 'complete');
+    this.moveLists(promise, 'pending', 'complete');
 
-this.triggerEvent('complete', promise);
+    this.triggerEvent('complete', promise);
 
-} catch (e) {
+  } catch (e) {
+    if (this.retry) {
+      if (tryNumber  <  this.maxRetries) {
+        const  res  =  await this.runFunction(func, promise, tryNumber  +  1);
 
-if (this.retry) {
+        if (res) return  true;
+      }
+    }
+    
+    this.moveLists(promise, 'pending', 'failed');
 
-if (tryNumber  <  this.maxRetries) {
-
-const  res  =  await  this.runFunction(func, promise, tryNumber  +  1);
-
+    this.triggerEvent('failed', promise);
+  }
   
-
-if (res) return  true;
-
+  return  true;
 }
 
-}
-
-  
-
-this.moveLists(promise, 'pending', 'failed');
-
-this.triggerEvent('failed', promise);
-
-}
-
-  
-
-return  true;
-
-}
-
-  
-
-async  processNextItem() {
-
-if (this.pending.length  <  this.maxConcurrent) {
-
-if (!this.queued.length) { return  false; }
+async processNextItem() {
+  if (this.pending.length  <  this.maxConcurrent) {
+  if (!this.queued.length) { return  false; }
 
   
 
@@ -579,8 +562,8 @@ return  Promise.all(this.pending);
 
 ### Multiple Keys
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTY1MDkyNzYsLTYyNTQ1OTYxNCwtMT
-I0NDU0NTg1OSwtMTE0MDQyOTA0NSwtMTE4MDAzMDE0OSw5MzY3
-ODExOTcsLTEyMDU3Mjk4OTEsLTMyMTk3OTk2NSwzMDg2OTc5Mj
-ksLTExODI1NTU1MDQsLTEzMjIxNzAwNjVdfQ==
+eyJoaXN0b3J5IjpbMjE2MzEzOTcyLC02MjU0NTk2MTQsLTEyND
+Q1NDU4NTksLTExNDA0MjkwNDUsLTExODAwMzAxNDksOTM2Nzgx
+MTk3LC0xMjA1NzI5ODkxLC0zMjE5Nzk5NjUsMzA4Njk3OTI5LC
+0xMTgyNTU1NTA0LC0xMzIyMTcwMDY1XX0=
 -->
