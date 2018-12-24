@@ -5,6 +5,7 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Unit Test
 	- Feature Test
 	- End to End / Integration Test
+	- Browser and Device Testing
 - Testing basics
 	- Have at least a basic test
 - Making a plan
@@ -30,6 +31,6 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Testing redux sagas
 	- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI5ODk4MTcsLTQ1NTQzNTcyMywzMT
+eyJoaXN0b3J5IjpbLTE0ODY3NDcwNjksLTQ1NTQzNTcyMywzMT
 E3NTM4MjQsLTIwODg3NDY2MTJdfQ==
 -->
