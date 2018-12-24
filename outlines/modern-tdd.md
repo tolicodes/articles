@@ -20,8 +20,13 @@ Modern TDD - Storybook, Jest, and Cypress
  	- Addons
 	 	- Knobs
 	 	- Actions Logger
- 	- S
+- Jest Tests
+	- Why do unit tests
+	- Jest setup
+	- Snapshot Testing
+	- Enzyme
+	- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTQzNTcyMywzMTE3NTM4MjQsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE4OTA4NTYxMjcsLTQ1NTQzNTcyMywzMT
+E3NTM4MjQsLTIwODg3NDY2MTJdfQ==
 -->
