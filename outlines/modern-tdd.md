@@ -24,6 +24,8 @@ Modern TDD - Storybook, Jest, and Cypress
 - Jest Tests
 	- Why do unit tests
 	- Jest setup
+	- Basic test
+	- Setup and Tear down (beforeEach, afterEach)
 	- Snapshot Testing
 		- Good 
 		- Bad
@@ -36,6 +38,6 @@ Modern TDD - Storybook, Jest, and Cypress
 		- CodeCov 
 	- CircleCI setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY4OTg1MDUsLTE0ODY3NDcwNjksLT
-Q1NTQzNTcyMywzMTE3NTM4MjQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTA4NjYyMzcsLTE0ODY3NDcwNjksLTQ1NT
+QzNTcyMywzMTE3NTM4MjQsLTIwODg3NDY2MTJdfQ==
 -->
