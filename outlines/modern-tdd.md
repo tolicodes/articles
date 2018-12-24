@@ -33,8 +33,9 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Testing functions and callbacks
 	- Testing redux sagas
 	- Coverage
-		- C
+		- CodeCov 
+	- CircleCI setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDUzNjA3LC0xNDg2NzQ3MDY5LC00NT
-U0MzU3MjMsMzExNzUzODI0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEzOTY4OTg1MDUsLTE0ODY3NDcwNjksLT
+Q1NTQzNTcyMywzMTE3NTM4MjQsLTIwODg3NDY2MTJdfQ==
 -->
