@@ -13,9 +13,9 @@ Modern TDD - Storybook, Jest, and Cypress
 - Storybook based development
 	- Why develop in isolation
 	- Setting up storybook
-	- 
-	- Writing stories
-	- 
+	- Building a StyleGuide
+	- Converting your test cases into Storybook stories
+	- Snapshot test your stories (Storyshots)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0ODE0Mzg5LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTA4MTg4NDI5NywtMjA4ODc0NjYxMl19
 -->
