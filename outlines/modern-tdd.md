@@ -33,11 +33,15 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Testing connected components
 	- Mocking components
 	- Testing functions and callbacks
+		- spies (jest.fn())
+		- toHaveBeenCalled
+		- toHaveBeenCalledWith
+	- 
 	- Testing redux sagas
 	- Coverage
 		- CodeCov 
 	- CircleCI setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjYyMzcsLTE0ODY3NDcwNjksLTQ1NT
-QzNTcyMywzMTE3NTM4MjQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbOTQ3NzY4NjAxLC0xNDg2NzQ3MDY5LC00NT
+U0MzU3MjMsMzExNzUzODI0LC0yMDg4NzQ2NjEyXX0=
 -->
