@@ -25,12 +25,16 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Why do unit tests
 	- Jest setup
 	- Snapshot Testing
+		- Good 
+		- Bad
 	- Enzyme
+	- Testing connected components
 	- Mocking components
 	- Testing functions and callbacks
 	- Testing redux sagas
-	- 
+	- Coverage
+		- C
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY3NDcwNjksLTQ1NTQzNTcyMywzMT
-E3NTM4MjQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTM3MDUzNjA3LC0xNDg2NzQ3MDY5LC00NT
+U0MzU3MjMsMzExNzUzODI0LC0yMDg4NzQ2NjEyXX0=
 -->
