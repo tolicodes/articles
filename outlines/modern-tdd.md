@@ -25,8 +25,11 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Jest setup
 	- Snapshot Testing
 	- Enzyme
+	- Mocking components
+	- Testing functions and callbacks
+	- Testing redux sagas
 	- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTA4NTYxMjcsLTQ1NTQzNTcyMywzMT
+eyJoaXN0b3J5IjpbLTE0ODI5ODk4MTcsLTQ1NTQzNTcyMywzMT
 E3NTM4MjQsLTIwODg3NDY2MTJdfQ==
 -->
