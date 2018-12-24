@@ -17,9 +17,11 @@ Modern TDD - Storybook, Jest, and Cypress
 	- Converting your test cases into Storybook stories
 	- Decorators (wrapping your stories)
  	- Snapshot test your stories (Storyshots)
- 	- Addobs
+ 	- Addons
 	 	- Knobs
+	 	- Actions Logger
+ 	- S
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2Mzc5NDYxLDMxMTc1MzgyNCwtMjA4OD
-c0NjYxMl19
+eyJoaXN0b3J5IjpbLTQ1NTQzNTcyMywzMTE3NTM4MjQsLTIwOD
+g3NDY2MTJdfQ==
 -->
