@@ -30,8 +30,9 @@ Modern TDD - Storybook, Jest, and Cypress
 		- Good 
 		- Bad
 	- Enzyme
+- 	- Mocking components
+		- what to mock and what not to mock
 	- Testing connected components
-	- Mocking components
 	- Testing functions and callbacks
 		- spies (jest.fn())
 		- toHaveBeenCalled
@@ -42,6 +43,6 @@ Modern TDD - Storybook, Jest, and Cypress
 		- CodeCov 
 	- CircleCI setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NzY4NjAxLC0xNDg2NzQ3MDY5LC00NT
-U0MzU3MjMsMzExNzUzODI0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTI5ODI5ODIwOSwtMTQ4Njc0NzA2OSwtND
+U1NDM1NzIzLDMxMTc1MzgyNCwtMjA4ODc0NjYxMl19
 -->
