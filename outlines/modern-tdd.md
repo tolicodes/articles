@@ -1,4 +1,4 @@
-Modern TDD - Storybook, Jest, and Cypress
+Modern TDD - Storybook, Jest, Pickle - Cypress + SauceLabs
 
 - Why testing is important
 - Types of testing
@@ -43,7 +43,7 @@ Modern TDD - Storybook, Jest, and Cypress
 	- CircleCI setup
 - Cypress Tests
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODYwMjUwNSwtMjk4Mjk4MjA5LC0xND
-g2NzQ3MDY5LC00NTU0MzU3MjMsMzExNzUzODI0LC0yMDg4NzQ2
-NjEyXX0=
+eyJoaXN0b3J5IjpbNzgzNzAzNjQ3LC0yOTgyOTgyMDksLTE0OD
+Y3NDcwNjksLTQ1NTQzNTcyMywzMTE3NTM4MjQsLTIwODg3NDY2
+MTJdfQ==
 -->
