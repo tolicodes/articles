@@ -37,12 +37,13 @@ Modern TDD - Storybook, Jest, and Cypress
 		- spies (jest.fn())
 		- toHaveBeenCalled
 		- toHaveBeenCalledWith
-	- 
 	- Testing redux sagas
 	- Coverage
 		- CodeCov 
 	- CircleCI setup
+- Cypress Tests
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5ODI5ODIwOSwtMTQ4Njc0NzA2OSwtND
-U1NDM1NzIzLDMxMTc1MzgyNCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTc1ODYwMjUwNSwtMjk4Mjk4MjA5LC0xND
+g2NzQ3MDY5LC00NTU0MzU3MjMsMzExNzUzODI0LC0yMDg4NzQ2
+NjEyXX0=
 -->
