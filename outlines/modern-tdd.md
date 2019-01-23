@@ -42,8 +42,10 @@ Modern TDD - Storybook, Jest, Pickle - Cypress + SauceLabs
 		- CodeCov 
 	- CircleCI setup
 - Cypress Tests
+- Selenium / SauceLabs Tests
+- Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNzAzNjQ3LC0yOTgyOTgyMDksLTE0OD
-Y3NDcwNjksLTQ1NTQzNTcyMywzMTE3NTM4MjQsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbNjkxMTE2NjczLDc4MzcwMzY0NywtMjk4Mj
+k4MjA5LC0xNDg2NzQ3MDY5LC00NTU0MzU3MjMsMzExNzUzODI0
+LC0yMDg4NzQ2NjEyXX0=
 -->
