@@ -52,10 +52,14 @@ Now for Colin's idea. We still have a few problems to solve
 ## Documenting Service Interaction
 Let's take a fake ManoWar Flow (I don't know what actually happens). It would be nice if we could make a  directed flow diagram. The nodes represent services. They accept some input, do something (either automatically or via a human being interaction, and at some point output something that's recieved by another node. 
 
-In some cases we might wan
+In some cases we might even have one process send an output to 2+ processes (ex: normalized image is sent to modeler and ML).
+
+It would be nice if we had an up to date process diagram of every service, it's input, and output, and how they are connnected to each other. It would look something like this:
 
 ![Process Flow](https://drive.google.com/uc?export=view&id=17ekCf1mhVNvk6bF9bpZF-XboC7DreUsq)
+
+Of course we have a lot more processes (
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MDg2NjA1LC03NDkzODUxMDEsMTUzNj
-kzMTgzN119
+eyJoaXN0b3J5IjpbMTk4NjI2OTM3NSwtNzQ5Mzg1MTAxLDE1Mz
+Y5MzE4MzddfQ==
 -->
