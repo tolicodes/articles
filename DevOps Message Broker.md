@@ -12,9 +12,11 @@ Let’s start with the most common model of how microservices work -- RESTful AP
 
 PubSub (via SNS) somewhat alleviates the issues. The concept is extremely simple. There are only two things you can do:
 
--   **Publish**: You publish a message to a topic with a payload. 
-	 ```
-	 
+**Publish**
+You publish a message to a topic with a payload. 
+
+    pubsub.publish('image-processing-complete', { l
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODgzNTI4NF19
+eyJoaXN0b3J5IjpbLTg3NTI0NjQ5NV19
 -->
