@@ -61,11 +61,12 @@ Of course we have a lot more processes and a lot more flows (ex: what happens in
 So let's start with a simple service that lets you represent all of our services and how they're connected. All we need is a simple database:
 
 **services**
-| id | name | input_type | output_type |
-|--  |--     |--          |--           |
-| 1  | Image Uploader | null | image |
-
+| id | name             | input_type 		| output_type      |
+|--  |--                |--                |--                |
+| 1  | Image Uploader   | null      	   | image            |
+| 2  | Image Normalizer | image      	   | normalized_image |
+| 2 .| ML Stuff			| normalized_image |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyOTY0MDE3LDE3NDcwMjU5MzAsLTc0OT
-M4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbLTIyMjc1NjM0MSwxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
