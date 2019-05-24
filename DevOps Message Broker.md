@@ -10,13 +10,17 @@ Colin has a brilliant idea for building a dynamic message broker for our service
 
 Let’s start with the most common model of how microservices work -- RESTful APIs. One server calls another server’s REST endpoint. The other server accepts it and interprets it Easy...until you have hundreds of services all interconnected, and suddenly you’re maintaining potentially REST calls in each application with nobody in the company really understanding which services talk to each other and where that code lies. Services go down, change APIs, and suddenly your perfect microservice world comes to a halt.
 
-PubSub (via SNS) somewhat alleviates the issues. The concept is extremely simple. There are only two things you can do:
+### PubSub
+PubSub (via services like SNS or Kafka) alleviates some issues. The concept is extremely simple. There are only two things you can do:
 
 **Publish**
 You publish a message to a topic with a payload. 
 
-    pubsub.publish('image-processing-complete', { l
+    pubsub.publish('image-processing-complete', { image_url: 'http://aws.com/image.jpg' });
+
+**Subscribe**
+You subscribe to topics you're interested 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTI0NjQ5NV19
+eyJoaXN0b3J5IjpbMTI5OTMwNDcyNV19
 -->
