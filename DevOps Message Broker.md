@@ -4,7 +4,9 @@
 
 Colin has a brilliant idea for building a dynamic message broker for our services infrastructure. Multiple HOVER engineers, including Elise, Dave, Max, and Ethan have described versions of this architecture. But what’s different about Colin’s idea is that it gives a simple, graphical, extendable, and dynamic way to manage how our services are interconnected. It solves many of the largest problems that a microservice architecture presents including service discovery, schema management, message pollution, logging, and error handling.
 
-# Challenges in a Micro Server World
+This really is a combination of existing solutions such as SNS/Kafka, SQS, Kibana, etc and a creation of a new service called a Message Broker.
+
+# Existing Solutions to Problems
 
 ## Message Brokerage
 
@@ -42,7 +44,7 @@ Essentially all I have to do is:
 So now we've solved async messaging and services going down.
 
 ## Logging
-There are many solutions to logging, but the best one I've seen is funneling your SNS to something like [Kibana](https://www.elastic.co/products/kibana), a log analyzer. Now you can obse
+There are many solutions to logging, but the best one I've seen is funneling your SNS to something like [Kibana](https://www.elastic.co/products/kibana), a log analyzer. Now you can observe and visualize all the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDg2MDU0NTVdfQ==
+eyJoaXN0b3J5IjpbMTUyNTkwNTkwOF19
 -->
