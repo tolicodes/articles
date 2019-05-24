@@ -40,6 +40,9 @@ Essentially all I have to do is:
      });
 
 So now we've solved async messaging and services going down.
+
+### Logging
+It's hard 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDA3ODQwMV19
+eyJoaXN0b3J5IjpbLTg3NTY5NzQxNV19
 -->
