@@ -85,8 +85,12 @@ Now we have documentation of all of our services. Yay!
 ### Discovery of Services
 We can make this even easier once we move to K8S by using its [Discovery API](https://medium.com/technology-matters/service-discovery-with-kubernetes-a503b16e71a0) which will list all the services available. Then you just use the tool to drag and drop them in the right order.
 
-## What if instead of documenting...we 
+## Source of Truth for Messaging - The DevOps Message Broker
+**OK. Here is where it gets interesting!!!**
+Why document...when this service can become THE source of truth for messaging! 
+
+All we have to do
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4NTYwMDk3LDE3NDcwMjU5MzAsLTc0OT
+eyJoaXN0b3J5IjpbODA2NjM1OTIzLDE3NDcwMjU5MzAsLTc0OT
 M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
