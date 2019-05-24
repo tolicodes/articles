@@ -96,10 +96,11 @@ All we have to do is add these two lines to each service:
     pubsub.publish('output:<THE SERVICES ID>:<output type>', payload);
     queue.process('input:<THE SERVICES ID>:<input type>', () => { });
 
-And now the message broker, which dynamically associates all the nodes together based on the database essentially does:
+And now the message broker, which dynamically associates all the nodes together based on the database essentially does for each `relationship` in the db:
 
-    queue.proc
+    queue.proccess('output:<publisher_service_id>:<input_type>', () => {
+      pubsub.publish('input:<subscriber_service_id>:<input_type>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyOTA0MTYyNiwxNzQ3MDI1OTMwLC03ND
-kzODUxMDEsMTUzNjkzMTgzN119
+eyJoaXN0b3J5IjpbLTE4ODI4NzYyMjEsMTc0NzAyNTkzMCwtNz
+Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
 -->
