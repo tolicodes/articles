@@ -47,7 +47,10 @@ So now we've solved async messaging and services going down.
 There are many solutions to logging, but the best one I've seen is funneling your SNS to something like [Kibana](https://www.elastic.co/products/kibana), a log analyzer. Now you can observe and visualize all of the inputs and outputs to your services, search through them, query them, you name it. Check out their website, it's f***ing cool.
 
 # Problems MessageBroker Solves
+Now for Colin's idea. We still have a few problems to solve
 
+## Documenting Service Interaction
+We have 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NjYwNTM2NV19
+eyJoaXN0b3J5IjpbMTUzNjkzMTgzN119
 -->
