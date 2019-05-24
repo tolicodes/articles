@@ -10,6 +10,8 @@ Colin has a brilliant idea for building a dynamic message broker for our service
 
 Let’s start with the most common model of how microservices work -- RESTful APIs. One server calls another server’s REST endpoint. The other server accepts it and interprets it Easy...until you have hundreds of services all interconnected, and suddenly you’re maintaining potentially REST calls in each application with nobody in the company really understanding which services talk to each other and where that code lies. Services go down, change APIs, and suddenly your perfect microservice world comes to a halt.
 
+Elise started describing pubsub [here]([https://hoverinc.atlassian.net/wiki/spaces/EN/pages/846790813/PubSub+Proposal+1](https://hoverinc.atlassian.net/wiki/spaces/EN/pages/846790813/PubSub+Proposal+1)). It took me a while to understand how they work, but now that I do I'll dumb it down. 
+
 ### PubSub - Managing API Endpoints 
 PubSub (via services like Amazon SNS or Kafka) alleviates some issues. The concept is extremely simple. There are only two things you can do:
 
@@ -37,7 +39,7 @@ Essentially all I have to do is:
         queue.delete(newMessage);
      });
 
-Super simple.
+So now we've solved async messaging and services going down.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk4OTYyODddfQ==
+eyJoaXN0b3J5IjpbLTc5NDA3ODQwMV19
 -->
