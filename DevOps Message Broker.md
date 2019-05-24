@@ -58,8 +58,12 @@ It would be nice if we had an up to date process diagram of every service, it's 
 
 Of course we have a lot more processes and a lot more flows (ex: what happens in design pro, vray, etc). There's no document that shows all of this. We could of course draw it in LucidCharts, but likely it will go out of date. 
 
-One function of 
+So let's start with a simple service that lets you represent all of our services and how they're connected. All we need is a simple database:
+
+- Nodes
+ -  id
+ - name 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2MDI1Njg1LC03NDkzODUxMDEsMTUzNj
-kzMTgzN119
+eyJoaXN0b3J5IjpbMTc0NzAyNTkzMCwtNzQ5Mzg1MTAxLDE1Mz
+Y5MzE4MzddfQ==
 -->
