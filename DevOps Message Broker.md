@@ -83,8 +83,10 @@ And then we just dump it into D3's [Graph](https://bl.ocks.org/cjrd/6863459) and
 Now we have documentation of all of our services. Yay!
 
 ### Discovery of Services
-What if we m
+We can make this even easier once we move to K8S by using its [Discovery API](https://medium.com/technology-matters/service-discovery-with-kubernetes-a503b16e71a0) which will list all the services available. Then you just use the tool to drag and drop them in the right order.
+
+## What if instead of documenting...we 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzQ4NjUyNiwxNzQ3MDI1OTMwLC03ND
-kzODUxMDEsMTUzNjkzMTgzN119
+eyJoaXN0b3J5IjpbNzc4NTYwMDk3LDE3NDcwMjU5MzAsLTc0OT
+M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
