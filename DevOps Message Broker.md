@@ -89,8 +89,8 @@ We can make this even easier once we move to K8S by using its [Discovery API](ht
 **OK. Here is where it gets interesting!!!**
 Why document...when this service can become THE source of truth for messaging! 
 
-All we have to do is make a little tweak on top of SNS/SQS...by adding a Broker. Usually in SNS posts a specific topic like `image_processing_done` and any service can subscribe to it. But then every service
+All we have to do is make a little tweak on top of SNS/SQS...by adding a Broker. Usually in SNS posts a specific topic like `image_processing_done` and any service can subscribe to it. But then every service that subsribes to it needs to know the name of the topic. What if I create a service which doesn't really care where the image comes from? Perhaps we want to arbitrar
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDA1MTMzOSwxNzQ3MDI1OTMwLC03ND
-kzODUxMDEsMTUzNjkzMTgzN119
+eyJoaXN0b3J5IjpbLTEzNTQ3NTk1OTcsMTc0NzAyNTkzMCwtNz
+Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
 -->
