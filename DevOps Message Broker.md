@@ -62,13 +62,10 @@ So let's start with a simple service that lets you represent all of our services
 
 **services**
 | id | name | input_type | output_type |
-|--|--|
-| 1 | Image Uploader | null | image |
-| id | name |
-|--|--|
-|  |  |
+|--  |--     |--          |--           |
+| 1  | Image Uploader | null | image |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzNTU0NTAxLDE3NDcwMjU5MzAsLTc0OT
+eyJoaXN0b3J5IjpbNjIyOTY0MDE3LDE3NDcwMjU5MzAsLTc0OT
 M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
