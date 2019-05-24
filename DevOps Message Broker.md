@@ -99,9 +99,13 @@ All we have to do is add these two lines to each service:
 And now the message broker, which dynamically associates all the nodes together based on the database essentially does for each `relationship` in the db:
 
     queue.proccess('output:<publisher_service_id>:<input_type>', (payload) => {
-      pubsub.publish('input:<subscriber_service_id>:<input_type>', payload)
-    }
+      pubsub.publish('input:<subscriber_service_id>:<input_type>', payload);
+    });
+
+That's it! With 5 lines of code we essentially create a dymanic message broker and can add, remove, rearrange services as we please without them knowing about one another. The only requirement is that output and input types match :) 
+
+## Mp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTgzNDkzNiwxNzQ3MDI1OTMwLC03ND
+eyJoaXN0b3J5IjpbLTQ0NDU1OTg5MiwxNzQ3MDI1OTMwLC03ND
 kzODUxMDEsMTUzNjkzMTgzN119
 -->
