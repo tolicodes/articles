@@ -91,15 +91,15 @@ Why document...when this service can become THE source of truth for messaging!
 
 All we have to do is make a little tweak on top of SNS/SQS...by adding a Broker. Usually in SNS posts a specific topic like `image_processing_done` and any service can subscribe to it. But then every service that subsribes to it needs to know the name of the topic. What if I create a service which doesn't really care where the image comes from? Perhaps we want to arbitrarily add and remove services at different parts of the process and quickly enable/disable/replace them. We can do that if we have a message broker.
 
-All we have to do is add these two lines publish from the services:
+All we have to do is add these two lines to each service:
 
     pubsub.publish('output:<THE SERVICES ID>:<output type>', payload);
     queue.process('input:<THE SERVICES ID>:<input type>', () => { });
 
+And now the message broker, which dynamically associates all the nodes together based on the database essentially does:
 
-
-For 
+    queue.proc
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDU4MTM1LDE3NDcwMjU5MzAsLTc0OT
-M4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbMTkyOTA0MTYyNiwxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
