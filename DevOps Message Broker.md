@@ -70,8 +70,11 @@ So let's start with a simple service that lets you represent all of our services
 | 5 .| Combiner        	| labels,3d_model  | 3d_model_json, completed_jpg .  |
 
 **relationships**
-| 
+| id | publisher_service_id | subscriber_service_id |
+| -- | --                   | --                    |
+| 1  | 1    				| 2						|
+| 2  | 2					| 3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ0ODQzNzE1LDE3NDcwMjU5MzAsLTc0OT
-M4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbLTQ0OTk4MzU1NSwxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
