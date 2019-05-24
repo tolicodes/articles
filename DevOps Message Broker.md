@@ -50,7 +50,8 @@ There are many solutions to logging, but the best one I've seen is funneling you
 Now for Colin's idea. We still have a few problems to solve
 
 ## Documenting Service Interaction
-We have ![Process Flow](https://picasaweb.google.com/103722053078639062859/6694478000461521345#6694477999838043506)
+We have ![Process Flow](https://drive.google.com/open?id=17ekCf1mhVNvk6bF9bpZF-XboC7DreUsq)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTM4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbLTExMzQ3MjM1MjAsLTc0OTM4NTEwMSwxNT
+M2OTMxODM3XX0=
 -->
