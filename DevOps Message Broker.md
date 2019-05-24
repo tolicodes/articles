@@ -137,8 +137,10 @@ We can then go throw the log and view exactly what data was passed in a human re
 Because we have a Broker we can stop the flow on a job at any points and restart it at any step we want
 
 ### Schema Validation
-This is going to be huge...
+This is going to be huge...Every log message will go through a schema validator (using [JSON Schema](https://json-schema.org/)) or something similar. That means we can catch errors in between services!
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyMzQxNTIzLDE3NDcwMjU5MzAsLTc0OT
-M4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbLTE1NDgyNjQ1NDQsMTc0NzAyNTkzMCwtNz
+Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
 -->
