@@ -105,6 +105,9 @@ And now the message broker, which dynamically associates all the nodes together 
 That's it! With 5 lines of code we essentially create a dymanic message broker and can add, remove, rearrange services as we please without them knowing about one another. The only requirement is that output and input types match :) 
 
 ## What's Possible After We Have a Broker
+### Schema Validation
+This is going to be huge...Every log message will go through a schema validator (using [JSON Schema](https://json-schema.org/)) or something similar. That means we can catch errors in between services! No more broken contracts! 
+
 ### Searching 
 Now that every single service goes through the broker, we can visualize exactly where a job failed. We can do this by applying metadata to each payload. A small tweak
 
@@ -136,11 +139,11 @@ We can then go throw the log and view exactly what data was passed in a human re
 ### Process Restarting and Interuption
 Because we have a Broker we can stop the flow on a job at any points and restart it at any step we want
 
-### Schema Validation
-This is going to be huge...Every log message will go through a schema validator (using [JSON Schema](https://json-schema.org/)) or something similar. That means we can catch errors in between services!
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDgyNjQ1NDQsMTc0NzAyNTkzMCwtNz
-Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
+eyJoaXN0b3J5IjpbMTQwOTE4MDE3NywxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
