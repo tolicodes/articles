@@ -121,8 +121,14 @@ Now that every single service goes through the broker, we can visualize exactly 
 With this small tweak we can easily search and visualize (either in our broker or via Kibana) where a certain job is in the process, if it's stuck, failed, etc
 
 ### Process Tracking
-The broker will automatically add its own metadata, a random `flow_uuid` and a `starting_service` which associates it with a instance of the flow 
+The broker will automatically add its own metadata, a random `flow_uuid` and a `starting_service` which will associate it with a flow and will automatically visualize it goes forward
+
+### Type Based Visualization
+We can create "interpreters" for different types of messages in the log. Since every message is type
+
+### Schema Validation
+This is 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTQ3MDYyMywxNzQ3MDI1OTMwLC03ND
-kzODUxMDEsMTUzNjkzMTgzN119
+eyJoaXN0b3J5IjpbLTEwNjA3NTkxNzEsMTc0NzAyNTkzMCwtNz
+Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
 -->
