@@ -50,10 +50,12 @@ There are many solutions to logging, but the best one I've seen is funneling you
 Now for Colin's idea. We still have a few problems to solve
 
 ## Documenting Service Interaction
-Let's take a fake ManoWar Flow (I don't know what actually happens). It would be nice if we could make a  directed flow diagram where the node
+Let's take a fake ManoWar Flow (I don't know what actually happens). It would be nice if we could make a  directed flow diagram. The nodes represent services. They accept some input, do something (either automatically or via a human being interaction, and at some point output something that's recieved by another node. 
+
+In some cases we might wan
 
 ![Process Flow](https://drive.google.com/uc?export=view&id=17ekCf1mhVNvk6bF9bpZF-XboC7DreUsq)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMxMTY2OTAwLC03NDkzODUxMDEsMTUzNj
+eyJoaXN0b3J5IjpbOTc4MDg2NjA1LC03NDkzODUxMDEsMTUzNj
 kzMTgzN119
 -->
