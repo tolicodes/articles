@@ -19,8 +19,13 @@ You publish a message to a topic with a payload.
     pubsub.publish('image-processing-complete', { image_url: 'http://aws.com/image.jpg' });
 
 **Subscribe**
-You subscribe to topics you're interested 
+You subscribe to topics you're interested in with a callback
 
+    pubsub.subscribe('image-processing-complete', (payload) => { 
+      console.log(payload.image);
+    });
+ 
+ Simple right? Now you can have all your services 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTMwNDcyNV19
+eyJoaXN0b3J5IjpbODQwMzk3NDgyXX0=
 -->
