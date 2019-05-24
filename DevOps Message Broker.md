@@ -129,11 +129,16 @@ We can create "interpreters" for different types of messages in the log. We will
 - `image`: Image parser (displays the payload as an image)
 - `normalized_image`: also Image parser
 - `labels`: json parser (display prettified json)
--  `3d_model`
+-  `3d_model`: machete parser (displays using machete viewer)
+
+We can then go throw the log and view exactly what data was passed in a human readable way
+
+### Process Restarting and Interuption
+Because we have a Broker we can stop the flow on a job at any points and restart it at any step we want
 
 ### Schema Validation
-This is 
+This is going to be huge...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTgzNTU3LDE3NDcwMjU5MzAsLTc0OT
+eyJoaXN0b3J5IjpbNTEyMzQxNTIzLDE3NDcwMjU5MzAsLTc0OT
 M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
