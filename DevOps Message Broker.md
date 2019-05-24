@@ -105,11 +105,17 @@ And now the message broker, which dynamically associates all the nodes together 
 That's it! With 5 lines of code we essentially create a dymanic message broker and can add, remove, rearrange services as we please without them knowing about one another. The only requirement is that output and input types match :) 
 
 ## More
-### Error Tracking
+### Tracking Processes
 Now that every single service goes through the broker, we can visualize exactly where a job failed. We can do this by applying metadata to each payload. A small tweak
 
+    pubsub.publish('output:<THE SERVICES ID>:<output type>', {
+	  metadata: {
+	    job_id: 12312,
+	    some_other_id: 
+      }
+	});
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjIxNzcxNTYsMTc0NzAyNTkzMCwtNz
-Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
+eyJoaXN0b3J5IjpbMzI2NDM5MDM5LDE3NDcwMjU5MzAsLTc0OT
+M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
