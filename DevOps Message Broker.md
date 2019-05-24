@@ -11,7 +11,7 @@ Colin has a brilliant idea for building a dynamic message broker for our service
 Let’s start with the most common model of how microservices work -- RESTful APIs. One server calls another server’s REST endpoint. The other server accepts it and interprets it Easy...until you have hundreds of services all interconnected, and suddenly you’re maintaining potentially REST calls in each application with nobody in the company really understanding which services talk to each other and where that code lies. Services go down, change APIs, and suddenly your perfect microservice world comes to a halt.
 
 ### PubSub - Managing API Endpoints 
-PubSub (via services like SNS or Kafka) alleviates some issues. The concept is extremely simple. There are only two things you can do:
+PubSub (via services like Amazon SNS or Kafka) alleviates some issues. The concept is extremely simple. There are only two things you can do:
 
 **Publish**
 You publish a message to a topic with a payload. 
@@ -28,7 +28,9 @@ You subscribe to topics you're interested in with a callback
 Simple right? Now Service A doesn't need to know about Service B. It just publishes a message, and whatever service is interested subscribes to it. No REST calls needed. No need to set up an express server to listen on those endpoints
 
 ### Message Queueing - Services that Are Down
-What if a service is down? Retry logic is hard to build. Not every engineer has the time to write fibonacci backoff sequences. T
+What if a service is down? Retry logic is hard to build. Not every engineer has the time to write fibonacci backoff sequences. There's an elegant solution called a message queue. An example is Amazon SQS. The simplest way I've heard it described in an email inbox. I don't have to be constantly looking at my inbox. I just check my email when I have time, and mark messages as read. Your PubSub can write to a s
+
+Essentially 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTUxMjIyNl19
+eyJoaXN0b3J5IjpbLTI3MzcxMjA2MF19
 -->
