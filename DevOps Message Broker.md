@@ -60,10 +60,15 @@ Of course we have a lot more processes and a lot more flows (ex: what happens in
 
 So let's start with a simple service that lets you represent all of our services and how they're connected. All we need is a simple database:
 
-- Nodes
- -  id
- - name 
+**services**
+| id | name | input_type | output_type |
+|--|--|
+| 1 | Image Uploader | null | image |
+| id | name |
+|--|--|
+|  |  |
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzAyNTkzMCwtNzQ5Mzg1MTAxLDE1Mz
-Y5MzE4MzddfQ==
+eyJoaXN0b3J5IjpbODUzNTU0NTAxLDE3NDcwMjU5MzAsLTc0OT
+M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
