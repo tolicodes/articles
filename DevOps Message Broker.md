@@ -70,13 +70,13 @@ So let's start with a simple service that lets you represent all of our services
 | 5 .| Combiner        	| labels,3d_model  | 3d_model_json, completed_jpg .  |
 
 **relationships**
-| id | publisher_service_id | subscriber_service_id | input_type |
-| -- | --                   | --                    | --         |
-| 1  | 1    				| 2						| image      |
-| 2  | 2					| 3						| 
-| 3  | 2					| 4						|
-| 4  | 3					| 5						|
-| 5  | 4					| 5						|
+| id | publisher_service_id | subscriber_service_id | input_type       |
+| -- | --                   | --                    | --               |
+| 1  | 1    				| 2						| image       	   |
+| 2  | 2					| 3						| normalized_image |
+| 3  | 2					| 4						| normalized_image |
+| 4  | 3					| 5						| labels           |
+| 5  | 4					| 5						| 3d_model         |
 
 And then we just dump it into D3's [Graph](https://bl.ocks.org/cjrd/6863459) and we've got ourselves a visual representation. It even has a graph builder so that you can generate and rearrange graphs and save it to the DB. 
 
@@ -99,8 +99,9 @@ All we have to do is add these two lines to each service:
 And now the message broker, which dynamically associates all the nodes together based on the database essentially does for each `relationship` in the db:
 
     queue.proccess('output:<publisher_service_id>:<input_type>', (payload) => {
-      pubsub.publish('input:<subscriber_service_id>:<input_type>', payload
+      pubsub.publish('input:<subscriber_service_id>:<input_type>', payload)
+    }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTUyNzU0LDE3NDcwMjU5MzAsLTc0OT
-M4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbMTI4OTgzNDkzNiwxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
