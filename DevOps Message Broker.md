@@ -46,20 +46,20 @@ So now we've solved async messaging and services going down.
 ## Logging
 There are many solutions to logging, but the best one I've seen is funneling your SNS to something like [Kibana](https://www.elastic.co/products/kibana), a log analyzer. Now you can observe and visualize all of the inputs and outputs to your services, search through them, query them, you name it. Check out their website, it's f***ing cool.
 
-# Problems MessageBroker Solves
+# Problems DevOpsBroker Solves
 Now for Colin's idea. We still have a few problems to solve
 
 ## Documenting Service Interaction
-Let's take a fake ManoWar Flow (I don't know what actually happens). It would be nice if we could make a  directed flow diagram. The nodes represent services. They accept some input, do something (either automatically or via a human being interaction, and at some point output something that's recieved by another node. 
-
-In some cases we might even have one process send an output to 2+ processes (ex: normalized image is sent to modeler and ML).
+Let's take a fake ManoWar Flow (I don't know what actually happens). It would be nice if we could make a  directed flow diagram. The nodes represent services. They accept some input, do something (either automatically or via a human being interaction, and at some point output something that's recieved by another node. In some cases we might even have one process send an output to 2+ processes (ex: normalized image is sent to modeler and ML).
 
 It would be nice if we had an up to date process diagram of every service, it's input, and output, and how they are connnected to each other. It would look something like this:
 
 ![Process Flow](https://drive.google.com/uc?export=view&id=17ekCf1mhVNvk6bF9bpZF-XboC7DreUsq)
 
-Of course we have a lot more processes (
+Of course we have a lot more processes and a lot more flows (ex: what happens in design pro, vray, etc). There's no document that shows all of this. We could of course draw it in LucidCharts, but likely it will go out of date. 
+
+One function of 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjI2OTM3NSwtNzQ5Mzg1MTAxLDE1Mz
-Y5MzE4MzddfQ==
+eyJoaXN0b3J5IjpbODc2MDI1Njg1LC03NDkzODUxMDEsMTUzNj
+kzMTgzN119
 -->
