@@ -89,8 +89,8 @@ We can make this even easier once we move to K8S by using its [Discovery API](ht
 **OK. Here is where it gets interesting!!!**
 Why document...when this service can become THE source of truth for messaging! 
 
-All we have to do
+All we have to do is make a little tweak on top of SNS/SQS...by adding a Broker. Usually in SNS posts a specific topic like `image_processing_done` and any service can subscribe to it. But then every service
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2NjM1OTIzLDE3NDcwMjU5MzAsLTc0OT
-M4NTEwMSwxNTM2OTMxODM3XX0=
+eyJoaXN0b3J5IjpbLTYzMDA1MTMzOSwxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
