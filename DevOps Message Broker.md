@@ -70,10 +70,10 @@ So let's start with a simple service that lets you represent all of our services
 | 5 .| Combiner        	| labels,3d_model  | 3d_model_json, completed_jpg .  |
 
 **relationships**
-| id | publisher_service_id | subscriber_service_id |
-| -- | --                   | --                    |
-| 1  | 1    				| 2						|
-| 2  | 2					| 3						|
+| id | publisher_service_id | subscriber_service_id | input_type |
+| -- | --                   | --                    | --         |
+| 1  | 1    				| 2						| image      |
+| 2  | 2					| 3						| 
 | 3  | 2					| 4						|
 | 4  | 3					| 5						|
 | 5  | 4					| 5						|
@@ -98,9 +98,9 @@ All we have to do is add these two lines to each service:
 
 And now the message broker, which dynamically associates all the nodes together based on the database essentially does for each `relationship` in the db:
 
-    queue.proccess('output:<publisher_service_id>:<input_type>', () => {
-      pubsub.publish('input:<subscriber_service_id>:<input_type>
+    queue.proccess('output:<publisher_service_id>:<input_type>', (payload) => {
+      pubsub.publish('input:<subscriber_service_id>:<input_type>', payload
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODI4NzYyMjEsMTc0NzAyNTkzMCwtNz
-Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
+eyJoaXN0b3J5IjpbLTYxOTUyNzU0LDE3NDcwMjU5MzAsLTc0OT
+M4NTEwMSwxNTM2OTMxODM3XX0=
 -->
