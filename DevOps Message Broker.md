@@ -41,8 +41,8 @@ Essentially all I have to do is:
 
 So now we've solved async messaging and services going down.
 
-### Logging
-It's hard 
+## Logging
+There are many solutions to logging, but the best one I've seen is funneling your SNS to something like [Kibana](https://www.elastic.co/products/kibana), a log analyzer. Now you can obse
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTY5NzQxNV19
+eyJoaXN0b3J5IjpbLTE1MDg2MDU0NTVdfQ==
 -->
