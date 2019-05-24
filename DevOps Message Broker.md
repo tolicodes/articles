@@ -27,10 +27,10 @@ You subscribe to topics you're interested in with a callback
  
 Simple right? Now Service A doesn't need to know about Service B. It just publishes a message, and whatever service is interested subscribes to it. No REST calls needed. No need to set up an express server to listen on those endpoints
 
-### Message Queueing - Services that Are Down
-What if a service is down? Retry logic is hard to build. Not every engineer has the time to write fibonacci backoff sequences. There's an elegant solution called a message queue. An example is Amazon SQS. The simplest way I've heard it described in an email inbox. I don't have to be constantly looking at my inbox. I just check my email when I have time, and mark messages as read. Your PubSub can write to a s
+### Message Queueing - Services that Are Down, Async Messaging
+What if a service is down? Retry logic is hard to build. Not every engineer has the time to write fibonacci backoff sequences. There's an elegant solution called a message queue. An example is Amazon SQS. The simplest way I've heard it described in an email inbox. I don't have to be constantly looking at my inbox. I just check my email when I have time, and mark messages as read. Your PubSub can write to a message queue, and whatever service consumes it can delete it when it's been processed. If your recieving service is down, no problem, the messages are waiting for it when the service restarts (automatically or manually) and the workflow continues as normal. Total
 
-Essentially 
+Essentially all I have to do is 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MzcxMjA2MF19
+eyJoaXN0b3J5IjpbMTM0MDM2OTg5OV19
 -->
