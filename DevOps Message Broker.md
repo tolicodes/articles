@@ -25,10 +25,10 @@ You subscribe to topics you're interested in with a callback
       console.log(payload.image);
     });
  
-Simple right? Now Service A doesn't need to know about Service B. It just publishes a message, and whatever service is interested subscribes to it. No REST calls needed. No need t
+Simple right? Now Service A doesn't need to know about Service B. It just publishes a message, and whatever service is interested subscribes to it. No REST calls needed. No need to set up an express server to listen on those endpoints
 
-### Message Queueing 
-
+### Message Queueing - Services that Are Down
+What if a service is down? Retry logic is hard to build. Not every engineer has the time to write fibonacci backoff sequences. T
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjI5MDI4NV19
+eyJoaXN0b3J5IjpbMTY3NTUxMjIyNl19
 -->
