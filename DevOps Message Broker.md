@@ -73,8 +73,13 @@ So let's start with a simple service that lets you represent all of our services
 | id | publisher_service_id | subscriber_service_id |
 | -- | --                   | --                    |
 | 1  | 1    				| 2						|
-| 2  | 2					| 3
+| 2  | 2					| 3						|
+| 3  | 2					| 4						|
+| 4  | 3					| 5						|
+| 5  | 4					| 5						|
+
+And then we just dump it into D3's 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTk4MzU1NSwxNzQ3MDI1OTMwLC03ND
-kzODUxMDEsMTUzNjkzMTgzN119
+eyJoaXN0b3J5IjpbLTE2MDQ3MDAwMTYsMTc0NzAyNTkzMCwtNz
+Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
 -->
