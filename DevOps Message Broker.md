@@ -78,8 +78,10 @@ So let's start with a simple service that lets you represent all of our services
 | 4  | 3					| 5						|
 | 5  | 4					| 5						|
 
-And then we just dump it into D3's 
+And then we just dump it into D3's [Graph](https://bl.ocks.org/cjrd/6863459) and we've got ourselves a visual representation. It even has a graph builder so that you can generate and rearrange graphs and save it to the DB. 
+
+Now we have documentation of all of our services
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDQ3MDAwMTYsMTc0NzAyNTkzMCwtNz
-Q5Mzg1MTAxLDE1MzY5MzE4MzddfQ==
+eyJoaXN0b3J5IjpbMTUwMTk2MjE5MCwxNzQ3MDI1OTMwLC03ND
+kzODUxMDEsMTUzNjkzMTgzN119
 -->
