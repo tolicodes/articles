@@ -18,17 +18,17 @@
 ### Why develop in isolation
 ### Setting up storybook
 ### Building a StyleGuide
-	- Converting your test cases into Storybook stories
-	- Decorators (wrapping your stories)
- 	- Snapshot test your stories (Storyshots)
- 	- Addons
-	 	- Knobs
-	 	- Actions Logger
-- Jest Tests
-	- Why do unit tests
-	- Jest setup
-	- Basic test
-	- Setup and Tear down (beforeEach, afterEach)
+### Converting your test cases into Storybook stories
+### Decorators (wrapping your stories)
+#### Snapshot test your stories (Storyshots)
+### Addons
+####  Knobs
+####  Actions Logger
+## Jest Tests
+### Why do unit tests
+### Jest setup
+### Basic test
+### Setup and Tear down (beforeEach, afterEach)
 	- Snapshot Testing
 		- Good 
 		- Bad
@@ -48,5 +48,5 @@
 - Selenium / SauceLabs Tests
 - Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjEwMzkzOV19
+eyJoaXN0b3J5IjpbMTcxMDIyNDU1N119
 -->
