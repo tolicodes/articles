@@ -41,13 +41,18 @@
 #### spies (jest.fn())
 ##### toHaveBeenCalled
 ##### toHaveBeenCalledWith
-## Testing redux sagas
-	- Coverage
-		- CodeCov 
-	- CircleCI setup
-- Cypress Tests
-- Selenium / SauceLabs Tests
-- Pickle - what it does and how to use it
+### Testing redux sagas
+
+## Coverage
+##### CodeCov 
+
+## CircleCI setup
+
+## End-2-End Testing
+
+## Cypress Tests
+### Selenium / SauceLabs Tests
+### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1NTgzNTA3XX0=
+eyJoaXN0b3J5IjpbMTM5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
 -->
