@@ -24,23 +24,24 @@
 ### Addons
 ####  Knobs
 ####  Actions Logger
+
 ## Jest Tests
 ### Why do unit tests
 ### Jest setup
 ### Basic test
 ### Setup and Tear down (beforeEach, afterEach)
-	- Snapshot Testing
-		- Good 
-		- Bad
-	- Enzyme
-- 	- Mocking components
-		- what to mock and what not to mock
-	- Testing connected components
-	- Testing functions and callbacks
-		- spies (jest.fn())
-		- toHaveBeenCalled
-		- toHaveBeenCalledWith
-	- Testing redux sagas
+### Snapshot Testing
+#### Good 
+#### Bad
+### Enzyme
+### Mocking components
+#### what to mock and what not to mock
+#### Testing connected components
+#### Testing functions and callbacks
+#### spies (jest.fn())
+##### toHaveBeenCalled
+##### toHaveBeenCalledWith
+## Testing redux sagas
 	- Coverage
 		- CodeCov 
 	- CircleCI setup
@@ -48,5 +49,5 @@
 - Selenium / SauceLabs Tests
 - Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDIyNDU1N119
+eyJoaXN0b3J5IjpbODA1NTgzNTA3XX0=
 -->
