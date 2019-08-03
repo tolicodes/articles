@@ -3,7 +3,7 @@
 ## Why testing is important
 You join a 5 person startup. The business plan isn't quite fleshed out. You're probably changing direction every few months. There's no time for testing. The only mission is to survive. After all, testing it time consuming, time is money, and right now you every penny counts.
 
-Before you know it, your 5 person startup baloons. Now you have a large engineering team, and a sale
+Before you know it, your 5 person startup baloons. Now you have an active sales team, targeting large corporations, and an engineering team to match. Despite your engineering team quadrupling, you might 
 
 ## Types of testing
 ### Unit Test
@@ -58,6 +58,6 @@ Before you know it, your 5 person startup baloons. Now you have a large engineer
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzY3NTA1NjUsMTM5NTQwMTQ5Nyw4MD
+eyJoaXN0b3J5IjpbLTE2OTI3OTExNDAsMTM5NTQwMTQ5Nyw4MD
 U1ODM1MDddfQ==
 -->
