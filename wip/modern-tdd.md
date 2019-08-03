@@ -42,7 +42,9 @@ test(Calculator, () => {
 ```
 
 ### Feature Test
-A Feature test tests a  
+A Feature Test tests a specific feature in the app environment. For a Feature Test to occur, you must fully load the frontend of the app, but you can mock the backend response (or response from another system).
+
+An example (using cypress)
 
 ### End to End / Integration Test
 ### Browser and Device Testing
@@ -94,6 +96,6 @@ A Feature test tests a
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjk5NzgyMiwxMzk1NDAxNDk3LDgwNT
+eyJoaXN0b3J5IjpbMjAzMDMyMjU3NSwxMzk1NDAxNDk3LDgwNT
 U4MzUwN119
 -->
