@@ -225,8 +225,12 @@ In your React app run:
 
 ```bash
 npx -p @storybook/cli sb init
-
+yarn run storybook
 ```
+
+You should now be able to access storybook on http://localhost:9009 with the built in tests.
+
+Now you can start developing your first component
 
 ### Building a StyleGuide
 ### Converting your test cases into Storybook stories
@@ -265,6 +269,6 @@ npx -p @storybook/cli sb init
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTg2MTgzNDMsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbNzUxOTAxMjgxLC0xMTUzNzYxMzIxLDEzOT
+U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
