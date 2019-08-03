@@ -18,8 +18,16 @@ It's difficult to convince management to take on a TDD approach - after all ther
 5. **Automatic Documentation**: A well written test suite documents the tests from a functional (Unit Test), feature (Feature Test), and user flow (E2E) perspective. This makes it easy to onboard new engineers, designers, and other product employeees.
 6. **Visualize your coverage/risk**: Unit Testing tools include a visualization feature to see what parts of your code are undocument, and therefore hold the most risk
 
-## Types of testing
+## Types of Testing
 ### Unit Test
+A Unit Test tests individuals compontents, classes, and functions. An example of a unit test would be something that tests a business logic class:
+
+```
+class Calculator {
+
+}
+```
+
 ### Feature Test
 ### End to End / Integration Test
 ### Browser and Device Testing
@@ -71,6 +79,6 @@ It's difficult to convince management to take on a TDD approach - after all ther
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3MDE1NzIsMTM5NTQwMTQ5Nyw4MDU1OD
-M1MDddfQ==
+eyJoaXN0b3J5IjpbLTM4NTc4NjY2OCwxMzk1NDAxNDk3LDgwNT
+U4MzUwN119
 -->
