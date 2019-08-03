@@ -213,9 +213,10 @@ Notice that:
 
 
 ## Storybook based development
-Generally, developers are used to creating components inside the actual application, many times nested quite deep in the app. This is no
-
 ### Why develop in isolation
+Generally, developers are used to creating components inside the actual application, many times nested quite deep in the app. This is not an approach that promotes reusability and scalability. Often times, your components will be titely coupled to how the app implements them, and it will be difficult to reuse them in other apps, or even the same app.
+
+When you begin w
 ### Setting up storybook
 ### Building a StyleGuide
 ### Converting your test cases into Storybook stories
@@ -254,6 +255,6 @@ Generally, developers are used to creating components inside the actual applicat
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5NzgzNzYwLC0xMTUzNzYxMzIxLDEzOT
+eyJoaXN0b3J5IjpbMzMxNDQ0Mzg3LC0xMTUzNzYxMzIxLDEzOT
 U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
