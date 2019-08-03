@@ -126,7 +126,9 @@ Browser/Device tests are written exactly like E2E tests, assuming there is a rea
 
 ## Testing basics
 ### Have at least a basic test
-Starting a TDD approach may seem like an arduous task. However, even if you write just ` E2E test, you already 
+Starting a TDD approach may seem like an arduous task. However, even if you write just ` E2E test, you already get a huge return on investment. I've seen many situtations where a small update by a developer takes down an entire system. And you hear about it from the customer!
+
+I recommend writing 1 test to start - testing the login to the application and seeing the front page being displayed. From there you can slowly and incrementally add on new tests.
 
 ### Making a plan
 #### Writing your test cases / stories first
@@ -172,6 +174,6 @@ Starting a TDD approach may seem like an arduous task. However, even if you writ
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIxNjU2MTIwLC0xMTUzNzYxMzIxLDEzOT
-U0MDE0OTcsODA1NTgzNTA3XX0=
+eyJoaXN0b3J5IjpbLTExNTcyMzgwMTAsLTExNTM3NjEzMjEsMT
+M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
 -->
