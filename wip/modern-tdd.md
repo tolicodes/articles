@@ -51,6 +51,7 @@ A Feature Test tests a specific feature in the app environment. For a Feature Te
 
 Feature Testing frameworks include
 - Selenium
+- WebDriver.io
 - Cypress
 - TestCafe
 
@@ -92,6 +93,10 @@ Feature: Cart Checkout
 ```
 
 ### End to End / Integration Test
+End to End or Integration tests are similar to Feature tests, but they test an entire flow rather than just one feature. The same frameworks that can be used for Feature Tests (Cypress, Selenium, WebDriver, etc) can be used for E2E tests. You can also use abstractions such as
+
+An ex
+
 ### Browser and Device Testing
 
 ## Testing basics
@@ -141,6 +146,6 @@ Feature: Cart Checkout
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3NDU1NTI2LDEzOTU0MDE0OTcsODA1NT
+eyJoaXN0b3J5IjpbMTMyNDc0MTk5LDEzOTU0MDE0OTcsODA1NT
 gzNTA3XX0=
 -->
