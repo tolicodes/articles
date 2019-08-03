@@ -216,9 +216,18 @@ Notice that:
 ### Why develop in isolation
 Generally, developers are used to creating components inside the actual application, many times nested quite deep in the app. This is not an approach that promotes reusability and scalability. Often times, your components will be titely coupled to how the app implements them, and it will be difficult to reuse them in other apps, or even the same app.
 
-I recommend using a tool called Storybook, which forces you to develop your components in isolation. This will guartantee that your components are portable, and most importantly 
+I recommend using a tool called Storybook, which forces you to develop your components in isolation. This will guartantee that your components are portable.
+
+As an added bonus you get full visual documentation of all your components and their variations/states.
 
 ### Setting up storybook
+In your React app run:
+
+```bash
+npx -p @storybook/cli sb init
+
+```
+
 ### Building a StyleGuide
 ### Converting your test cases into Storybook stories
 ### Decorators (wrapping your stories)
@@ -256,6 +265,6 @@ I recommend using a tool called Storybook, which forces you to develop your comp
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjEzMDQ5MywtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbLTE1NTg2MTgzNDMsLTExNTM3NjEzMjEsMT
+M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
 -->
