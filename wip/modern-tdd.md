@@ -12,7 +12,8 @@ There are a few companies that I've worked at, such as [HOVER](http://hover.to) 
 It's difficult to convince management to take on a TDD approach - after all there's no direct revenue tied to tests. But there's quite a business case for doing so:
 
 1. **Reduce future bugs**: Untested code creates a significant amount of bugs, which take a lot of time and money to eliminate
-2. **
+2. **Technical debt**: Untested code creates a lot of technical debt, that is, inefficient and poorly documented code that makes writing new features difficult
+3. **Well thought out and concise code**: TDD is a change in how you think. It forces you to slow down and 
 
 ## Types of testing
 ### Unit Test
@@ -67,6 +68,6 @@ It's difficult to convince management to take on a TDD approach - after all ther
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTkyNTYwMTgsMTM5NTQwMTQ5Nyw4MD
+eyJoaXN0b3J5IjpbLTE4NzcyODA3NTIsMTM5NTQwMTQ5Nyw4MD
 U1ODM1MDddfQ==
 -->
