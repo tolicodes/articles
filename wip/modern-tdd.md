@@ -14,7 +14,8 @@ It's difficult to convince management to take on a TDD approach - after all ther
 1. **Reduce future bugs**: Untested code creates a significant amount of bugs, which take a lot of time and money to eliminate
 2. **Technical debt**: Untested code creates a lot of technical debt, that is, inefficient and poorly documented code that makes writing new features difficult
 3. **Improve communication and create concise code**: TDD is a change in how you think. It forces you to slow down and communicate clear requirements with the product team for how the feature should work.
-4. **Reduces fear of refactoring**: It is significantly safer to refact
+4. **Reduces fear of refactoring**: It is significantly safer to refactor well tested code. By having Unit, Feature, and End to End test suites you virtually guarantee that critical functions will not break
+5. **Automatic Documentation**: A well written test suite documents the tests from a functional (Unit Test), feature (Feature Test), and Integra
 
 ## Types of testing
 ### Unit Test
@@ -69,6 +70,6 @@ It's difficult to convince management to take on a TDD approach - after all ther
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzAwNzczMiwxMzk1NDAxNDk3LDgwNT
-U4MzUwN119
+eyJoaXN0b3J5IjpbLTE0NTgyMzc5MTcsMTM5NTQwMTQ5Nyw4MD
+U1ODM1MDddfQ==
 -->
