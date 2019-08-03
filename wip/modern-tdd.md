@@ -20,7 +20,9 @@ It's difficult to convince management to take on a TDD approach - after all ther
 
 ## Types of Testing
 ### Unit Test
-A Unit Test tests individuals compontents, classes, and functions. An example of a unit test would be something that tests a business logic class:
+A Unit Test tests individuals compontents, classes, and functions. These tests are done in complete isolation from the app environment.
+
+An example of a unit test would be something that tests a business logic class:
 
 ```
 class Calculator {
@@ -32,14 +34,16 @@ class Calculator {
 test(Calculator, () => {
 	test('add', () => {
 		it('adds two numbers', () => {
-			
-			expect(
+			const calc = new Calculator();
+			expect(calc.add(1, 2)).toBe(3);
         });
     });
 });
 ```
 
 ### Feature Test
+A Feature test tests a  
+
 ### End to End / Integration Test
 ### Browser and Device Testing
 
@@ -90,6 +94,6 @@ test(Calculator, () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwNDYyNTY1LDEzOTU0MDE0OTcsODA1NT
-gzNTA3XX0=
+eyJoaXN0b3J5IjpbMTUzNjk5NzgyMiwxMzk1NDAxNDk3LDgwNT
+U4MzUwN119
 -->
