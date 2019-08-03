@@ -139,7 +139,7 @@ Feature: Cart
 	Scenario: I should be able to see a product catalog
 		When I go to the "Product Selection Screen"
 		Then I should see a "Product"
-		And I should see a "Price" inside the "Product" containing "$1.00"
+		And I should see a "Price" inside the "Product" containing "$10.00"
 		And I should see a "Name" inside the "Product" containing "Pencil Sharpener"
 		And I should see a "Description" inside the "Product" containing "A tool that sharpens pencils"
 	
@@ -158,9 +158,13 @@ test('Product List Component', () => {
 	it('should be able to list products', () => {
 		const items:[{
 			name: "Pencil Sharpener",
-			
+			price: 10,
+		}, {
+			name: "Pencil",
+			price: 1,
 		}]
-	})
+	});
+
 });
 ```
 
@@ -204,6 +208,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTEyOTQ3MCwtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbNDIxNzMyOTk5LC0xMTUzNzYxMzIxLDEzOT
+U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
