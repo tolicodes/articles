@@ -158,17 +158,21 @@ import renderer  from  'react-test-renderer';
 import Cart from './Cart';
 
 test('Product List Component', () => {
-	it('should be able to list products', () => {
-		const items:[{
-			name: "Pencil Sharpener",
-			price: 10,
-		}, {
-			name: "Pencil",
-			price: 1,
-		}];
-
-		const cart = renderer.create(<Cart items={items}/>);
+	const items:[{
+		name: "Pencil Sharpener",
+		price: 10,
+	}, {
+		name: "Pencil",
+		price: 1,
+	}];
 		
+	it('should be able to list products', () => {
+		const cart = renderer.create(<Cart items={items}/>);
+		expect(cart.toJSON()).toMatchSnapshot();
+	});
+	
+	it('should render a price for r', () => {
+		const cart = renderer.create(<Cart items={items}/>);
 		expect(cart.toJSON()).toMatchSnapshot();
 	});
 });
@@ -214,6 +218,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzgwMjY3MSwtMTE1Mzc2MTMyMSwxMz
+eyJoaXN0b3J5IjpbLTEyMzA1ODU3OSwtMTE1Mzc2MTMyMSwxMz
 k1NDAxNDk3LDgwNTU4MzUwN119
 -->
