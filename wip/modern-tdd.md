@@ -125,14 +125,15 @@ They will allow you to test using WebDriver.io (and Pickle abstractions of WebDr
 Browser/Device tests are written exactly like E2E tests, assuming there is a real backend. They are the closest to mirroring real world scenarios.
 
 ## Testing basics
-### Have at least a basic test
+### Your 1st Test
 Starting a TDD approach may seem like an arduous task. However, even if you write just ` E2E test, you already get a huge return on investment. I've seen many situtations where a small update by a developer takes down an entire system. And you hear about it from the customer!
 
 I recommend writing 1 test to start - testing the login to the application and seeing the front page being displayed. From there you can slowly and incrementally add on new tests.
 
-### Making a plan
-#### Writing your test cases / stories first
-#### Breaking things down into story points
+### The TDD/BDD Approach
+The TDD/BDD approach suggests starting off with a set of requirements. You can write these requirements in plain English (or PickleJS) and slowly break down the process 
+
+
 
 ## Storybook based development
 ### Why develop in isolation
@@ -174,6 +175,6 @@ I recommend writing 1 test to start - testing the login to the application and s
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTcyMzgwMTAsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMTcyMzkyMTUyOCwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
