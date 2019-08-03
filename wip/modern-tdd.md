@@ -192,14 +192,19 @@ const { calculateTax } from './cartUtils';
 
 test('Cart Utils', () => {
 	test('calculateTax', () => {
-		it('calculates Tax propertly', () => {			expect(calculateTax(1.00).toBe(1.08);
+		it('calculates Tax propertly', () => {
+			expect(calculateTax(1.00).toBe(1.08);
 		});
 		
 		it('does not caclulate tax for negative values', () => {
+			expect(calculateTax(-1.00).toBe(0);
 		});
 	});
 });
 ```
+
+Notice that:
+- We used direct values for the `toBe` instead of calculating them in the test. We could have easily copies the tax formula from the `calculateTax` function itself, but it wouldn't have served much purpose. Instead we want to esp
 
 ## Storybook based development
 ### Why develop in isolation
@@ -241,6 +246,6 @@ test('Cart Utils', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQyNzIyNjEyLC0xMTUzNzYxMzIxLDEzOT
-U0MDE0OTcsODA1NTgzNTA3XX0=
+eyJoaXN0b3J5IjpbMTc0MjQxMTk0MCwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
