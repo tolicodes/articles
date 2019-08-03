@@ -60,11 +60,11 @@ An example (using Cypress):
 
 ```
 describe('Cart Checkout', () => {
-
+	it('should be able to check out', () => {
+		cy.click('.checkout-button')
+		cy.location('pathname').should('eq', '/checkout')
+	});
 });
-
-cy.click('.checkout-button')
-cy.location('pathname').should('eq', '/checkout')
 ```
 
 And abstracted in PickleJS:
@@ -141,6 +141,6 @@ Feature: Cart Checkout
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDg4ODAzNiwxMzk1NDAxNDk3LDgwNT
-U4MzUwN119
+eyJoaXN0b3J5IjpbNDE3NDU1NTI2LDEzOTU0MDE0OTcsODA1NT
+gzNTA3XX0=
 -->
