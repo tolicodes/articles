@@ -122,14 +122,15 @@ The main ones are:
 
 They will allow you to test using WebDriver.io (and Pickle abstractions of WebDriver) on virtually any device/browser combination.
 
-Browser/Device tests are written exactly like E2E tests, assuming there is a real backend. They are the closest 
+Browser/Device tests are written exactly like E2E tests, assuming there is a real backend. They are the closest to mirroring real world scenarios.
 
 ## Testing basics
 ### Have at least a basic test
+Starting a TDD approach may seem like an arduous task. However, even if you write just ` E2E test, you already 
 
-## Making a plan
-### Writing your test cases / stories first
-### Breaking things down into story points
+### Making a plan
+#### Writing your test cases / stories first
+#### Breaking things down into story points
 
 ## Storybook based development
 ### Why develop in isolation
@@ -171,6 +172,6 @@ Browser/Device tests are written exactly like E2E tests, assuming there is a rea
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMDE0NDgxOCwtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbMzIxNjU2MTIwLC0xMTUzNzYxMzIxLDEzOT
+U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
