@@ -155,7 +155,9 @@ Next we just need to add Unit Tests for all the business logic.
 
 ```
 import renderer  from  'react-test-renderer';
-import Cart from './Cart';
+import ProductList from './ProductList';
+mount } from 'enzyme';
+```
 
 test('Product List Component', () => {
 	const items:[{
@@ -167,12 +169,12 @@ test('Product List Component', () => {
 	}];
 		
 	it('should be able to list products', () => {
-		const cart = renderer.create(<Cart items={items}/>);
-		expect(cart.toJSON()).toMatchSnapshot();
+		const productList = renderer.create(<ProductList items={items}/>);
+		expect(productList.toJSON()).toMatchSnapshot();
 	});
 	
-	it('should render a price for r', () => {
-		const cart = renderer.create(<Cart items={items}/>);
+	it('should render a total when an item is added to cart', () => {
+		const productList = renderer.create(<ProductList items={items}/>);
 		expect(cart.toJSON()).toMatchSnapshot();
 	});
 });
@@ -218,6 +220,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA1ODU3OSwtMTE1Mzc2MTMyMSwxMz
+eyJoaXN0b3J5IjpbMTEwODAxMDQyMCwtMTE1Mzc2MTMyMSwxMz
 k1NDAxNDk3LDgwNTU4MzUwN119
 -->
