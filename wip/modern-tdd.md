@@ -1,6 +1,8 @@
 # Modern TDD - Storybook, Jest, Pickle - Cypress + SauceLabs
 
 ## Why testing is important
+You join a 5 person startup. The business plan isn't quite fleshed out. You're probably changing direction every few months. There's no time for testing. The only mis
+
 ## Types of testing
 ### Unit Test
 ### Feature Test
@@ -54,5 +56,6 @@
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMTkzMTkwNDk4NSwxMzk1NDAxNDk3LDgwNT
+U4MzUwN119
 -->
