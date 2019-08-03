@@ -154,6 +154,9 @@ You write down every little piece of the functionality in this form, and boom! Y
 Next we just need to add Unit Tests for all the business logic.
 
 ```
+import renderer  from  'react-test-renderer';
+import Cart from './Cart';
+
 test('Product List Component', () => {
 	it('should be able to list products', () => {
 		const items:[{
@@ -162,9 +165,11 @@ test('Product List Component', () => {
 		}, {
 			name: "Pencil",
 			price: 1,
-		}]
-	});
+		}];
 
+		const cart = renderer.create(<Cart items={items}/>);
+
+	});
 });
 ```
 
@@ -208,6 +213,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxNzMyOTk5LC0xMTUzNzYxMzIxLDEzOT
+eyJoaXN0b3J5IjpbODkyODI3NzAzLC0xMTUzNzYxMzIxLDEzOT
 U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
