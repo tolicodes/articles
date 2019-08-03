@@ -192,7 +192,11 @@ const { calculateTax } from './cartUtils';
 
 test('Cart Utils', () => {
 	test('calculateTax', () => {
-		it('calculates Tax propertly', () =
+		it('calculates Tax propertly', () => {			expect(calculateTax(1.00).toBe(1.08);
+		});
+		
+		it('does not caclulate tax for negative values', () => {
+		});
 	});
 });
 ```
@@ -237,6 +241,6 @@ test('Cart Utils', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNDA5NzU4MywtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbNjQyNzIyNjEyLC0xMTUzNzYxMzIxLDEzOT
+U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
