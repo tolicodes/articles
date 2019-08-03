@@ -59,16 +59,26 @@ There are also abstractions on each of these frameworks, which allow you to writ
 An example (using Cypress)
 
 And abstracted in PickleJS:
+
+**cart.feature**
 ```
 Feature: Cart Checkout
 	Scenario: I should be able to check out
 		When I click the "Checkout Button"
 		I should be redirected to the "Checkout Screen"
+```
 
-
+**selectors.json**
+```
 {
+	"Checkout Button": ".checkout-button"
+}
+```
 
-
+**screens.json**
+```
+{
+	"Checkout Screen": "/checkout"
 }
 ```
 
@@ -122,6 +132,6 @@ Feature: Cart Checkout
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTM3NDExNjUsMTM5NTQwMTQ5Nyw4MD
+eyJoaXN0b3J5IjpbLTIxMTU1ODk4NDYsMTM5NTQwMTQ5Nyw4MD
 U1ODM1MDddfQ==
 -->
