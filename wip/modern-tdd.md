@@ -27,7 +27,7 @@ Unit Testing Frameworks include:
 - Jasmine
 - Mocha
 
-An example of a unit test would be something that tests a business logic class:
+An example of a Unit Test (written in Jest) would be something that tests a business logic class:
 
 ```
 class Calculator {
@@ -49,7 +49,12 @@ test(Calculator, () => {
 ### Feature Test
 A Feature Test tests a specific feature in the app environment. For a Feature Test to occur, you must fully load the frontend of the app, but you can mock the backend response (or response from another system).
 
-An example (using cypress)
+Feature Testing frameworks include
+- Selenium
+- Cypress
+- TestCafe
+
+An example (using Cypress)
 
 ### End to End / Integration Test
 ### Browser and Device Testing
@@ -101,6 +106,6 @@ An example (using cypress)
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDkzNjk3NiwxMzk1NDAxNDk3LDgwNT
-U4MzUwN119
+eyJoaXN0b3J5IjpbMzk5Mzc3ODQzLDEzOTU0MDE0OTcsODA1NT
+gzNTA3XX0=
 -->
