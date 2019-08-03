@@ -57,6 +57,8 @@ Feature Testing frameworks include
 
 There are also abstractions on each of these frameworks, which allow you to write the tests in plain English. I wrote one such framework, [PickleJS](http://picklejs.com)
 
+Note that you will need to write mocks for each API request your app makes, because a Feature Test should be completely independent from the Backend systems. Essentially, it should not test any part 
+
 An example (using Cypress):
 
 ```
@@ -93,7 +95,7 @@ Feature: Cart Checkout
 ```
 
 ### End to End / Integration Test
-End to End or Integration tests are similar to Feature tests, but they test an entire flow rather than just one feature. The same frameworks that can be used for Feature Tests (Cypress, Selenium, WebDriver, etc) can be used for E2E tests. You can also use abstractions such as
+End to End or Integration tests are similar to Feature tests, but they test an entire flow rather than just one feature. The same frameworks that can be used for Feature Tests (Cypress, Selenium, WebDriver, etc) can be used for E2E tests. You can also use abstractions such as Pickle for E2E tests
 
 An ex
 
@@ -146,6 +148,6 @@ An ex
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDc0MTk5LDEzOTU0MDE0OTcsODA1NT
-gzNTA3XX0=
+eyJoaXN0b3J5IjpbLTExNTM3NjEzMjEsMTM5NTQwMTQ5Nyw4MD
+U1ODM1MDddfQ==
 -->
