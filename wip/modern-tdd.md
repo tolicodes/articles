@@ -22,6 +22,11 @@ It's difficult to convince management to take on a TDD approach - after all ther
 ### Unit Test
 A Unit Test tests individuals compontents, classes, and functions. These tests are done in complete isolation from the app environment.
 
+Unit Testing Frameworks include:
+- Jest
+- Jasmine
+- Mocha
+
 An example of a unit test would be something that tests a business logic class:
 
 ```
@@ -96,6 +101,6 @@ An example (using cypress)
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDMyMjU3NSwxMzk1NDAxNDk3LDgwNT
+eyJoaXN0b3J5IjpbLTIxNDkzNjk3NiwxMzk1NDAxNDk3LDgwNT
 U4MzUwN119
 -->
