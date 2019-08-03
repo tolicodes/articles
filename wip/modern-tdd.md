@@ -125,7 +125,7 @@ They will allow you to test using WebDriver.io (and Pickle abstractions of WebDr
 Browser/Device tests are written exactly like E2E tests, assuming there is a real backend. They are the closest to mirroring real world scenarios.
 
 ## The TDD/BDD Approach
-The best way to imagine TDD/BDD is writing an outline for an essay or a book. You don't just start writing. First you plan what it is that 
+The best way to imagine TDD/BDD is writing an outline for an essay or a book. You don't just start writing. First you plan what it is that you will cover. A Unit, Feature, and E2E test will similarily outline the functionality of your app and business logic, before you even start to write it. That way, when you're ready to code, it will come out concise and well organized.
 
 ### Your 1st Test
 Starting a TDD approach may seem like an arduous task. However, even if you write just ` E2E test, you already get a huge return on investment. I've seen many situtations where a small update by a developer takes down an entire system. And you hear about it from the customer!
@@ -213,6 +213,8 @@ Notice that:
 
 
 ## Storybook based development
+Generally, developers are used to creating components inside the actual application, many times nested quite deep in the app. This is no
+
 ### Why develop in isolation
 ### Setting up storybook
 ### Building a StyleGuide
@@ -252,6 +254,6 @@ Notice that:
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODkwMzcyOSwtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbNTI5NzgzNzYwLC0xMTUzNzYxMzIxLDEzOT
+U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
