@@ -24,8 +24,19 @@ A Unit Test tests individuals compontents, classes, and functions. An example of
 
 ```
 class Calculator {
-
+  add (a, b) {
+    return a + b;
+  }
 }
+
+test(Calculator, () => {
+	test('add', () => {
+		it('adds two numbers', () => {
+			
+			expect(
+        });
+    });
+});
 ```
 
 ### Feature Test
@@ -79,6 +90,6 @@ class Calculator {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTc4NjY2OCwxMzk1NDAxNDk3LDgwNT
-U4MzUwN119
+eyJoaXN0b3J5IjpbOTAwNDYyNTY1LDEzOTU0MDE0OTcsODA1NT
+gzNTA3XX0=
 -->
