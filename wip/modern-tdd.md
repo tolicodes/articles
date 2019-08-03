@@ -137,7 +137,10 @@ For example, if your Product Manager wants you to build a cart you may ask her t
 ```
 Feature: Cart
 	Scenario: I should be able to see a product catalog
-		When I go to the "
+		When I go to the "Product Selection Screen"
+		Then I should see a "Product"
+		And I should see a "Price" inside the "Product" containing "$1.00"
+		
 ```
 
 ## Storybook based development
@@ -180,6 +183,6 @@ Feature: Cart
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTEzNTA4MzQsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbLTEwMjk0MjMxNCwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
