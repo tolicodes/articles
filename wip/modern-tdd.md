@@ -114,7 +114,15 @@ Feature: Cart Checkout
 ### Browser and Device Testing
 Browser/Device testing is a subset of E2E testing. This is to ensure that functionality works as expected on different browsers and devices. This is especially important whenever dealing with device specific functionality (ex: different components on iPad/iPhone)
 
-There are various "Virtual Browser" and "Virtual Device 
+There are various "Virtual Browser" and "Virtual Device" providers which will help you with these tests. 
+
+The main ones are:
+- BrowserStack
+- SauceLabs
+
+They will allow you to test using WebDriver.io (and Pickle abstractions of WebDriver) on virtually any device/browser combination.
+
+Browser/Device tests are written exactly like E2E tests, assuming there is a real backend. They are the closest 
 
 ## Testing basics
 ### Have at least a basic test
@@ -163,6 +171,6 @@ There are various "Virtual Browser" and "Virtual Device
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjA0ODI3NTgsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMjAxMDE0NDgxOCwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
