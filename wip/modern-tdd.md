@@ -151,7 +151,18 @@ Feature: Cart
 
 You write down every little piece of the functionality in this form, and boom! Your E2E tests and Feature Tests are practically done.
 
-Next we just need to add Unit Tests for 
+Next we just need to add Unit Tests for all the business logic.
+
+```
+test('Product List Component', () => {
+	it('should be able to list products', () => {
+		const items:[{
+			name: "Pencil Sharpener",
+			
+		}]
+	})
+});
+```
 
 ## Storybook based development
 ### Why develop in isolation
@@ -193,6 +204,6 @@ Next we just need to add Unit Tests for
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0MzY4ODc0LC0xMTUzNzYxMzIxLDEzOT
-U0MDE0OTcsODA1NTgzNTA3XX0=
+eyJoaXN0b3J5IjpbLTc0MTEyOTQ3MCwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
