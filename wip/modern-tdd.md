@@ -125,6 +125,8 @@ They will allow you to test using WebDriver.io (and Pickle abstractions of WebDr
 Browser/Device tests are written exactly like E2E tests, assuming there is a real backend. They are the closest to mirroring real world scenarios.
 
 ## The TDD/BDD Approach
+The best way to imagine TDD/BDD is writing an outline for an essay or a book. You don't just start writing. First you plan what it is that 
+
 ### Your 1st Test
 Starting a TDD approach may seem like an arduous task. However, even if you write just ` E2E test, you already get a huge return on investment. I've seen many situtations where a small update by a developer takes down an entire system. And you hear about it from the customer!
 
@@ -204,10 +206,11 @@ test('Cart Utils', () => {
 ```
 
 Notice that:
+- We **HAVE NOT WRITTEN THE FUNCTIONAL CODE YET**. All of our tests will fail. And that's ok, we are writing the outline first, and only later filling in the code that will be tested.
 - We used direct values for the `toBe` instead of calculating them in the test. We could have easily copies the tax formula from the `calculateTax` function itself, but it wouldn't have served much purpose. Instead we want to test with known inputs and outputs. If the logic changes in the future, it's ok! The tests will break, and we will know to update them
 - We test all possible edge case scenarios. 
 - We test the business logic as closely to the function as possible. We want to test the smallest bits of code that we can identify, not monolithic logic flows (although the latter is useful as well).
-- W
+
 
 ## Storybook based development
 ### Why develop in isolation
@@ -249,6 +252,6 @@ Notice that:
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDI2OTQzMjMsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMTkwODkwMzcyOSwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
