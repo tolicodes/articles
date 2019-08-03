@@ -112,6 +112,7 @@ Feature: Cart Checkout
 ```
 
 ### Browser and Device Testing
+Browser/Device testing is a subset of E2E testing. This is to ensure that 
 
 ## Testing basics
 ### Have at least a basic test
@@ -160,6 +161,6 @@ Feature: Cart Checkout
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODUxMTgwOTEsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMTgxNDY0ODA5OCwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
