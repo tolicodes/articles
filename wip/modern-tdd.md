@@ -144,9 +144,14 @@ Feature: Cart
 		And I should see a "Description" inside the "Product" containing "A tool that sharpens pencils"
 	
 	Scenario: I should be able to add a product to my cart
-		When I go to the "Product Selection SCreen"
-		And I click 
+		When I go to the "Product Selection Screen"
+		And I click "Add to Cart" on the "Product"
+		Then I should see "Product" inside the "Cart"
 ```
+
+You write down every little piece of the functionality in this form, and boom! Your E2E tests and Feature Tests are practically done.
+
+Next we just need to add Unit Tests for 
 
 ## Storybook based development
 ### Why develop in isolation
@@ -188,6 +193,6 @@ Feature: Cart
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3Nzg5NzE3NCwtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbNTg0MzY4ODc0LC0xMTUzNzYxMzIxLDEzOT
+U0MDE0OTcsODA1NTgzNTA3XX0=
 -->
