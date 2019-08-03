@@ -7,7 +7,9 @@ Before you know it, your 5 person startup baloons. Now you have an active sales 
 
 I've been through this process more times than I could count. Especially in sales driven organizations, pumping out code at top speed is  the prioirity, all at the cost of creating tremendous technical debt. 
 
-There are a few companies that I've worked at, such as [HOVER](http://hover.to) and [Smartly, which prioritized testing early on in the 
+There are a few companies that I've worked at, such as [HOVER](http://hover.to) and [Smartly](http://smart.ly), which prioritized testing early on in the process and reduced their technical debt significantly. 
+
+It's difficult to convince management to take on a TDD approach - after all there's no direct revenue tied to tests. But there's quite a lot 
 
 ## Types of testing
 ### Unit Test
@@ -62,6 +64,6 @@ There are a few companies that I've worked at, such as [HOVER](http://hover.to) 
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTU2Mzg4OTksMTM5NTQwMTQ5Nyw4MD
-U1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbLTU2NDI5NjE5NiwxMzk1NDAxNDk3LDgwNT
+U4MzUwN119
 -->
