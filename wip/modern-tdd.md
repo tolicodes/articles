@@ -185,7 +185,17 @@ test('Product List Component', () => {
 
 Unit tests are expecially useful for testing classes and functions that are used for complex business logic
 
-For example, I may have a function that calculates tax for my cart (even though the tax is not shown in the UI). I still want to ensure that logic is correct, and functions individually from the rest of the Cart's functionality. The smaller we can break down indi
+For example, I may have a function that calculates tax for my cart (even though the tax is not shown in the UI). I still want to ensure that logic is correct, and functions individually from the rest of the Cart's functionality. The smaller we can break down individual business logic parts, the more accurately we can identify and test edge cases, and the safter we can refactor!
+
+```
+const { calculateTax } from './cartUtils';
+
+test('Cart Utils', () => {
+	test('calculateTax', () => {
+		it('calculates Tax propertly', () =
+	});
+});
+```
 
 ## Storybook based development
 ### Why develop in isolation
@@ -227,6 +237,6 @@ For example, I may have a function that calculates tax for my cart (even though 
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTAyODc4NywtMTE1Mzc2MTMyMSwxMz
+eyJoaXN0b3J5IjpbMTUyNDA5NzU4MywtMTE1Mzc2MTMyMSwxMz
 k1NDAxNDk3LDgwNTU4MzUwN119
 -->
