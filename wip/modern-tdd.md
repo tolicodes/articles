@@ -153,7 +153,7 @@ You write down every little piece of the functionality in this form, and boom! Y
 
 Next we just need to add Unit Tests for all the business logic.
 
-Notice that even though Unit and Feature Tests may look similar, the Unit tests test the component in
+Notice that even though Unit and Feature Tests may look similar, the Unit tests test the component in isolation (we are manually feeding it props).
 
 ```
 import renderer  from  'react-test-renderer';
@@ -183,6 +183,9 @@ test('Product List Component', () => {
 });
 ```
 
+Unit tests are expecially useful for testing classes and functions that are used for complex business logic
+
+For example, I may have a function that calculates tax for my cart (even though the tax is not shown in the UI). I still want to ensure that logic is correct, and functions individually from the rest of the Cart's functionality. The smaller we can break down indi
 
 ## Storybook based development
 ### Why develop in isolation
@@ -224,6 +227,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjY0MzAyNTIsLTExNTM3NjEzMjEsMT
-M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbLTY3MTAyODc4NywtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
