@@ -204,7 +204,10 @@ test('Cart Utils', () => {
 ```
 
 Notice that:
-- We used direct values for the `toBe` instead of calculating them in the test. We could have easily copies the tax formula from the `calculateTax` function itself, but it wouldn't have served much purpose. Instead we want to esp
+- We used direct values for the `toBe` instead of calculating them in the test. We could have easily copies the tax formula from the `calculateTax` function itself, but it wouldn't have served much purpose. Instead we want to test with known inputs and outputs. If the logic changes in the future, it's ok! The tests will break, and we will know to update them
+- We test all possible edge case scenarios. 
+- We test the business logic as closely to the function as possible. We want to test the smallest bits of code that we can identify, not monolithic logic flows (although the latter is useful as well).
+- W
 
 ## Storybook based development
 ### Why develop in isolation
@@ -246,6 +249,6 @@ Notice that:
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjQxMTk0MCwtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbLTExMDI2OTQzMjMsLTExNTM3NjEzMjEsMT
+M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
 -->
