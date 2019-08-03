@@ -9,7 +9,10 @@ I've been through this process more times than I could count. Especially in sale
 
 There are a few companies that I've worked at, such as [HOVER](http://hover.to) and [Smartly](http://smart.ly), which prioritized testing early on in the process and reduced their technical debt significantly. 
 
-It's difficult to convince management to take on a TDD approach - after all there's no direct revenue tied to tests. But there's quite a lot 
+It's difficult to convince management to take on a TDD approach - after all there's no direct revenue tied to tests. But there's quite a business case for doing so:
+
+1. **Reduce future bugs**: Untested code creates a significant amount of bugs, which take a lot of time and money to eliminate
+2. **
 
 ## Types of testing
 ### Unit Test
@@ -64,6 +67,6 @@ It's difficult to convince management to take on a TDD approach - after all ther
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDI5NjE5NiwxMzk1NDAxNDk3LDgwNT
-U4MzUwN119
+eyJoaXN0b3J5IjpbLTEyOTkyNTYwMTgsMTM5NTQwMTQ5Nyw4MD
+U1ODM1MDddfQ==
 -->
