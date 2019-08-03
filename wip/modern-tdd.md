@@ -168,7 +168,8 @@ test('Product List Component', () => {
 		}];
 
 		const cart = renderer.create(<Cart items={items}/>);
-
+		
+		expect(cart.toJSON()).toMatchSnapshot();
 	});
 });
 ```
@@ -213,6 +214,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkyODI3NzAzLC0xMTUzNzYxMzIxLDEzOT
-U0MDE0OTcsODA1NTgzNTA3XX0=
+eyJoaXN0b3J5IjpbLTQzMzgwMjY3MSwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
