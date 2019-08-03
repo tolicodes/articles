@@ -140,7 +140,12 @@ Feature: Cart
 		When I go to the "Product Selection Screen"
 		Then I should see a "Product"
 		And I should see a "Price" inside the "Product" containing "$1.00"
-		
+		And I should see a "Name" inside the "Product" containing "Pencil Sharpener"
+		And I should see a "Description" inside the "Product" containing "A tool that sharpens pencils"
+	
+	Scenario: I should be able to add a product to my cart
+		When I go to the "Product Selection SCreen"
+		And I click 
 ```
 
 ## Storybook based development
@@ -183,6 +188,6 @@ Feature: Cart
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjk0MjMxNCwtMTE1Mzc2MTMyMSwxMz
+eyJoaXN0b3J5IjpbLTc3Nzg5NzE3NCwtMTE1Mzc2MTMyMSwxMz
 k1NDAxNDk3LDgwNTU4MzUwN119
 -->
