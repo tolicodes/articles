@@ -54,7 +54,13 @@ Feature Testing frameworks include
 - Cypress
 - TestCafe
 
+There are also abstractions on each of these frameworks, which allow you to write the tests in plain English. I wrote one such 
+
 An example (using Cypress)
+```
+Feature: Cart Checkout
+	
+```
 
 ### End to End / Integration Test
 ### Browser and Device Testing
@@ -106,6 +112,6 @@ An example (using Cypress)
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5Mzc3ODQzLDEzOTU0MDE0OTcsODA1NT
+eyJoaXN0b3J5IjpbNzM4ODg0NjQzLDEzOTU0MDE0OTcsODA1NT
 gzNTA3XX0=
 -->
