@@ -95,9 +95,17 @@ Feature: Cart Checkout
 ```
 
 ### End to End / Integration Test
-End to End or Integration tests are similar to Feature tests, but they test an entire flow rather than just one feature. The same frameworks that can be used for Feature Tests (Cypress, Selenium, WebDriver, etc) can be used for E2E tests. You can also use abstractions such as Pickle for E2E tests
+End to End or Integration tests are similar to Feature tests, but they test an entire flow rather than just one feature. The same frameworks that can be used for Feature Tests (Cypress, Selenium, WebDriver, etc) can be used for E2E tests. You can also use abstractions such as Pickle for E2E tests. 
 
-An ex
+One big difference between a Feature and E2E test, is that the E2E uses a real backend.
+
+An example would be checking the full flow of a cart:
+```
+Feature: Cart Checkout
+	Scenario: I should be able to check out
+		When I click the "Checkout Button"
+		I should be redirected to the "Checkout Screen"
+```
 
 ### Browser and Device Testing
 
@@ -148,6 +156,6 @@ An ex
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM3NjEzMjEsMTM5NTQwMTQ5Nyw4MD
-U1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMTYwMjYwODc2MiwtMTE1Mzc2MTMyMSwxMz
+k1NDAxNDk3LDgwNTU4MzUwN119
 -->
