@@ -56,7 +56,16 @@ Feature Testing frameworks include
 
 There are also abstractions on each of these frameworks, which allow you to write the tests in plain English. I wrote one such framework, [PickleJS](http://picklejs.com)
 
-An example (using Cypress)
+An example (using Cypress):
+
+```
+describe('Cart Checkout', () => {
+
+});
+
+cy.click('.checkout-button')
+cy.location('pathname').should('eq', '/checkout')
+```
 
 And abstracted in PickleJS:
 
@@ -132,6 +141,6 @@ Feature: Cart Checkout
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTU1ODk4NDYsMTM5NTQwMTQ5Nyw4MD
-U1ODM1MDddfQ==
+eyJoaXN0b3J5IjpbMTExMDg4ODAzNiwxMzk1NDAxNDk3LDgwNT
+U4MzUwN119
 -->
