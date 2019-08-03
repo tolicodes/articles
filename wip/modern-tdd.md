@@ -153,6 +153,8 @@ You write down every little piece of the functionality in this form, and boom! Y
 
 Next we just need to add Unit Tests for all the business logic.
 
+Notice that even though Unit and Feature Tests may look similar, the Unit tests test the component in
+
 ```
 import renderer  from  'react-test-renderer';
 import ProductList from './ProductList';
@@ -174,12 +176,13 @@ test('Product List Component', () => {
 	
 	it('should render a total when an item is added to cart', () => {
 		const productList = mount(<ProductList items={items}/>);
-		productList.find('.product .addToCart').click();
-		expect(productList.find('.cart
-		expect(cart.toJSON()).toMatchSnapshot();
+		productList.find('.product.nth-child(0) .addToCart').click();
+		productList.find('.product.nth-child(1) .addToCart').click();
+		expect(productList.find('.cart .total').toEqual('$11.00');
 	});
 });
 ```
+
 
 ## Storybook based development
 ### Why develop in isolation
@@ -221,6 +224,6 @@ test('Product List Component', () => {
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzNjY3MDQyLC0xMTUzNzYxMzIxLDEzOT
-U0MDE0OTcsODA1NTgzNTA3XX0=
+eyJoaXN0b3J5IjpbLTE3MjY0MzAyNTIsLTExNTM3NjEzMjEsMT
+M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
 -->
