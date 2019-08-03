@@ -112,7 +112,9 @@ Feature: Cart Checkout
 ```
 
 ### Browser and Device Testing
-Browser/Device testing is a subset of E2E testing. This is to ensure that 
+Browser/Device testing is a subset of E2E testing. This is to ensure that functionality works as expected on different browsers and devices. This is especially important whenever dealing with device specific functionality (ex: different components on iPad/iPhone)
+
+There are various "Virtual Browser" and "Virtual Device 
 
 ## Testing basics
 ### Have at least a basic test
@@ -161,6 +163,6 @@ Browser/Device testing is a subset of E2E testing. This is to ensure that
 ### Selenium / SauceLabs Tests
 ### Pickle - what it does and how to use it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNDY0ODA5OCwtMTE1Mzc2MTMyMSwxMz
-k1NDAxNDk3LDgwNTU4MzUwN119
+eyJoaXN0b3J5IjpbLTExNjA0ODI3NTgsLTExNTM3NjEzMjEsMT
+M5NTQwMTQ5Nyw4MDU1ODM1MDddfQ==
 -->
